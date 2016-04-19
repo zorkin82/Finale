@@ -1,0 +1,109 @@
+\documentclass[article,dr=phil,type=drfinal,colorback,accentcolor=tud2b]{tudreport}
+
+\usepackage[stable]{footmisc}
+\usepackage[ngerman]{hyperref,babel}
+
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{booktabs}
+
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc} 
+\usepackage{graphicx}
+
+\usepackage{apacite}
+  
+\hypersetup{%
+  pdftitle={Diplomarbeit},
+  pdfauthor={D. Beckmann},
+  pdfsubject={},
+  pdfview=FitH, 
+  pdfstartview=FitV
+}
+  
+\newcommand{\getmydate}{%
+  \ifcase\month%
+    \or Januar\or Februar\or M\"arz%
+    \or April\or Mai\or Juni\or Juli%
+    \or August\or September\or Oktober%
+    \or November\or Dezember%
+  \fi\ \number\year%
+}
+\setcounter{seclinedepth}{1}
+
+%%% Zum Tester der Marginalien %%%
+  \newif\ifTUDmargin\TUDmarginfalse
+  %%% Wird der Folgende Zeile einkommentiert,
+  %%% werden Marginalien gesetzt.
+  % \TUDmargintrue
+  \ifTUDmargin\makeatletter
+    \TUD@setmarginpar{2}
+  \makeatother\fi
+%%% ENDE: Zum Tester der Marginalien %%%
+
+\newlength{\longtablewidth}
+\setlength{\longtablewidth}{0.7\linewidth}
+\addtolength{\longtablewidth}{-\marginparsep}
+\addtolength{\longtablewidth}{-\marginparwidth}
+
+
+% \settitlepicture{tudreport-pic}
+% \printpicturesize
+  \title{Konzeption eines Softwaresystems zur Verwaltung von Hochschulsporteinrichtungen}
+
+  \subsubtitle{
+    \begin{tabbing}
+    Links \= Mitte \= Rechts \kill
+      \textbf{Autor:}\> \> Dirk Beckmann (di.beckmann@gmx.de) \\
+      \textbf{Betreuer:}\> \> Prof. Dr. Josef Wiemeyer (wiemeyer@sport.tu-darmstadt.de) \\
+      \> \>  Dietbert Schöberel (schoeberl@sport.tu-darmstadt.de)
+    \end{tabbing}
+  }
+  %\setinstitutionlogo[width]{TUD_sublogo}
+  \uppertitleback{(\textaccent{\textbackslash uppertitleback})}
+  \lowertitleback{(\textaccent{\textbackslash lowertitleback})\hfill\today}
+  \institution{Fachbereich Humanwissenschaft\\
+      Institut für Sportwissenschaft}
+%  \dedication{Hier ist gen"ugend Platz\\
+%    f"ur eine Widmung (\textaccent{\textbackslash dedication}).\\
+%    \strut\\
+%    F"ur Annelore Schmidt\\
+%    aus dem Referat Kommunikation.\\
+%    Sie hat immer ein offenes Ohr\\
+%    f"ur unsere Fragen und Anregungen.}
+
+
+\begin{document}
+  \maketitle
+  
+  \tableofcontents 
+  \clearpage
+  
+  \listoffigures 
+  \clearpage
+  
+  \listoftables 
+  \clearpage
+  
+	\section {Motivation}
+
+
+	\include{einleitung} 
+	
+	\include{hochschulsport} 
+	
+	\include{grundlagen} 
+	
+	\include{konzept} 
+	
+	\include{zusammenfassung} 
+
+	\include{glossar}
+	
+	\include{anhang}
+
+
+  \bibliography{literatur_full} 
+  \bibliographystyle{apacite}
+  
+\end{document}
