@@ -2,6 +2,7 @@
 \contentsline {section}{\numberline {1}Motivation}{4}{section.1}
 \contentsline {section}{\numberline {2}Einleitung}{5}{section.2}
 \contentsline {section}{\numberline {3}Analyse der Fachdom\IeC {\"a}ne Hochschulsport}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Historische Entwicklung des Hochschulsports}{6}{subsection.3.1}
 \contentsline {section}{\numberline {4}Technische und fachliche Grundlagen}{7}{section.4}
 \contentsline {section}{\numberline {5}System Konzeption}{8}{section.5}
 \contentsline {section}{\numberline {6}Diskussion, Zusammenfassung und Ausblick}{9}{section.6}
