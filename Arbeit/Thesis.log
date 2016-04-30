@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/W32TeX) (format=pdflatex 2014.5.23)  19 APR 2016 23:26
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/W32TeX) (format=pdflatex 2014.5.23)  28 APR 2016 18:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1306,7 +1306,7 @@ Package  Warning: Title has more then 3 lines. Fontsize reduced on input line 7
 
 LaTeX Font Info:    Font shape `T1/5fp/b/n' in size <11.5> not available
 (Font)              Font shape `T1/5fp/mb/n' tried instead on input line 78.
-<tud_logo.pdf, id=39, 157.58875pt x 63.23625pt>
+<tud_logo.pdf, id=143, 157.58875pt x 63.23625pt>
 File: tud_logo.pdf Graphic file (type pdf)
  <use tud_logo.pdf>
 Package pdftex.def Info: tud_logo.pdf used on input line 78.
@@ -1333,16 +1333,6 @@ ex.map} <c:/texlive/2013/../texmf-local/tex/latex/tuddesign/logo/tud_logo.pdf>]
 \openout2 = `hochschulsport.aux'.
 
  (./hochschulsport.tex
-Underfull \hbox (badness 10000) detected at line 4
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 4
-[]
- []
-
-
 Underfull \hbox (badness 10000) detected at line 5
 []
  []
@@ -1353,33 +1343,8 @@ Underfull \hbox (badness 10000) detected at line 5
  []
 
 
-Underfull \hbox (badness 10000) detected at line 6
-[]
- []
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
-
-Underfull \hbox (badness 10000) detected at line 6
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 7
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 7
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 8
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 8
-[]
  []
 
 
@@ -1389,6 +1354,46 @@ Underfull \hbox (badness 10000) detected at line 9
 
 
 Underfull \hbox (badness 10000) detected at line 9
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 10
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 10
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 11
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 11
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 12
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 12
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 13
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 13
 []
  []
 
@@ -1650,32 +1655,26 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
 konzept.aux) (./zusammenfassung.aux) (./glossar.aux) (./anhang.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
-
-
-Package rerunfilecheck Warning: File `Thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Thesis.out':
-(rerunfilecheck)             Before: 1BF487E582FA31D6A902CC3B5059ED87;540
-(rerunfilecheck)             After:  7FFFAEF9FCF97A84B2C222D06BA388C2;2580.
+Package rerunfilecheck Info: File `Thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 7FFFAEF9FCF97A84B2C222D06BA388C2;2580.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
- 12582 strings out of 493308
- 190930 string characters out of 6141367
- 335494 words of memory out of 5000000
- 15674 multiletter control sequences out of 15000+600000
- 73422 words of font info for 58 fonts, out of 8000000 for 9000
+ 12610 strings out of 493308
+ 191452 string characters out of 6141367
+ 335515 words of memory out of 5000000
+ 15701 multiletter control sequences out of 15000+600000
+ 74574 words of font info for 59 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 59i,12n,75p,248b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,12n,75p,793b,484s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2013/../t
-exmf-local/fonts/type1/softmake/frontpage/5fpm8a.pfb><c:/texlive/2013/../texmf-
-local/fonts/type1/softmake/frontpage/5fpr8a.pfb>
-Output written on Thesis.pdf (9 pages, 60197 bytes).
+exmf-local/fonts/type1/softmake/charter/5chr8a.pfb><c:/texlive/2013/../texmf-lo
+cal/fonts/type1/softmake/frontpage/5fpm8a.pfb><c:/texlive/2013/../texmf-local/f
+onts/type1/softmake/frontpage/5fpr8a.pfb>
+Output written on Thesis.pdf (9 pages, 73509 bytes).
 PDF statistics:
- 136 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
+ 218 PDF objects out of 1000 (max. 8388607)
+ 199 compressed objects within 2 object streams
  44 named destinations out of 1000 (max. 500000)
- 90 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 298 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -83,28 +83,249 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Warum wird das Projekt gemacht?           						 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
-
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
+Lorem 
 
 \section{Produkteinsatz}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Wer ist die Zielgruppe?                   						 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergaren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.   
-
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet,
+Lorem 
 
 \section{Funktionale Anforderungen}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Was muss das Programm können?                   					 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Verwaltung}
+\textbf{Allgemein}\\
 \begin{usecase}
   \addheading{Nummer}{Beschreibung} 
-  \addrow{/FA10/}{Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam}
-  \addrow{/FA20/}{Lorem ipsum dolor sit amet, consetetur sadipscing elitr}
-  \addrow{/FA30/}{adasdfasdf asdf asdfas}
+  \addrow{/FA/}{Der Zugang zur Verwaltung soll über eine Benutzerauthentifizierung abgesichert sein}
+  \addrow{/FA/}{Das Benutzersystem soll eine Rechteverwaltung beinhalten}
+  \addrow{/FA/}{Anonymisierung}
+  \addrow{/FA/}{Sämtliche Buchungen müssen nachvollziehbar machen, aus welcher Anwendung und von wem sie gebucht wurden (z.b. welcher Backenduser)}
+  \addrow{/FA/}{}
 \end{usecase}
+
+\paragraph{\textbf{Veranstaltungen}\\}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/FA/}{Erstellen, bearbeiten und löschen von Veranstaltungen}
+  \addrow{/FA/}{Beliebige Kategorisierung (Semester, Themenbereich, Status etc)}
+  \addrow{/FA/}{Abgestuftes Preismodel (Nach Nutzergruppe, Buchungszeitpunkt)}
+  \addrow{/FA/}{Festlegung von Kursvoraussetzungen (Z.b. Müssen vorher andere Kurse belegt worden sein)}
+  \addrow{/FA/}{Zeitliches und allgemeines sperren und Freigeben für unterschiedliche Nutzergruppen}
+  \addrow{/FA/}{Hinterlegen von Kursinformationen (Kursbeschreibung, Bilder, Dateien, Fertigkeitsniveau, Gender)}
+  \addrow{/FA/}{Zuordnen von Teilnehmern zu Veranstaltungen}
+  \addrow{/FA/}{Zuordnen von Übungsleitern zu Veranstaltungen}
+  \addrow{/FA/}{Individuelle Definition der Bezahlung je Übungsleiter}
+  \addrow{/FA/}{Zuordnen von Ansprechpartnern und Verantwortlichen zu Veranstaltungen}
+  \addrow{/FA/}{Manuelles und zeitgesteuertes veröffentlichen von Veranstaltungen}
+  \addrow{/FA/}{Definieren von minimaler und maximaler Teilnehmerzahlen}
+  \addrow{/FA/}{Zuordnung zu Veranstaltungsorten (Räume, Sportplätze, Turnhallen)}
+  \addrow{/FA/}{Automatisiertes Erstellen der Einzeltermine}
+  \addrow{/FA/}{Änderungsmöglichkeiten für jeden Einzeltermin (Datum, Start/Ende, Übungsleiter, Ort)}
+  \addrow{/FA/}{Verwalten einer Warteliste (Anschreiben, Personen hinzufügen, löschen)}
+  \addrow{/FA/}{Auswahl unterschiedlicher Platzvergabeverfahren (Race, Auslosung)}
+  \addrow{/FA/}{Übersicht der Teilnehmer}
+  \addrow{/FA/}{Passwortgeschützter Zugang zur Anmeldung}
+  \addrow{/FA/}{Druckmöglichkeiten (Teilnehmerliste, Warteliste, Teilnehmerurkunde, "Veranstaltungsinformationen")}
+  \addrow{/FA/}{Erfassungsmöglichkeit der Anwesenheit von Teilnehmern}
+  \addrow{/FA/}{Duplizieren einzelner und multipler Veranstaltungen}
+  \addrow{/FA/}{Multi-Campus Unterstützung}
+  \addrow{/FA/}{}
+\end{usecase}
+
+\paragraph{\textbf{Personen/Kunden/Teilnehmer}\\}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/FA/}{Erstellen, ändern und löschen von Personen}
+  \addrow{/FA/}{Einlesen von Chipkarten zu einer Person (Studierenden Card, Bediensteten Card)}
+  \addrow{/FA/}{Zuordnung zu Benutzergruppen (Studierende, Bedienstete, Externe)}
+  \addrow{/FA/}{Zuordnung zu Hochschulen}
+  \addrow{/FA/}{Automatisierte Überprüfung der Benutzergruppe und Hochschule}
+  \addrow{/FA/}{Optionales hinterlegen von Bankdaten (mehrere Bankdaten möglich)}
+  \addrow{/FA/}{Aufrufen einer Rechnungshistorie}
+  \addrow{/FA/}{Sperren von Personen (Kein Zutritt und keine Buchungen mehr möglich)}
+  \addrow{/FA/}{Zuordnung zu unterschiedlichen Kategorien}
+  \addrow{/FA/}{Druckmöglichkeiten (Steckbrief, Rechnungshistorie, Kurshistorie)}
+  \addrow{/FA/}{Zutrittsprotokoll für Zutrittskontrollsysteme}
+  \addrow{/FA/}{Kommunikationshistorie (Systemmails, Manuelle Kommunikationseinträge)}
+  \addrow{/FA/}{Dublettenprüfung und Zusammenführung}
+  \addrow{/FA/}{}
+\end{usecase}
+
+\paragraph{\textbf{Verträge}\\}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/FA/}{Erstellen, bearbeiten und löschen von Verträgen basierend auf Vorlagen} 
+  \addrow{/FA/}{Erstellen, bearbeiten und löschen von Vertragsvorlagen}
+  \addrow{/FA/}{Stilllegen von Verträgen}
+  \addrow{/FA/}{Automatisierte Rechnungsgenerierung}
+  \addrow{/FA/}{}
+  \addrow{/FA/}{}
+\end{usecase}
+
+\paragraph{\textbf{Buchhaltung}\\}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/FA/}{Liste kostenpflichtiger Rechnungen (Verträge, Buchungen, Verkäufe)} 
+  \addrow{/FA/}{Übersicht überfälliger Posten}
+  \addrow{/FA/}{Rechnungserstellung}
+  \addrow{/FA/}{Austauschmöglichkeit mit anderen Programmen für die Rechnungsabwicklung (SAP, csv)}
+  \addrow{/FA/}{SEPA Unterstützung mit Mandatsverwaltung}
+  \addrow{/FA/}{Unterstützung unterschiedlicher Kostenstellen und Buchungskonten}
+  \addrow{/FA/}{Unterscheidung von Lastschriften und Gutschriften}
+  \addrow{/FA/}{}
+\end{usecase}
+
+\paragraph{\textbf{Kalender/Raumplanung}\\}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/FA/}{Unterstützung von Kalenderdarstellungen eines Veranstaltungsortes in der Tages, Wochen, Arbeitswochen, Monats und Listenansicht}
+  \addrow{/FA/}{Kalenderdarstellung mehrerer Veranstaltungsorte (Ressourcen) in der Tages und Listenansicht}
+  \addrow{/FA/}{Ressourcen müssen auf Basis von Veranstaltungsorten frei definierbar sein}
+  \addrow{/FA/}{Option zur Auswahl der angezeigten Ereignisse (Basierend auf Kategorien)}
+  \addrow{/FA/}{Möglichkeit zum ICAL Import/Export}
+  \addrow{/FA/}{Anlegen, andern und löschen von unabhängigen Terminen}
+  \addrow{/FA/}{Definierbare Listen (Ausfallende Kurse, Kurse in den nächsten x Minuten, Kurse der Kategorie x und/oder y)}
+  \addrow{/FA/}{}
+\end{usecase}
+
+\paragraph{\textbf{Übungsleiter}\\}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/FA/}{Anzeige von Übungsleiterlisten und ihren Kursen}
+  \addrow{/FA/}{Verwaltung von Stundenzetteln}
+  \addrow{/FA/}{Erstellen, ändern und löschen von Dienstverträgen (Zuordnung von Veranstaltungen)}
+  \addrow{/FA/}{Übungsleitersuche nach eigenen Kriterien (Sportart, aktiv/inaktiv)}
+  \addrow{/FA/}{}
+\end{usecase}
+
+\paragraph{\textbf{Mailing}\\}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/FA/}{Erstellen von Massenmails an große Empfängergruppen}
+  \addrow{/FA/}{Erstellen, ändern und verwalten von dynamischen Empfängerlisten nach definierten Kriterien (z.b. Alle Teilnehmer von Kursen der Kategorie Bergsport im Jahr 2009)}
+  \addrow{/FA/}{Unterstützung von dynamischen Mailvorlagen (Platzhalter)}
+  \addrow{/FA/}{Eventgesteuerte, automatische Mailings (Zeit, Veranstaltungsabsage)}
+  \addrow{/FA/}{Unterstützung von Dateianhängen}
+  \addrow{/FA/}{Mailhistorie}
+  \addrow{/FA/}{Exportmöglichkeit von Empfängerlisten}
+  \addrow{/FA/}{Unterstützung unterschiedlicher Mailkonten}
+  \addrow{/FA/}{}
+  \addrow{/FA/}{}
+\end{usecase}
+
+\paragraph{\textbf{Einzelplatzbuchung}\\}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/FA/}{Ausgewählte Veranstaltungsorte sollen für eine Buchung zur Verfügung gestellt werden (z.b. Seminarraum, Turnhalle, Tennisplatz)}
+  \addrow{/FA/}{Die Buchung erfolgt basierend auf definierten Zeit-Slots}
+  \addrow{/FA/}{Zeit-Slots werden nach Vorgaben automatisch generiert (Länge der Slots, von/bis)}
+  \addrow{/FA/}{Es müssen Zeiträume automatisch und manuell geblockt werden können, die nicht frei buchbar sind (Interne Verwendung für Kurse etc.)}
+  \addrow{/FA/}{Je Veranstaltungsort lassen sich unterschiedliche Slot-Preise und Buchungsvoraussetzungen vergeben (Ab wann kann gebucht werden, welche Nutzergruppen können buchen, wie viele Buchungen können pro Person je Woche/Monat gemacht werden, wie viele Tage im Voraus kann gebucht werden)}
+  \addrow{/FA/}{}
+\end{usecase}
+
+\paragraph{\textbf{Verleih}\\}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/FA/}{Anlegen, ändern und löschen von Verleihobjekten (VW T3, Kanadier 103, etc.)}
+  \addrow{/FA/}{Anlegen, ändern und löschen von Verleihgruppen (Autos, Boote)}
+  \addrow{/FA/}{Je Objekt unterschiedliche Abrechnungseinheiten und Preise}
+  \addrow{/FA/}{Personengebunden}
+  \addrow{/FA/}{Jedes Objekt besitzt eine Verleih Historie}
+  \addrow{/FA/}{Suche nach Objekten und Leihpersonen}
+  \addrow{/FA/}{Liste verliehener Objekte}
+  \addrow{/FA/}{}
+\end{usecase}
+
+\paragraph{\textbf{Verkauf}\\}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/FA/}{Über den Verkauf müssen auf den Kunden Kurse und Warenartikel gebucht werden können}
+  \addrow{/FA/}{Je nach Rechtezuteilung soll hier auch ein "Überbuchen" von Veranstaltungen möglich sein}
+  \addrow{/FA/}{Eine Bezahlung soll Bar, per Lastschrift oder Rechnung erfolgen können (konfigurierbar)}
+  \addrow{/FA/}{Alte Zahlungsvorgänge sollen einsehbar sein}
+  \addrow{/FA/}{Die Ansteuerung eine Bondruckers ist wünschenswert}
+  \addrow{/FA/}{Im Verkauf muss die Möglichkeit bestehen Kurse zu stornieren}
+  \addrow{/FA/}{Es muss die Möglichkeit bestehen von Punktekarten diese abzutragen}
+  \addrow{/FA/}{}
+\end{usecase}
+
+\subsection{Zugangsteuerung}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/FA/}{Die Zugangsteuerung soll automatisiert und manuell erfolgen können (Chip, Karte, Barcode oder Tastendruck)}
+  \addrow{/FA/}{Es sollen beliebig viele Steuerungsinstanzen unterstützt werden}
+  \addrow{/FA/}{Die Berechtigung kann für jede Instanz eigenständig definiert werden}
+  \addrow{/FA/}{Berechtigung durch Gruppenzugehörigkeit, Verträge, gebuchte Kurse, Punktekarten, Platzbuchungen}
+  \addrow{/FA/}{Kurs und Platzbuchungszugänge sollen einen Zutritt nur den Buchungszeitraum +/- x erlauben}
+  \addrow{/FA/}{Die Aktivitäten der Instanzen soll protokolliert werden (optional anonymisiert)}
+  \addrow{/FA/}{}
+\end{usecase}
+
+
+\subsection{Studio}
+\paragraph{\textbf{Checkin/Checkout}\\}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/FA/}{Nutzer müssen manuell und automatisiert eingechecked werden können}
+  \addrow{/FA/}{Ein Checkin für Tagesgäste muss möglich sein (Ohne einen User anzulegen)}
+  \addrow{/FA/}{Beim Checkin müssen wichtige Personendaten angezeigt werden (Bild, Vertrag, Notizen)}
+  \addrow{/FA/}{Beim Checkin muss die Ausgabe von Spindschlüsseln vermerkt werden können}
+  \addrow{/FA/}{Die Checkout Bedingungen müssen konfigurierbar sein (Offene Rechnungen, hinterlegte Bankdaten, Schlüssel)}
+  \addrow{/FA/}{Eingecheckte Personen sollen Artikel/Kurse kaufen/buchen können}
+  \addrow{/FA/}{Die Rechnung muss temporär vorgehalten werden und erst beim Checkout beglichen werden}
+  \addrow{/FA/}{}
+\end{usecase}
+
+\paragraph{\textbf{Studioinfo}\\}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/FA/}{Basierend auf den Checkin Daten sollen aktuelle Studio Infos angezeigt werden können (Liste aller Personen, Anzahl der Besucher, Besucher über den Tag)}
+  \addrow{/FA/}{Übersicht der Kurse im Studio (Aktuelle Kurse, etc.)}
+  \addrow{/FA/}{}
+\end{usecase}
+
+\paragraph{\textbf{Trainer}\\}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/FA/}{Erstellen, bearbeiten und löschen von Trainern}
+  \addrow{/FA/}{Trainer basieren auf normalen Personen/Teilnehmern}
+  \addrow{/FA/}{Trainer können für Termine freigeschaltet werden (Personal Training)}
+  \addrow{/FA/}{Je Trainer können individuelle Informationen hinterlegt werden (Preis, Qualifikation, Bilder)}
+  \addrow{/FA/}{Trainer können verfügbare Zeiten eintragen}
+  \addrow{/FA/}{Personen können auf freie Trainerzeiten gebucht werden}
+  \addrow{/FA/}{Über einen Kalender können Trainertermine dargestellt werden (Mehrere Trainer in der Tagesansicht oder ein Trainer in der Wochenansicht)}
+  \addrow{/FA/}{Für Teilnehmer/Personen wird eine Trainer Terminkalender bereitgestellt}
+  \addrow{/FA/}{}
+\end{usecase}
+
+
+
+\subsection{Anpassungen}
+Das System muss umfangreiche individuelle Konfigurationsmöglicheiten unterstützen. Dies beinhaltet das Anlegen von Auswahlelementen wie auch die Erstellung unterschiedlicher Konfigurationselemente (z.B. Modulaktivierung)
+\paragraph{\textbf{Auswahlelemente}\\}
+
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/FA/}{Sportarten (Beschreibugn, Ansprechpartner, Kateorie)}
+  \addrow{/FA/}{Gendergruppen}
+  \addrow{/FA/}{Leistungsniveau/Zielgruppen}
+  \addrow{/FA/}{Kosteninformation}
+  \addrow{/FA/}{Anmeldeinformation}
+  \addrow{/FA/}{Veranstaltungskategorie}
+  \addrow{/FA/}{Bankkonten}
+  \addrow{/FA/}{Kostenstelle}
+  \addrow{/FA/}{Semester}
+  \addrow{/FA/}{Feiertage (Gesetzlich nach Bundesland und eigene Definitionen)}
+  \addrow{/FA/}{Mail Templates für automatische Mails (Buchungsbestätigung, Warteliste, Stornierung, etc)}
+  \addrow{/FA/}{Campus}
+  \addrow{/FA/}{Veranstaltungsorte (Adresse, Ansprechpartner, Sichtbarkeit, Aktiv/Inaktiv)}
+  \addrow{/FA/}{}
+\end{usecase}
+
 
 \section{Produktdaten}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -112,16 +333,36 @@ Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie co
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{usecase}
   \addheading{Nummer}{Beschreibung} 
-  \addrow{/PD10/}{asdfasdf asdf asdf }
-  \addrow{/PD20/}{asdf asdf asfas asdfas asdf}
-  \addrow{/PD30/}{asdf asdf asdfa a}
+  \addrow{/PD/}{asdfasdf asdf asdf }
+  \addrow{/PD/}{asdf asdf asfas asdfas asdf}
+  \addrow{/PD/}{asdf asdf asdfa a}
 \end{usecase}
 
 \section{Nichtfunktionale Anforderungen}
+\subsection{Allgemein}
 \begin{usecase}
   \addheading{Nummer}{Beschreibung} 
-  \addrow{/NF10/}{asdf asdf asdf asdf asdf asdf }
-  \addrow{/NF20/}{ asdf asdf asdftergfgasdgewr asdfh}
+  \addrow{/NF/}{Kurse, Personen, Buchungsvorgänge und Rechnungen müssen eine lückenlose Änderungshistorie sicherstellen}
+  \addrow{/NF/}{}
+\end{usecase}
+
+\subsection{Backend}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/NF/}{Die Kurssuche darf nicht länger als 2s dauern}
+  \addrow{/NF/}{Die Personensuche darf nicht länger als 4s dauern}
+  \addrow{/NF/}{Die Verwaltung muss auch bei überlasteter Website funktionsfähig bleiben}
+  \addrow{/NF/}{}
+\end{usecase}
+
+\subsection{Frontend}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/NF/}{Die Kurssuche darf nicht länger als 4s dauern}
+  \addrow{/NF/}{Die Website muss auch bei 1000 gleichzeitigen Besuchern bedienbar bleiben (max 10s Reaktionszeit)}
+  \addrow{/NF/}{Die Website muss den Internet Explorer bis Version 10 unterstützen}
+  \addrow{/NF/}{Die Maximale Teilnehmerzahl darf nie überschritten werden}
+  \addrow{/NF/}{}
 \end{usecase}
 
 \section{Systemmodelle}
