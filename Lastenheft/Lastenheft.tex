@@ -83,20 +83,33 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Warum wird das Projekt gemacht?           						 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Lorem 
+Die Hochschulsport Verwaltungssoftware soll die Arbeitsabläufe innerhalb einer Hochschulsporteinrichtung vereinfachen, zentralisieren und dem Benutzer bei den täglichen Aufgaben unterstützen. Das System unterscheidet dabei die Bereiche Verwaltung (Backend) und öffentliche Darstellung der Informationen (Frontend), die unterschiedlichen Kriterien erfüllen müssen. \\
+Es soll eine zentrale Plattform zur Verfügung gestellt werden, die Anlaufstelle für möglichst viele Aufgaben ist und die Synergien bestehender Daten und Abläufe nutzen. Das System soll so modular aufgebaut sein, dass sich neue Funktionen integrieren lassen und sich so eine Anpassung an neue Anforderungen oder Arbeitsbereiche möglich ist.\\
+
+
 
 \section{Produkteinsatz}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Wer ist die Zielgruppe?                   						 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Lorem 
+Das \textbf{Frontend} soll den Hochschulsport-Teilnehmer (Kunden) die Möglichkeit bieten, sich über das Internet detailliert über das Hochschulsport-Programm zu informieren und sich zu Veranstaltungen/Terminen selbstständig anzumelden. Die Bedienung erfolgt für alle Benutzer sehr einfach und komfortabel über einen Webbrowser. Das Frontend muss sich auf PC, Tablet oder Smartphone einfach bedienen lassen.
+Kunden lassen sich in unterschiedliche Gruppen unterteilen:
+\begin{itemize}
+\item Studierende der dem Hochschulsport zugehörigen Hochschulen (es können mehr als eine Einrichtung sein)
+\item Bedienstete der zugehörigen Hochschulen
+\item Studierende externer Hochschulen
+\item Bedienstete externer Hochschulen
+\item Externe
+\end{itemize} 
+
+Über das \textbf{Backend} soll das Verwaltungspersonal administrative Tätigkeiten manuell, automatisiert oder teilautomatisiert schneller erledigen können. Das Backend verfügt über ein erweitertes Rechtesystem, dass unterschiedlichen Personen differenzierte Bearbeitungsmöglichkeiten zur Verfügung stellt. Die Bereitstellung der relevanten Informationen im Frontend soll auf einfache Weise zu bewerkstelligen sein. Zudem soll der Hochschulsport durch die Informationen in die Lage versetzt werden, ihr Angebot zu analysieren und optimieren.
 
 \section{Funktionale Anforderungen}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Was muss das Programm können?                   					 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Verwaltung}
-\textbf{Allgemein}\\
+\paragraph{\textbf{Allgemein}\\}
 \begin{usecase}
   \addheading{Nummer}{Beschreibung} 
   \addrow{/FA/}{Der Zugang zur Verwaltung soll über eine Benutzerauthentifizierung abgesichert sein}
@@ -265,7 +278,6 @@ Lorem
   \addrow{/FA/}{}
 \end{usecase}
 
-
 \subsection{Studio}
 \paragraph{\textbf{Checkin/Checkout}\\}
 \begin{usecase}
@@ -302,8 +314,6 @@ Lorem
   \addrow{/FA/}{}
 \end{usecase}
 
-
-
 \subsection{Anpassungen}
 Das System muss umfangreiche individuelle Konfigurationsmöglicheiten unterstützen. Dies beinhaltet das Anlegen von Auswahlelementen wie auch die Erstellung unterschiedlicher Konfigurationselemente (z.B. Modulaktivierung)
 \paragraph{\textbf{Auswahlelemente}\\}
@@ -331,11 +341,187 @@ Das System muss umfangreiche individuelle Konfigurationsmöglicheiten unterstüt
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Auf welchen Daten arbeitet das Produkt?                            %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Es sollen die Möglichkeit bestehen (mindestens) die folgenden Daten persistent zu speichern.\\ Die Erfordernis ob und wie lange die Daten gespeichert werden ist individuell anpassbar und ergibt sich aus dem Kontext.\\
+\subsection{Personendaten}
 \begin{usecase}
   \addheading{Nummer}{Beschreibung} 
-  \addrow{/PD/}{asdfasdf asdf asdf }
-  \addrow{/PD/}{asdf asdf asfas asdfas asdf}
-  \addrow{/PD/}{asdf asdf asdfa a}
+  \addrow{/PD/}{Nachname, Vorname, Titel, Anrede}
+  \addrow{/PD/}{Adresse}
+  \addrow{/PD/}{Geburtsdatum}
+  \addrow{/PD/}{Bild}
+  \addrow{/PD/}{Hochschule}
+  \addrow{/PD/}{Matrikelnummer}
+  \addrow{/PD/}{Authentifizierungsid (z.b. Kartenid, Chipid)}
+  \addrow{/PD/}{Bemerkung}
+  \addrow{/PD/}{Passwort}
+  \addrow{/PD/}{Email}
+  \addrow{/PD/}{Telefon}
+  \addrow{/PD/}{Nutzergruppe (Studierender, Bediensteter, Externer, andere Hochschule)}
+  \addrow{/PD/}{Status validiert (wurde der Status bestätigt)}
+  \addrow{/PD/}{Aktiv/inaktiv}
+  \addrow{/PD/}{Gesperrt}
+  \addrow{/PD/}{}
+\end{usecase}
+
+\subsection{Kursdaten}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/PD/}{Kursname}
+  \addrow{/PD/}{Katgorien (Typ, Sportart, Semester, Themenbereich, Status, etc)}
+  \addrow{/PD/}{Preismodel}
+  \addrow{/PD/}{Voraussetzungen}
+  \addrow{/PD/}{Sperr- oder Veröffentlichungsstatus}
+  \addrow{/PD/}{Kursbeschreibung, Bilder, Dateien}
+  \addrow{/PD/}{Teilnehmergrenzen}
+  \addrow{/PD/}{Teilnehmerliste}
+  \addrow{/PD/}{Warteliste}
+  \addrow{/PD/}{Platzvergabe Verfahren}
+  \addrow{/PD/}{Ansprechpartner}
+  \addrow{/PD/}{Verantwortlicher Mitarbeiter}
+  \addrow{/PD/}{Übungsleiter}
+  \addrow{/PD/}{Einzeltermine}
+  \addrow{/PD/}{Veranstaltungsort}
+  \addrow{/PD/}{Passwort (für geschützte Veranstaltungen)}
+  \addrow{/PD/}{Campus}
+  \addrow{/PD/}{}
+\end{usecase}
+
+\subsection{Rechnungsdaten}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/PD/}{Bezahlverfahren}
+  \addrow{/PD/}{Bankdaten (IBAN, BIC, Kontoinhaber, Lastschriftmandat)}
+  \addrow{/PD/}{Rechnungsdaten}
+  \addrow{/PD/}{Betrag, Mehrwertsteuer}
+  \addrow{/PD/}{Bezahlstatus}
+  \addrow{/PD/}{Rechnungspositionen}
+  \addrow{/PD/}{Kostenstelle, Buchungskonto}
+  \addrow{/PD/}{Rechnungstyp}
+  \addrow{/PD/}{Mahnungen}
+  \addrow{/PD/}{}
+\end{usecase}
+
+\subsection{Vertragsdaten}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/PD/}{Vertragsname}
+  \addrow{/PD/}{Laufzeit}
+  \addrow{/PD/}{Automatische Verlängerung}
+  \addrow{/PD/}{Verlängerungsspanne}
+  \addrow{/PD/}{Stilllegung}
+  \addrow{/PD/}{Rechnungen}
+  \addrow{/PD/}{Vertragsnehmer}
+  \addrow{/PD/}{Kostenstelle, Buchungskonto}
+  \addrow{/PD/}{}
+\end{usecase}
+
+\subsection{Termine}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/PD/}{Bezeichnung kurz/lang}
+  \addrow{/PD/}{Beschreibung}
+  \addrow{/PD/}{Start, Ende}
+  \addrow{/PD/}{Veranstaltungsort}
+  \addrow{/PD/}{Kategorie}
+  \addrow{/PD/}{Übungsleiter}
+  \addrow{/PD/}{Ausfall}
+  \addrow{/PD/}{Sichtbarkeit}
+  \addrow{/PD/}{}
+\end{usecase}
+
+\subsection{Übungsleiter}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/PD/}{Personid}
+  \addrow{/PD/}{Kurshistorie}
+  \addrow{/PD/}{Stundenzettel}
+  \addrow{/PD/}{Kategorien}
+  \addrow{/PD/}{Dienstverträge}
+  \addrow{/PD/}{}
+\end{usecase}
+
+\subsection{Mailings(Verteiler)}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/PD/}{Name, Gruppe, Kategorie}
+  \addrow{/PD/}{Empfängerliste (Vorname, Nachname, Anrede, Titel, Email, Hinzugefügt am)}
+  \addrow{/PD/}{Postfach}
+  \addrow{/PD/}{Versandhistorie}
+  \addrow{/PD/}{}
+\end{usecase}
+
+\subsection{Einzelplatzbuchung}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/PD/}{Ressourcen ID}
+  \addrow{/PD/}{Slots (Frei, gebucht, reserviert)}
+  \addrow{/PD/}{Slotlänge}
+  \addrow{/PD/}{Slotstart, Slotende}
+  \addrow{/PD/}{Preise}
+  \addrow{/PD/}{}
+\end{usecase}
+
+\subsection{Verleih}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/PD/}{Verleihobjekte, Objektkategorien}
+  \addrow{/PD/}{Verleihhistorie}
+  \addrow{/PD/}{Verliehen von, geliehen von}
+  \addrow{/PD/}{von, bis}
+  \addrow{/PD/}{Preis}
+  \addrow{/PD/}{Bemerkungen}
+  \addrow{/PD/}{Bilder}
+  \addrow{/PD/}{}
+\end{usecase}
+
+\subsection{Zugangssteuerung}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/PD/}{Accesspoint id}
+  \addrow{/PD/}{Standort, Typ}
+  \addrow{/PD/}{Berechtigungsdefinition}
+  \addrow{/PD/}{Toleranzwerte}
+  \addrow{/PD/}{Zutrittsprotokoll (Wer, Wann, in or out)}
+  \addrow{/PD/}{}
+\end{usecase}
+
+\subsection{Checkin/Checkout}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/PD/}{Person (Name, ggf Personid)}
+  \addrow{/PD/}{Zeiten (in/out)}
+  \addrow{/PD/}{Ort (in/out)}
+  \addrow{/PD/}{Schlüssel}
+  \addrow{/PD/}{Checkout Freigabe}
+  \addrow{/PD/}{}
+\end{usecase}
+
+\subsection{Studioinfo}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/PD/}{Liste anwesender Kunden}
+  \addrow{/PD/}{Liste anwesender Trainer/Service}
+  \addrow{/PD/}{Auslastung Studio}
+  \addrow{/PD/}{}
+\end{usecase}
+
+\subsection{Trainerdaten}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/PD/}{Personid}
+  \addrow{/PD/}{Referenzen, Qualifikation, Beschreibung}
+  \addrow{/PD/}{Kategorie}
+  \addrow{/PD/}{Zeiten}
+  \addrow{/PD/}{}
+\end{usecase}
+
+\subsection{Logdaten}
+\begin{usecase}
+  \addheading{Nummer}{Beschreibung} 
+  \addrow{/PD/}{Datum (erstellt, geändert, gelöscht)}
+  \addrow{/PD/}{Bearbeiter(erstellt, geändert, gelöscht)}
+  \addrow{/PD/}{System (erstellt, geändert, gelöscht)}
+  \addrow{/PD/}{}
 \end{usecase}
 
 \section{Nichtfunktionale Anforderungen}

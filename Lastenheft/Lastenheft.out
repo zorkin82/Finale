@@ -6,11 +6,25 @@
 \BOOKMARK [2][-]{subsection.3.3}{Studio}{section.3}% 6
 \BOOKMARK [2][-]{subsection.3.4}{Anpassungen}{section.3}% 7
 \BOOKMARK [1][-]{section.4}{Produktdaten}{}% 8
-\BOOKMARK [1][-]{section.5}{Nichtfunktionale Anforderungen}{}% 9
-\BOOKMARK [2][-]{subsection.5.1}{Allgemein}{section.5}% 10
-\BOOKMARK [2][-]{subsection.5.2}{Backend}{section.5}% 11
-\BOOKMARK [2][-]{subsection.5.3}{Frontend}{section.5}% 12
-\BOOKMARK [1][-]{section.6}{Systemmodelle}{}% 13
-\BOOKMARK [2][-]{subsection.6.1}{Szenarien}{section.6}% 14
-\BOOKMARK [2][-]{subsection.6.2}{Anwendungsf\344lle}{section.6}% 15
-\BOOKMARK [1][-]{subsection.6.2}{ Glossar}{}% 16
+\BOOKMARK [2][-]{subsection.4.1}{Personendaten}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.2}{Kursdaten}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.3}{Rechnungsdaten}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.4}{Vertragsdaten}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.5}{Termine}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.6}{\334bungsleiter}{section.4}% 14
+\BOOKMARK [2][-]{subsection.4.7}{Mailings\(Verteiler\)}{section.4}% 15
+\BOOKMARK [2][-]{subsection.4.8}{Einzelplatzbuchung}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.9}{Verleih}{section.4}% 17
+\BOOKMARK [2][-]{subsection.4.10}{Zugangssteuerung}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.11}{Checkin/Checkout}{section.4}% 19
+\BOOKMARK [2][-]{subsection.4.12}{Studioinfo}{section.4}% 20
+\BOOKMARK [2][-]{subsection.4.13}{Trainerdaten}{section.4}% 21
+\BOOKMARK [2][-]{subsection.4.14}{Logdaten}{section.4}% 22
+\BOOKMARK [1][-]{section.5}{Nichtfunktionale Anforderungen}{}% 23
+\BOOKMARK [2][-]{subsection.5.1}{Allgemein}{section.5}% 24
+\BOOKMARK [2][-]{subsection.5.2}{Backend}{section.5}% 25
+\BOOKMARK [2][-]{subsection.5.3}{Frontend}{section.5}% 26
+\BOOKMARK [1][-]{section.6}{Systemmodelle}{}% 27
+\BOOKMARK [2][-]{subsection.6.1}{Szenarien}{section.6}% 28
+\BOOKMARK [2][-]{subsection.6.2}{Anwendungsf\344lle}{section.6}% 29
+\BOOKMARK [1][-]{subsection.6.2}{ Glossar}{}% 30
