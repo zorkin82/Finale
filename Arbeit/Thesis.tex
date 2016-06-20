@@ -1,4 +1,4 @@
-\documentclass[article,dr=phil,type=drfinal,colorback,accentcolor=tud2b]{tudreport}
+\documentclass[report,type=diplom,colorback,accentcolor=tud2b,12pt]{tudthesis}
 
 \usepackage[stable]{footmisc}
 \usepackage[ngerman]{hyperref,babel}
@@ -49,21 +49,15 @@
 
 % \settitlepicture{tudreport-pic}
 % \printpicturesize
-  \title{Konzeption eines Softwaresystems zur Verwaltung von Hochschulsporteinrichtungen}
-
-  \subsubtitle{
-    \begin{tabbing}
-    Links \= Mitte \= Rechts \kill
-      \textbf{Autor:}\> \> Dirk Beckmann (di.beckmann@gmx.de) \\
-      \textbf{Betreuer:}\> \> Prof. Dr. Josef Wiemeyer (wiemeyer@sport.tu-darmstadt.de) \\
-      \> \>  Dietbert Schöberel (schoeberl@sport.tu-darmstadt.de)
-    \end{tabbing}
-  }
+  \thesistitle{Konzeption eines Softwaresystems zur Verwaltung von Hochschulsporteinrichtungen}{}
+  \referee{Prof. Dr. Joseph Wiemeyer} {Dietbert Schöberl}
+  \author{Dirk Beckmann}
+  \date{}
+  
   %\setinstitutionlogo[width]{TUD_sublogo}
-  \uppertitleback{(\textaccent{\textbackslash uppertitleback})}
-  \lowertitleback{(\textaccent{\textbackslash lowertitleback})\hfill\today}
-  \institution{Fachbereich Humanwissenschaft\\
-      Institut für Sportwissenschaft}
+  \department{Fachbereich Humanwissenschaft}
+    \group{Institut für Sportwissenschaft}
+    \tuprints{...}{..}
 %  \dedication{Hier ist gen"ugend Platz\\
 %    f"ur eine Widmung (\textaccent{\textbackslash dedication}).\\
 %    \strut\\
@@ -74,8 +68,10 @@
 
 
 \begin{document}
-  \maketitle
+	
+  \makethesistitle
   
+  \affidavit[...]{Dirk Beckmann}
   %\tableofcontents 
   %\clearpage
   

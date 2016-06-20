@@ -1,27 +1,93 @@
-\section{Technische und fachliche Grundlagen} 
+\chapter{Technische und fachliche Grundlagen} 
 \label{ch:grundlagen} 
 
-\subsection{Softwarearchitekturen}
-	\subsubsection{Monolitisch}
-	\subsubsection{Client-Server}
-	\subsubsection{Dienstorientiert}
-
-\subsection{System Kommunikation}
-	\subsubsection{Represental State Transfer (REST)}
-	\subsubsection{Remote Procedure Call (RPC)}
-	\subsubsection{Enterprise Service Bus (ESB)}
-	\subsubsection{Message Bus}
-
-\subsection{Datenbanksysteme}
-	\subsubsection{Relationale Datenbanken}
-	\subsubsection{NoSQL Datenbanken}
-	\subsubsection{Gegenüberstellung}
+\section{Softwarearchitekturen}
+	\subsection{Monolitisch}
+	\subsection{Client/Server-Architekturmodell}
+	Im Gegensatz zur monolitischen Architektur handelt es sich beim Client/Server Modell um ein verteiltes System.\\
+	Das Client/Server-Architekturmodel ist ein Systemmodell, das aus einer Anzahl von zugehörigen Diensten und Servern besteht, sowie aus Clients, die diese Dienste nutzen und auf sie zugreifen. Das einfachste Modell ist dabei das zweischichtige Client/Server Modell, die zusammen ein komplettes System bilden mit unterschiedlichen Zuständigkeiten. \\
+	Dabei lassen sich drei logische Hauptbestandteile unterschieden.
 	
-\subsection{Konzepte}
-	\subsubsection{Singel Responisibility}
-	\subsubsection{Domain Driven Design}
-	\subsubsection{Data Consistency Primer}
-	\subsubsection{Competiting Consumer Pattern}
-	\subsubsection{Materialized View Pattern}
-	\subsubsection{Queue-Based Lode Leveling Pattern}
-	\subsubsection{Api Gateway Pattern}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.7\linewidth]{images/Clients-und-Server}
+		\caption{Client Server Model}
+		\label{fig:client-server}
+	\end{figure}
+	
+	\paragraph{Server}
+	Der Server ist die zentrale Einheit der Architektur. Sie stellt Services und Daten anderen Einheiten zur Verfügung. Der Server muss nicht zwingend wissen, welche und wie viele Einheiten die von ihm zur Verfügung gestellten Dienste und Daten nutzen.
+	
+	\paragraph{Client}
+	Clients können in beliebig großer Anzahl existieren. Sie nehmen die Daten oder Services, die vom Server bereitgestellt werden in Anspruch. Um mit den Diensten interagieren zu können, muss ein Client von der Existenz und dessen Adresse wissen. Der Client sendet eine Anfrage an den Server und bekommt ein Resultat zurück geliefert. 	
+	
+	
+	Generell lassen sich zwei Client-Modelle unterscheiden:
+	\subsubsection{Thin-Client-Modell}
+	Bei diesem Modell werden die gesamten Anwendungsprozesse und Datenhaltung auf dem Server erledigt. Der Client ist nur für die Darstellung verantwortlich. Daraus ergibt sich der Vorteil, dass sehr wenig Ressourcen für den Client benötigt werden und dieser sich auch auf kleinen Systemen (z.B. Terminals) implementieren lässt. Der Nachteil dieses Modelles liegt jedoch darin, dass so sämtliche Arbeit Serverseitig geleistet werden muss. Gerade bei Anwendungen mit großer Client Anzahl oder rechenintensiven Operationen kann so der Server schnell zur kritischen Komponente werden und das System vor Skalierungsprobleme stellen. Zusätzlich führt der Thin-Client zu einer erhöhten Netzwerkbelastung, da alle Daten vom Server zum Client transportiert werden müssen.
+	
+	\subsubsection{Fat-Client-Modell}
+	Dieses Modell verlagert die Anwendungslogik vollständig oder in großen Teilen vom Server direkt in den Client. Dadurch kann der Server deutlich entlastet werden und die Rechenleistung des Client Rechners zusätzlich genutzt werden. Dies kann sich in speziellen Situationen allerdings auch als Nachteile erweisen, wenn die Client Computer die notwendige Rechenleistung nicht selbstständig bereitstellen könne. Der Server fungiert dabei nur noch als Daten Service und die Netzwerklast wird reduziert. Die Verlagerung der Anwendungslogik auf den Client bringt aber auch Nachteile mit sich. Müssen hier Änderungen vorgenommen werden, so müssen alle Clients auf die neue Version aktualisiert werden, was zu einem komplexen Systemmanagement führen kann. Der Aufwand dafür steigt mit zunehmender Zahl der Clients.
+	
+	\paragraph{Netzwerk (optional)}
+	In der Literatur wird das Netzwerk häufig noch ein dritter Bestandteil aufgeführt, der jedoch nicht zwingend notwendig ist da prinzipiell Server und Client auf einem Computer ausgeführt werden können und so kein Netzwerk zur Kommunikation benötigen. Da dieses Modell aber in der Praxis nahezu ausschließlich als verteiltes System angewendet wird, ist in diesen Fällen das Netzwerk grundlegende Kommunikationsgrundlage.
+	\\
+	
+	Generell hat das zweischichtige Client/Server Modell das Problem, dass die drei logischen Schichten auf zwei unterschiedlichen Computersystemen abgebildet werden müssen. \\
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.7\linewidth]{images/placeholder}
+		\caption{Logische drei Schichten}
+		\label{fig:log3schichten}
+	\end{figure}
+	
+	Als Alternativansatz hat sich dafür die dreischichtige Architektur Entwickelt. Sie stellt für jede logische Schicht ein separates Computersystem zur Verfügung. Die Vorteile liegen dabei in der besseren Skalierbarkeit, da jedes System individuell skaliert werden kann, geringere Netzwerklast im Vergleich zum Thin-Client-Modell und Anwendungsprozesse sind zentralisiert und lassen sich dort leichter anpassen und aktualisieren.
+	
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.7\linewidth]{images/placeholder}
+		\caption{Drei schichtige Architektur}
+		\label{fig:3-tier-architecture}
+	\end{figure}
+
+
+	Sommerville gibt in seinem Buch Software Engineering Beispiele, wann die Anwendung der jeweiligen Architektur sinnvoll ist.
+	
+	
+	\begin{tabular}{|p{3.5cm}|p{12.5cm}|}
+		\hline 
+		Architektur & Anwendung \\ 
+		\hline 
+		Zweischichtige C/S-Architektur mit Thin-Clients & Anwendungen mit Legacy-Systemen, bei denen die Trennung von Anwendungsprozessen und Datenmanagement nicht praktikabel ist Rechenintensive Anwendungen wie zum Beispiel Compiler mit geringem oder keinem Datenmanagement -Datenintensive Anwendungen (Browser oder Abfragesysteme) mit wenig oder keinen Anwendungsprozessen \\
+		\hline 
+		Zweischichtige C/S-Architektur mit Fat-Clients & Anwendungen, bei denen die Prozesse durch Standardanwendungen (z.b. Microsoft Excel) auf dem Client verarbeitet werden Anwendungen mit rechenintensiver Datenverarbeitung (z.B. Datenvisualisierung) Anwendungen mit relativ stabiler Endbenutzerfunktionalität, die in einer Umgebung mit gut strukturiertem Systemmanagement angeordnet sind \\ 
+		\hline 
+		Drei- oder mehrschichtige C/S-Architektur & Anwendungen großen Umfangs mit Hunderten oder Tausenden von Clients Anwendungen, bei denen sowohl die Daten als auch die Anwendung selbst ständigen Veränderungen unterliegen Anwendungen, bei denen Daten aus vielfältigen Quellen verarbeitet werden \\ 
+		\hline 
+	\end{tabular} 
+	
+	
+	
+	\subsection{Dienstorientiert}
+
+\section{System Kommunikation}
+	\subsection{Represental State Transfer (REST)}
+	\subsection{Remote Procedure Call (RPC)}
+	\subsection{Enterprise Service Bus (ESB)}
+	\subsection{Message Bus}
+
+\section{Datenbanksysteme}
+	\subsection{Relationale Datenbanken}
+	\subsection{NoSQL Datenbanken}
+	\subsection{Gegenüberstellung}
+	
+\section{Konzepte}
+	\subsection{Singel Responisibility}
+	\subsection{Domain Driven Design}
+	\subsection{Data Consistency Primer}
+	\subsection{Competiting Consumer Pattern}
+	\subsection{Materialized View Pattern}
+	\subsection{Queue-Based Lode Leveling Pattern}
+	\subsection{Api Gateway Pattern}
