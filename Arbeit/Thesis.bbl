@@ -1,3 +1,53 @@
 \begin{thebibliography}{}
 
+\bibitem [\protect \citeauthoryear {%
+Bass%
+, Clements%
+\BCBL {}\ \BBA {} Kazman%
+}{%
+Bass%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+Bass.2013}
+\APACinsertmetastar {%
+Bass.2013}%
+\begin{APACrefauthors}%
+Bass, L.%
+, Clements, P.%
+\BCBL {}\ \BBA {} Kazman, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2013}.
+\newblock
+\APACrefbtitle {{S}oftware architecture in practice} {{S}oftware architecture
+  in practice}\ (\PrintOrdinal{3rd ed}\ \BEd).
+\newblock
+\APACaddressPublisher{Upper Saddle River and NJ}{Addison-Wesley}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sommerville%
+}{%
+Sommerville%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+Sommerville.2007}
+\APACinsertmetastar {%
+Sommerville.2007}%
+\begin{APACrefauthors}%
+Sommerville, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2007}.
+\newblock
+\APACrefbtitle {{S}oftware-{E}ngineering} {{S}oftware-{E}ngineering}\
+  (\PrintOrdinal{8.}\ \BEd).
+\newblock
+\APACaddressPublisher{M{\"u}nchen and Boston [u.a.]}{Pearson Studium}.
+\PrintBackRefs{\CurrentBib}
+
 \end{thebibliography}

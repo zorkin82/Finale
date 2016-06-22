@@ -1,7 +1,14 @@
 \chapter{Technische und fachliche Grundlagen} 
-\label{ch:grundlagen} 
+\label{ch:grundlagen}
+Der dritte Teil dieser Diplomarbeit vermittelt die technischen Grundlagen für einige ausgewählte Bereiche und bereitet die Basis für das Verständnis der gewählten Konzepte in Teil vier. Die Untergliederung in Softwarearchitekturen, System Kommunikation, Datenbanksysteme und Konzepte stellt dabei nur eine grundlegende Einteilung dar und bilden einen Querschnitt durch wichtige Bereiche der Anwendungsarchitektur. Die Aufzählung stellt dabei keinen Anspruch auf Vollständigkeit und die Beschreibungen können nicht bis ins kleinste Detail vollzogen werden, da dies den Rahmen dieser Arbeit sprengen würde. Die Darstellung soll jedoch tiefgründig genug sein, um dem Leser ein fundiertes Verständnis der einzelnen Thematiken zu vermitteln.
 
 \section{Softwarearchitekturen}
+Die Definitionen, was Softwarearchitektur ist unterscheidet sich bei einzelnen Autoren. \citet*[S. 4]{Bass.2013} verwenden für mich eine sehr passende Definition des Begriffes:
+	\begin{quote} 
+	The software architecture of a system is the set of structures needed to reason about the system, which comprise software elements, relations among them, and properties of both.
+	 \end{quote}
+Vor allem die Zusammenhänge sind hier von Bedeutung, auch wenn das Design der Architektur nicht endgültig sein muss und sich im Laufe der Entwicklung noch Veränderungen und Anpassungen ergeben könne, so ist es doch von Anfang an wichtig eine Vorstellung über die geplanten Zusammenhänge im gesamten Team zu entwickeln.\\
+Ich will daher hier drei grundlegende Architekturen darstellen, die sich in den Zusammenhängen unterscheiden. Jede diese Architekturen lässt sich in optimieren, anpassen und so besser nutzbar machen und oftmals gibt es auch unterschiedliche Kombinationen die zum gewünschten Erfolg führen.
 	\subsection{Monolitisch}
 	\subsection{Client/Server-Architekturmodell}
 	Im Gegensatz zur monolitischen Architektur handelt es sich beim Client/Server Modell um ein verteiltes System.\\
@@ -19,10 +26,7 @@
 	Der Server ist die zentrale Einheit der Architektur. Sie stellt Services und Daten anderen Einheiten zur Verfügung. Der Server muss nicht zwingend wissen, welche und wie viele Einheiten die von ihm zur Verfügung gestellten Dienste und Daten nutzen.
 	
 	\paragraph{Client}
-	Clients können in beliebig großer Anzahl existieren. Sie nehmen die Daten oder Services, die vom Server bereitgestellt werden in Anspruch. Um mit den Diensten interagieren zu können, muss ein Client von der Existenz und dessen Adresse wissen. Der Client sendet eine Anfrage an den Server und bekommt ein Resultat zurück geliefert. 	
-	
-	
-	Generell lassen sich zwei Client-Modelle unterscheiden:
+	Clients können in beliebig großer Anzahl existieren. Sie nehmen die Daten oder Services, die vom Server bereitgestellt werden in Anspruch. Um mit den Diensten interagieren zu können, muss ein Client von der Existenz und dessen Adresse wissen. Der Client sendet eine Anfrage an den Server und bekommt ein Resultat zurück geliefert. \citet*[S. 302]{Sommerville.2007} unterscheidet folgende zwei Client-Modelle:
 	\subsubsection{Thin-Client-Modell}
 	Bei diesem Modell werden die gesamten Anwendungsprozesse und Datenhaltung auf dem Server erledigt. Der Client ist nur für die Darstellung verantwortlich. Daraus ergibt sich der Vorteil, dass sehr wenig Ressourcen für den Client benötigt werden und dieser sich auch auf kleinen Systemen (z.B. Terminals) implementieren lässt. Der Nachteil dieses Modelles liegt jedoch darin, dass so sämtliche Arbeit Serverseitig geleistet werden muss. Gerade bei Anwendungen mit großer Client Anzahl oder rechenintensiven Operationen kann so der Server schnell zur kritischen Komponente werden und das System vor Skalierungsprobleme stellen. Zusätzlich führt der Thin-Client zu einer erhöhten Netzwerkbelastung, da alle Daten vom Server zum Client transportiert werden müssen.
 	

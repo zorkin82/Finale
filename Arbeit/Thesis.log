@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.20)  20 JUN 2016 19:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.20)  22 JUN 2016 19:03
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -1202,7 +1202,15 @@ Package: apacite 2013/07/21 v6.03 APA citation
 \bibitemsep=\skip118
 \biblabelsep=\skip119
 )
-\longtablewidth=\skip120
+(F:\Miktex\texmfs\install\tex\latex\natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip120
+\bibsep=\skip121
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count123
+)
+LaTeX Info: Redefining \BBA on input line 15.
+\longtablewidth=\skip122
 
 
 LaTeX Warning: Unused global option(s):
@@ -1249,16 +1257,16 @@ File: t15ch.fd 2008/06/23 Fontinst v1.927 font definitions for T1/5ch.
 )
 (F:\Miktex\texmfs\install\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count123
+\scratchcounter=\count124
 \scratchdimen=\dimen142
 \scratchbox=\box37
-\nofMPsegments=\count124
-\nofMParguments=\count125
+\nofMPsegments=\count125
+\nofMParguments=\count126
 \everyMPshowfont=\toks25
-\MPscratchCnt=\count126
+\MPscratchCnt=\count127
 \MPscratchDim=\dimen143
-\MPnumerator=\count127
-\makeMPintoPDFobject=\count128
+\MPnumerator=\count128
+\makeMPintoPDFobject=\count129
 \everyMPtoPDFconversion=\toks26
 ) (F:\Miktex\texmfs\install\tex\latex\oberdiek\epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -1306,7 +1314,7 @@ G,.JBIG2,.JB2,.eps]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\TUD@part@topskip=\skip121
+\TUD@part@topskip=\skip123
 Package hyperref Info: Link coloring OFF on input line 70.
 (F:\Miktex\texmfs\install\tex\latex\hyperref\nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1314,7 +1322,7 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (F:\Miktex\texmfs\install\tex\generic\oberdiek\gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count129
+\c@section@level=\count130
 )
 LaTeX Info: Redefining \ref on input line 70.
 LaTeX Info: Redefining \pageref on input line 70.
@@ -1323,7 +1331,7 @@ LaTeX Info: Redefining \nameref on input line 70.
 \@outlinefile=\write3
 \openout3 = `Thesis.out'.
 
-\c@maskedRefs=\count130
+\c@maskedRefs=\count131
  (F:\Miktex\texmfs\install\tex\latex\apacite\ngerman.apc
 File: ngerman.apc 2013/07/21 v6.03 apacite language file
 
@@ -1332,29 +1340,29 @@ File: german.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 142.
 LaTeX Info: Redefining \BHBI on input line 143.
 ))
-\@TUD@tmp@baselineskip=\skip122
-\@TUD@tmp@parwidth=\skip123
-\TUD@titleboxheight=\skip124
-\TUD@titleboxdepth=\skip125
-\TUD@subtitleboxheight=\skip126
-\TUD@subtitleboxdepth=\skip127
-\TUD@logoboxheight=\skip128
-\TUD@logoboxwidth=\skip129
-\TUD@colorbackheight=\skip130
-\TUD@colorbacktitleheight=\skip131
-\TUD@instboxheight=\skip132
-\TUD@instboxdepth=\skip133
-\TUD@instboxwidth=\skip134
-\TUD@instlogoheight=\skip135
-\TUD@instlogowidth=\skip136
-\TUD@sponsorheight=\skip137
+\@TUD@tmp@baselineskip=\skip124
+\@TUD@tmp@parwidth=\skip125
+\TUD@titleboxheight=\skip126
+\TUD@titleboxdepth=\skip127
+\TUD@subtitleboxheight=\skip128
+\TUD@subtitleboxdepth=\skip129
+\TUD@logoboxheight=\skip130
+\TUD@logoboxwidth=\skip131
+\TUD@colorbackheight=\skip132
+\TUD@colorbacktitleheight=\skip133
+\TUD@instboxheight=\skip134
+\TUD@instboxdepth=\skip135
+\TUD@instboxwidth=\skip136
+\TUD@instlogoheight=\skip137
+\TUD@instlogowidth=\skip138
+\TUD@sponsorheight=\skip139
 \TUD@titlebox=\box39
 \TUD@subtitlebox=\box40
 \TUD@logobox=\box41
 \TUD@instbox=\box42
 \TUD@sponsorbox=\box43
-\TUD@tmp@height=\skip138
-\TUD@tmp@depth=\skip139
+\TUD@tmp@height=\skip140
+\TUD@tmp@depth=\skip141
 LaTeX Font Info:    Try loading font information for T1+5fp on input line 72.
 
 (F:\Miktex\tuddesign\tex\latex\tex-tudfonts\softmake\frontpage\t15fp.fd
@@ -1450,13 +1458,13 @@ LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 (Font)              scaled to size 8.27202pt on input line 72.
 LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 (Font)              scaled to size 7.05002pt on input line 72.
-\@TUD@titlelines=\count131
+\@TUD@titlelines=\count132
 
 
 Package  Warning: Title has more then 3 lines. Fontsize reduced on input line 7
 2.
 
-<tud_logo.pdf, id=143, 157.58875pt x 63.23625pt>
+<tud_logo.pdf, id=139, 157.58875pt x 63.23625pt>
 File: tud_logo.pdf Graphic file (type pdf)
  <use tud_logo.pdf>
 Package pdftex.def Info: tud_logo.pdf used on input line 72.
@@ -1466,7 +1474,7 @@ File: tud_logo.pdf Graphic file (type pdf)
 <use tud_logo.pdf>
 Package pdftex.def Info: tud_logo.pdf used on input line 72.
 (pdftex.def)             Requested size: 134.92238pt x 62.59605pt.
-\@TUD@logolines=\count132
+\@TUD@logolines=\count133
  [-1
 Non-PDF special ignored!
 
@@ -1481,7 +1489,7 @@ LaTeX Font Info:    Try loading font information for T1+5sf on input line 72.
 (F:\Miktex\tuddesign\tex\latex\tex-tudfonts\softmake\stafford\t15sf.fd
 File: t15sf.fd 2008/06/23 Fontinst v1.927 font definitions for T1/5sf.
 )
-<by-nc-nd.pdf, id=157, 121.45375pt x 43.16125pt>
+<by-nc-nd.pdf, id=153, 121.45375pt x 43.16125pt>
 File: by-nc-nd.pdf Graphic file (type pdf)
  <use by-nc-nd.pdf>
 Package pdftex.def Info: by-nc-nd.pdf used on input line 72.
@@ -1492,12 +1500,20 @@ Package pdftex.def Info: by-nc-nd.pdf used on input line 72.
 
 
 
+] (Thesis.toc)
+\tf@toc=\write4
+\openout4 = `Thesis.toc'.
+
+
+[2
+
+
 ]
 \openout2 = `einleitung.aux'.
 
  (einleitung.tex
 chapter 1.
-) [2
+) [3
 
 
 
@@ -1521,7 +1537,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--24
 
  []
 
-[3
+[4
 
 
 
@@ -1555,7 +1571,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--40
 
  []
 
-[4]
+[5]
 Underfull \hbox (badness 10000) detected at line 42
 []
  []
@@ -1585,143 +1601,123 @@ Underfull \hbox (badness 10000) detected at line 44
 []
  []
 
-) [5]
+) [6]
 \openout2 = `grundlagen.aux'.
 
  (grundlagen.tex
 chapter 3.
 
-Underfull \hbox (badness 10000) detected at line 5
+Underfull \hbox (badness 10000) detected at line 12
 []
  []
 
 
-Underfull \hbox (badness 10000) detected at line 5
+Underfull \hbox (badness 10000) detected at line 12
 []
  []
 
 
-Underfull \hbox (badness 10000) detected at line 6
+Underfull \hbox (badness 10000) detected at line 13
 []
  []
 
 
-Underfull \hbox (badness 10000) detected at line 6
+Underfull \hbox (badness 10000) detected at line 13
 []
  []
 
-<images/Clients-und-Server.png, id=194, 353.06906pt x 304.13625pt>
+<images/Clients-und-Server.png, id=232, 353.06906pt x 304.13625pt>
 File: images/Clients-und-Server.png Graphic file (type png)
 
 <use images/Clients-und-Server.png>
-Package pdftex.def Info: images/Clients-und-Server.png used on input line 13.
+Package pdftex.def Info: images/Clients-und-Server.png used on input line 20.
 (pdftex.def)             Requested size: 348.54475pt x 300.24191pt.
- [6
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7
 
 
 
- <./images/Clients-und-Server.png>]
-Underfull \hbox (badness 10000) detected at line 26
+]
+Underfull \hbox (badness 10000) detected at line 30
 []
  []
 
 
-Underfull \hbox (badness 10000) detected at line 26
+Underfull \hbox (badness 10000) detected at line 30
 []
  []
 
 
-Underfull \hbox (badness 10000) detected at line 29
+Underfull \hbox (badness 10000) detected at line 33
 []
  []
 
 
-Underfull \hbox (badness 10000) detected at line 29
+Underfull \hbox (badness 10000) detected at line 33
 []
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 36--37
+[8 <./images/Clients-und-Server.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 37--39
 
  []
 
-<images/placeholder.png, id=203, 401.5pt x 200.75pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+<images/placeholder.png, id=254, 401.5pt x 200.75pt>
 File: images/placeholder.png Graphic file (type png)
 
 <use images/placeholder.png>
-Package pdftex.def Info: images/placeholder.png used on input line 40.
+Package pdftex.def Info: images/placeholder.png used on input line 44.
+(pdftex.def)             Requested size: 348.54475pt x 174.2835pt.
+File: images/placeholder.png Graphic file (type png)
+ <use images/placeholder.png>
+Package pdftex.def Info: images/placeholder.png used on input line 54.
 (pdftex.def)             Requested size: 348.54475pt x 174.2835pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-File: images/placeholder.png Graphic file (type png)
-<use images/placeholder.png>
-Package pdftex.def Info: images/placeholder.png used on input line 50.
-(pdftex.def)             Requested size: 348.54475pt x 174.2835pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 63--63
+Underfull \hbox (badness 10000) in paragraph at lines 67--67
 []\T1/5ch/m/n/12 Zweischichtige
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--63
-\T1/5ch/m/n/12 C/S-Architektur
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--65
-[]\T1/5ch/m/n/12 Zweischichtige
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--65
-\T1/5ch/m/n/12 C/S-Architektur
- []
-
-
-Underfull \hbox (badness 2689) in paragraph at lines 67--67
-[]\T1/5ch/m/n/12 Drei- oder mehr-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 67--67
+\T1/5ch/m/n/12 C/S-Architektur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
+[]\T1/5ch/m/n/12 Zweischichtige
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--69
+\T1/5ch/m/n/12 C/S-Architektur
+ []
+
+
+Underfull \hbox (badness 2689) in paragraph at lines 71--71
+[]\T1/5ch/m/n/12 Drei- oder mehr-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--71
 \T1/5ch/m/n/12 schich-ti-ge C/S-
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [8 <./images/placeholder.png>]
-Underfull \hbox (badness 10000) detected at line 73
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 73
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 76
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 76
-[]
- []
-
-
+ [9 <./images/placeholder.png>]
 Underfull \hbox (badness 10000) detected at line 77
 []
  []
@@ -1732,22 +1728,22 @@ Underfull \hbox (badness 10000) detected at line 77
  []
 
 
-Underfull \hbox (badness 10000) detected at line 78
+Underfull \hbox (badness 10000) detected at line 80
 []
  []
 
 
-Underfull \hbox (badness 10000) detected at line 78
+Underfull \hbox (badness 10000) detected at line 80
 []
  []
 
 
-Underfull \hbox (badness 10000) detected at line 79
+Underfull \hbox (badness 10000) detected at line 81
 []
  []
 
 
-Underfull \hbox (badness 10000) detected at line 79
+Underfull \hbox (badness 10000) detected at line 81
 []
  []
 
@@ -1771,13 +1767,13 @@ Underfull \hbox (badness 10000) detected at line 83
 []
  []
 
-
-Underfull \hbox (badness 10000) detected at line 84
+[10]
+Underfull \hbox (badness 10000) detected at line 86
 []
  []
 
 
-Underfull \hbox (badness 10000) detected at line 84
+Underfull \hbox (badness 10000) detected at line 86
 []
  []
 
@@ -1798,26 +1794,6 @@ Underfull \hbox (badness 10000) detected at line 88
 
 
 Underfull \hbox (badness 10000) detected at line 88
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 89
-[]
- []
-
-[9]
-Underfull \hbox (badness 10000) detected at line 89
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 90
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 90
 []
  []
 
@@ -1851,12 +1827,52 @@ Underfull \hbox (badness 10000) detected at line 93
 []
  []
 
-) [10]
+
+Underfull \hbox (badness 10000) detected at line 94
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 94
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 95
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 95
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 96
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 96
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 97
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 97
+[]
+ []
+
+) [11]
 \openout2 = `konzept.aux'.
 
  (konzept.tex
 chapter 4.
-) [11
+) [12
 
 
 
@@ -1865,56 +1881,54 @@ chapter 4.
 
  (zusammenfassung.tex
 chapter 5.
-) [12
+) [13
 
 
 
 ]
 \openout2 = `glossar.aux'.
 
- (glossar.tex) [13
+ (glossar.tex) [14
 
 
 ]
 \openout2 = `anhang.aux'.
 
- (anhang.tex) [14
+ (anhang.tex) [15
 
 
-] (Thesis.bbl
-
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
-
-)
+] (Thesis.bbl)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 102.
- [15
+ [16
 
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 102.
- (Thesis.aux (einleitung.aux) (hochschulsport.aux) (grundlagen.aux)
-(konzept.aux) (zusammenfassung.aux) (glossar.aux) (anhang.aux))
+ (Thesis.aux
+(einleitung.aux) (hochschulsport.aux) (grundlagen.aux) (konzept.aux)
+(zusammenfassung.aux) (glossar.aux) (anhang.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 102.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 102.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: A22D1E94D9118C05D7C8D1280E7F2903;2571.
+(rerunfilecheck)             Checksum: CA26599D646CC629CB9D427782F179D4;2512.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 102.
  ) 
 Here is how much of TeX's memory you used:
- 13603 strings out of 493335
- 211538 string characters out of 3140628
- 404844 words of memory out of 3000000
- 16713 multiletter control sequences out of 15000+200000
- 148853 words of font info for 69 fonts, out of 3000000 for 9000
+ 13933 strings out of 493335
+ 215733 string characters out of 3140628
+ 407432 words of memory out of 3000000
+ 17029 multiletter control sequences out of 15000+200000
+ 154314 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,13n,102p,8520b,487s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 65i,12n,102p,8520b,487s stack positions out of 5000i,500n,10000p,200000b,50000s
 {F:/Miktex/texmfs/install/fonts/enc/dvips/fontname/8r.enc}<F:/Miktex/tuddesig
 n/fonts/type1/softmake/charter/5chr8a.pfb><F:/Miktex/tuddesign/fonts/type1/soft
-make/frontpage/5fpm8a.pfb><F:/Miktex/tuddesign/fonts/type1/softmake/frontpage/5
-fpr8a.pfb><F:/Miktex/tuddesign/fonts/type1/softmake/stafford/5sfr8a.pfb>
-Output written on Thesis.pdf (17 pages, 161132 bytes).
+make/charter/5chri8a.pfb><F:/Miktex/tuddesign/fonts/type1/softmake/frontpage/5f
+pm8a.pfb><F:/Miktex/tuddesign/fonts/type1/softmake/frontpage/5fpr8a.pfb><F:/Mik
+tex/tuddesign/fonts/type1/softmake/stafford/5sfr8a.pfb>
+Output written on Thesis.pdf (18 pages, 180657 bytes).
 PDF statistics:
- 281 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 313 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 331 PDF objects out of 1000 (max. 8388607)
+ 73 named destinations out of 1000 (max. 500000)
+ 305 words of extra memory for PDF output out of 10000 (max. 10000000)
 
