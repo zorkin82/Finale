@@ -1,4 +1,6 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: Thesis.aux
+This is BibTeX, Version 0.99d (TeX Live 2013/W32TeX)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: Thesis.aux
 A level-1 auxiliary file: einleitung.aux
 A level-1 auxiliary file: hochschulsport.aux
 A level-1 auxiliary file: grundlagen.aux
@@ -7,5 +9,55 @@ A level-1 auxiliary file: zusammenfassung.aux
 A level-1 auxiliary file: glossar.aux
 A level-1 auxiliary file: anhang.aux
 The style file: apacite.bst
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=20001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: literatur_full.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
+You've used 6 entries,
+            6951 wiz_defined-function locations,
+            1322 strings with 11734 characters,
+and the built_in function-call counts, 9031 in all, are:
+= -- 1110
+> -- 69
+< -- 368
++ -- 338
+- -- 12
+* -- 552
+:= -- 1596
+add.period$ -- 24
+call.type$ -- 6
+change.case$ -- 102
+chr.to.int$ -- 0
+cite$ -- 12
+duplicate$ -- 227
+empty$ -- 440
+format.name$ -- 102
+if$ -- 1810
+int.to.chr$ -- 0
+int.to.str$ -- 18
+missing$ -- 0
+newline$ -- 141
+num.names$ -- 48
+pop$ -- 277
+preamble$ -- 1
+purify$ -- 24
+quote$ -- 0
+skip$ -- 546
+stack$ -- 0
+substring$ -- 369
+swap$ -- 150
+text.length$ -- 12
+text.prefix$ -- 0
+top$ -- 1
+type$ -- 480
+warning$ -- 0
+while$ -- 37
+width$ -- 0
+write$ -- 159

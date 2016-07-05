@@ -10,31 +10,30 @@
 \contentsline {chapter}{\numberline {3}Technische und fachliche Grundlagen}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}Softwarearchitekturen}{7}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Monolitisch}{7}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Client/Server-Architekturmodell}{7}{subsection.3.1.2}
-\contentsline {paragraph}{Server}{7}{paragraph*.7}
-\contentsline {paragraph}{Client}{8}{paragraph*.8}
-\contentsline {subsubsection}{Thin-Client-Modell}{8}{subsubsection*.9}
-\contentsline {subsubsection}{Fat-Client-Modell}{8}{subsubsection*.10}
-\contentsline {paragraph}{Netzwerk (optional)}{9}{paragraph*.11}
-\contentsline {subsection}{\numberline {3.1.3}Dienstorientiert}{10}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}System Kommunikation}{10}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Represental State Transfer (REST)}{10}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Remote Procedure Call (RPC)}{10}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Enterprise Service Bus (ESB)}{10}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Message Bus}{11}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}Datenbanksysteme}{11}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Relationale Datenbanken}{11}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}NoSQL Datenbanken}{11}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Gegen\IeC {\"u}berstellung}{11}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}Konzepte}{11}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Singel Responisibility}{11}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Domain Driven Design}{11}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Data Consistency Primer}{11}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Competiting Consumer Pattern}{11}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Materialized View Pattern}{11}{subsection.3.4.5}
-\contentsline {subsection}{\numberline {3.4.6}Queue-Based Lode Leveling Pattern}{11}{subsection.3.4.6}
-\contentsline {subsection}{\numberline {3.4.7}Api Gateway Pattern}{11}{subsection.3.4.7}
-\contentsline {chapter}{\numberline {4}System Konzeption}{12}{chapter.4}
-\contentsline {chapter}{\numberline {5}Diskussion, Zusammenfassung und Ausblick}{13}{chapter.5}
-\contentsline {section}{\numberline {5.1}Glossar}{14}{section.5.1}
-\contentsline {section}{\numberline {5.2}Anh\IeC {\"a}nge}{15}{section.5.2}
+\contentsline {subsection}{\numberline {3.1.2}Client/Server-Architekturmodell}{9}{subsection.3.1.2}
+\contentsline {paragraph}{Server}{9}{paragraph*.7}
+\contentsline {paragraph}{Client}{9}{paragraph*.8}
+\contentsline {subsubsection}{Thin-Client-Modell}{9}{subsubsection*.9}
+\contentsline {subsubsection}{Fat-Client-Modell}{10}{subsubsection*.10}
+\contentsline {paragraph}{Netzwerk (optional)}{10}{paragraph*.11}
+\contentsline {subsection}{\numberline {3.1.3}Dienstorientiert}{12}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}System Kommunikation}{12}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Represental State Transfer (REST)}{12}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Enterprise Service Bus (ESB)}{13}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Message Bus}{13}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Datenbanksysteme}{13}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Relationale Datenbanken}{13}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}NoSQL Datenbanken}{13}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Gegen\IeC {\"u}berstellung}{13}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Konzepte}{13}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Singel Responisibility}{13}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Domain Driven Design}{14}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Data Consistency Primer}{14}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Competiting Consumer Pattern}{14}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Materialized View Pattern}{14}{subsection.3.4.5}
+\contentsline {subsection}{\numberline {3.4.6}Queue-Based Lode Leveling Pattern}{14}{subsection.3.4.6}
+\contentsline {subsection}{\numberline {3.4.7}Api Gateway Pattern}{14}{subsection.3.4.7}
+\contentsline {chapter}{\numberline {4}System Konzeption}{15}{chapter.4}
+\contentsline {chapter}{\numberline {5}Diskussion, Zusammenfassung und Ausblick}{16}{chapter.5}
+\contentsline {section}{\numberline {5.1}Glossar}{17}{section.5.1}
+\contentsline {section}{\numberline {5.2}Anh\IeC {\"a}nge}{18}{section.5.2}

@@ -13,22 +13,21 @@
 \BOOKMARK [2][-]{subsection.3.1.3}{Dienstorientiert}{section.3.1}% 13
 \BOOKMARK [1][-]{section.3.2}{System Kommunikation}{chapter.3}% 14
 \BOOKMARK [2][-]{subsection.3.2.1}{Represental State Transfer \(REST\)}{section.3.2}% 15
-\BOOKMARK [2][-]{subsection.3.2.2}{Remote Procedure Call \(RPC\)}{section.3.2}% 16
-\BOOKMARK [2][-]{subsection.3.2.3}{Enterprise Service Bus \(ESB\)}{section.3.2}% 17
-\BOOKMARK [2][-]{subsection.3.2.4}{Message Bus}{section.3.2}% 18
-\BOOKMARK [1][-]{section.3.3}{Datenbanksysteme}{chapter.3}% 19
-\BOOKMARK [2][-]{subsection.3.3.1}{Relationale Datenbanken}{section.3.3}% 20
-\BOOKMARK [2][-]{subsection.3.3.2}{NoSQL Datenbanken}{section.3.3}% 21
-\BOOKMARK [2][-]{subsection.3.3.3}{Gegen\374berstellung}{section.3.3}% 22
-\BOOKMARK [1][-]{section.3.4}{Konzepte}{chapter.3}% 23
-\BOOKMARK [2][-]{subsection.3.4.1}{Singel Responisibility}{section.3.4}% 24
-\BOOKMARK [2][-]{subsection.3.4.2}{Domain Driven Design}{section.3.4}% 25
-\BOOKMARK [2][-]{subsection.3.4.3}{Data Consistency Primer}{section.3.4}% 26
-\BOOKMARK [2][-]{subsection.3.4.4}{Competiting Consumer Pattern}{section.3.4}% 27
-\BOOKMARK [2][-]{subsection.3.4.5}{Materialized View Pattern}{section.3.4}% 28
-\BOOKMARK [2][-]{subsection.3.4.6}{Queue-Based Lode Leveling Pattern}{section.3.4}% 29
-\BOOKMARK [2][-]{subsection.3.4.7}{Api Gateway Pattern}{section.3.4}% 30
-\BOOKMARK [0][-]{chapter.4}{System Konzeption}{}% 31
-\BOOKMARK [0][-]{chapter.5}{Diskussion, Zusammenfassung und Ausblick}{}% 32
-\BOOKMARK [1][-]{section.5.1}{Glossar}{chapter.5}% 33
-\BOOKMARK [1][-]{section.5.2}{Anh\344nge}{chapter.5}% 34
+\BOOKMARK [2][-]{subsection.3.2.2}{Enterprise Service Bus \(ESB\)}{section.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.2.3}{Message Bus}{section.3.2}% 17
+\BOOKMARK [1][-]{section.3.3}{Datenbanksysteme}{chapter.3}% 18
+\BOOKMARK [2][-]{subsection.3.3.1}{Relationale Datenbanken}{section.3.3}% 19
+\BOOKMARK [2][-]{subsection.3.3.2}{NoSQL Datenbanken}{section.3.3}% 20
+\BOOKMARK [2][-]{subsection.3.3.3}{Gegen\374berstellung}{section.3.3}% 21
+\BOOKMARK [1][-]{section.3.4}{Konzepte}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.4.1}{Singel Responisibility}{section.3.4}% 23
+\BOOKMARK [2][-]{subsection.3.4.2}{Domain Driven Design}{section.3.4}% 24
+\BOOKMARK [2][-]{subsection.3.4.3}{Data Consistency Primer}{section.3.4}% 25
+\BOOKMARK [2][-]{subsection.3.4.4}{Competiting Consumer Pattern}{section.3.4}% 26
+\BOOKMARK [2][-]{subsection.3.4.5}{Materialized View Pattern}{section.3.4}% 27
+\BOOKMARK [2][-]{subsection.3.4.6}{Queue-Based Lode Leveling Pattern}{section.3.4}% 28
+\BOOKMARK [2][-]{subsection.3.4.7}{Api Gateway Pattern}{section.3.4}% 29
+\BOOKMARK [0][-]{chapter.4}{System Konzeption}{}% 30
+\BOOKMARK [0][-]{chapter.5}{Diskussion, Zusammenfassung und Ausblick}{}% 31
+\BOOKMARK [1][-]{section.5.1}{Glossar}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.2}{Anh\344nge}{chapter.5}% 33

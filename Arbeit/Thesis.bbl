@@ -28,6 +28,109 @@ Bass, L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Fowler%
+}{%
+Fowler%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+Fowler.2010}
+\APACinsertmetastar {%
+Fowler.2010}%
+\begin{APACrefauthors}%
+Fowler, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+\APACrefbtitle {{R}ichardson {M}aturity {M}odel.} {{R}ichardson {M}aturity
+  {M}odel.}
+\newblock
+\begin{APACrefURL}
+  [{06.07.2016}]\url{http://martinfowler.com/articles/richardsonMaturityModel.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Melzer%
+}{%
+Melzer%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+Melzer.2010}
+\APACinsertmetastar {%
+Melzer.2010}%
+\begin{APACrefauthors}%
+Melzer, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2010}.
+\newblock
+\APACrefbtitle {{S}ervice-orientierte {A}rchitekturen mit {W}eb {S}ervices:
+  {K}onzepte - {S}tandards - {P}raxis} {{S}ervice-orientierte {A}rchitekturen
+  mit {W}eb {S}ervices: {K}onzepte - {S}tandards - {P}raxis}\
+  (\PrintOrdinal{4}\ \BEd).
+\newblock
+\APACaddressPublisher{Heidelberg}{Spektrum Akademischer Verlag}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Radde%
+}{%
+Radde%
+}{%
+{\protect \APACyear {1996}}%
+}]{%
+Radde.1996}
+\APACinsertmetastar {%
+Radde.1996}%
+\begin{APACrefauthors}%
+Radde, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1996}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{H}ochschulsporteinrichtungen - {E}ine vergleichende
+  {B}etrachtung} {{H}ochschulsporteinrichtungen - {E}ine vergleichende
+  {B}etrachtung}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{dvs-Informationen}{11}{3}{15--17}.
+\newblock
+\begin{APACrefURL}
+  [{05.07.2016}]\url{http://www.sportwissenschaft.de/fileadmin/pdf/dvs-Info/1996/1996\_3\_radde.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Richardson%
+}{%
+Richardson%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+Richardson.2014}
+\APACinsertmetastar {%
+Richardson.2014}%
+\begin{APACrefauthors}%
+Richardson, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+\APACrefbtitle {{P}attern: {M}onolithic {A}rchitecture.} {{P}attern:
+  {M}onolithic {A}rchitecture.}
+\newblock
+\begin{APACrefURL}
+  [{05.07.2016}]\url{http://microservices.io/patterns/monolithic.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Sommerville%
 }{%
 Sommerville%
