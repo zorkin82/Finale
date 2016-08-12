@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/W32TeX) (format=pdflatex 2014.5.23)  6 JUL 2016 00:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/W32TeX) (format=pdflatex 2014.5.23)  12 AUG 2016 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1328,7 +1328,7 @@ LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 Package  Warning: Title has more then 3 lines. Fontsize reduced on input line 7
 2.
 
-<tud_logo.pdf, id=136, 157.58875pt x 63.23625pt>
+<tud_logo.pdf, id=152, 157.58875pt x 63.23625pt>
 File: tud_logo.pdf Graphic file (type pdf)
  <use tud_logo.pdf>
 Package pdftex.def Info: tud_logo.pdf used on input line 72.
@@ -1355,7 +1355,7 @@ LaTeX Font Info:    Try loading font information for T1+5sf on input line 72.
 (c:/texlive/2013/../texmf-local/tex/latex/tex-tudfonts/softmake/stafford/t15sf.
 fd
 File: t15sf.fd 2008/06/23 Fontinst v1.927 font definitions for T1/5sf.
-) <by-nc-nd.pdf, id=150, 121.45375pt x 43.16125pt>
+) <by-nc-nd.pdf, id=166, 121.45375pt x 43.16125pt>
 File: by-nc-nd.pdf Graphic file (type pdf)
  <use by-nc-nd.pdf>
 Package pdftex.def Info: by-nc-nd.pdf used on input line 72.
@@ -1400,8 +1400,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--9
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--24
+Underfull \hbox (badness 10000) detected at line 10
+[]
+ []
 
+
+Underfull \hbox (badness 10000) detected at line 10
+[]
  []
 
 [4
@@ -1409,23 +1414,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--24
 
 
 ]
-Underfull \hbox (badness 10000) detected at line 29
-[]
- []
+Underfull \hbox (badness 10000) in paragraph at lines 21--24
 
-
-Underfull \hbox (badness 10000) detected at line 29
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 30
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 30
-[]
  []
 
 
@@ -1438,37 +1428,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--40
 
  []
 
-[5]
-Underfull \hbox (badness 10000) detected at line 42
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 42
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 43
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 43
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 61
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 61
-[]
- []
-
-) [6]
+[5]) [6]
 \openout2 = `grundlagen.aux'.
 
  (./grundlagen.tex
@@ -1492,7 +1452,7 @@ File: ts15ch.fd 2008/06/23 Fontinst v1.927 font definitions for TS1/5ch.
 
 
 
-] <images/TraditionalWebArchitecture.jpg, id=253, 722.7pt x 542.025pt>
+] <images/TraditionalWebArchitecture.jpg, id=273, 722.7pt x 542.025pt>
 File: images/TraditionalWebArchitecture.jpg Graphic file (type jpg)
 
 <use images/TraditionalWebArchitecture.jpg>
@@ -1509,7 +1469,7 @@ Underfull \hbox (badness 10000) detected at line 49
 []
  []
 
-<images/Clients-und-Server.png, id=264, 353.06906pt x 304.13625pt>
+<images/Clients-und-Server.png, id=284, 353.06906pt x 304.13625pt>
 File: images/Clients-und-Server.png Graphic file (type png)
 
 <use images/Clients-und-Server.png>
@@ -1549,7 +1509,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
-<images/placeholder.png, id=285, 401.5pt x 200.75pt>
+<images/placeholder.png, id=306, 401.5pt x 200.75pt>
 File: images/placeholder.png Graphic file (type png)
 
 <use images/placeholder.png>
@@ -1603,44 +1563,34 @@ Underfull \hbox (badness 10000) detected at line 113
  []
 
 
-Underfull \hbox (badness 10000) detected at line 116
+Underfull \hbox (badness 10000) detected at line 119
 []
  []
 
 
-Underfull \hbox (badness 10000) detected at line 116
+Underfull \hbox (badness 10000) detected at line 119
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 117--123
+Underfull \hbox (badness 10000) in paragraph at lines 120--126
 
  []
 
-[12] <images/Richardson_Maturity_Model.png, id=302, 675.52374pt x 399.4925pt>
+[12] <images/Richardson_Maturity_Model.png, id=321, 675.52374pt x 399.4925pt>
 File: images/Richardson_Maturity_Model.png Graphic file (type png)
 
 <use images/Richardson_Maturity_Model.png>
 Package pdftex.def Info: images/Richardson_Maturity_Model.png used on input lin
-e 146.
+e 149.
 (pdftex.def)             Requested size: 348.54475pt x 206.128pt.
 
-Underfull \hbox (badness 10000) detected at line 152
+Underfull \hbox (badness 10000) detected at line 155
 []
  []
 
 
-Underfull \hbox (badness 10000) detected at line 152
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 153
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 153
+Underfull \hbox (badness 10000) detected at line 155
 []
  []
 
@@ -1655,52 +1605,32 @@ Underfull \hbox (badness 10000) detected at line 156
  []
 
 
-Underfull \hbox (badness 10000) detected at line 157
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 157
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 158
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 158
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 161
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 161
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 162
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 162
-[]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 163
+Underfull \hbox (badness 10000) detected at line 159
 []
  []
 
 [13 <./images/Richardson_Maturity_Model.png>]
-Underfull \hbox (badness 10000) detected at line 163
+Underfull \hbox (badness 10000) detected at line 159
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 160
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 160
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 161
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 161
 []
  []
 
@@ -1741,6 +1671,36 @@ Underfull \hbox (badness 10000) detected at line 167
 
 
 Underfull \hbox (badness 10000) detected at line 167
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 168
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 168
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 169
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 169
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 170
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 170
 []
  []
 
@@ -1749,45 +1709,70 @@ Underfull \hbox (badness 10000) detected at line 167
 
  (./konzept.tex
 Kapitel 4.
-) [15
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--24
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 25--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--90
+
+ []
+
+[15
 
 
 
-]
+] [16]
 \openout2 = `zusammenfassung.aux'.
 
  (./zusammenfassung.tex
 Kapitel 5.
-) [16
+) [17
 
 
 
 ]
 \openout2 = `glossar.aux'.
 
- (./glossar.tex) [17
+ (./glossar.tex) [18
 
 
 ]
 \openout2 = `anhang.aux'.
 
- (./anhang.tex) [18
+ (./anhang.tex) [19
 
 
 ] (./Thesis.bbl
-LaTeX Font Info:    Try loading font information for T1+txtt on input line 51.
+LaTeX Font Info:    Try loading font information for T1+txtt on input line 74.
 
 (c:/texlive/2013/texmf-dist/tex/latex/txfonts/t1txtt.fd
 File: t1txtt.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 6094) in paragraph at lines 91--107
+Underfull \hbox (badness 6094) in paragraph at lines 114--130
 []\T1/5ch/m/n/12 Radde, G.  (1996).  Hoch-schul-spor-tein-rich-tun-gen - Ei-ne 
 ver-glei-chen-de Be-trach-
  []
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 102.
- [19
+ [20
 
 
 ]
@@ -1798,14 +1783,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 102.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 102.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 102.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 85B37379FD3BCF05B13DC0164B54722A;2395.
+(rerunfilecheck)             Checksum: 743E3176D0C52B1C53F6AD7705B40295;2619.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 102.
  ) 
 Here is how much of TeX's memory you used:
- 13334 strings out of 493308
- 202617 string characters out of 6141367
- 345503 words of memory out of 5000000
- 16328 multiletter control sequences out of 15000+600000
+ 13352 strings out of 493308
+ 202814 string characters out of 6141367
+ 345540 words of memory out of 5000000
+ 16337 multiletter control sequences out of 15000+600000
  156501 words of font info for 75 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  65i,12n,77p,1068b,486s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1817,10 +1802,10 @@ e1/softmake/frontpage/5fpm8a.pfb><c:/texlive/2013/../texmf-local/fonts/type1/so
 ftmake/frontpage/5fpr8a.pfb><c:/texlive/2013/../texmf-local/fonts/type1/softmak
 e/stafford/5sfr8a.pfb><c:/texlive/2013/texmf-dist/fonts/type1/public/txfonts/t1
 xtt.pfb>
-Output written on Thesis.pdf (21 pages, 236944 bytes).
+Output written on Thesis.pdf (22 pages, 242051 bytes).
 PDF statistics:
- 393 PDF objects out of 1000 (max. 8388607)
- 349 compressed objects within 4 object streams
- 96 named destinations out of 1000 (max. 500000)
- 307 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 425 PDF objects out of 1000 (max. 8388607)
+ 380 compressed objects within 4 object streams
+ 105 named destinations out of 1000 (max. 500000)
+ 339 words of extra memory for PDF output out of 10000 (max. 10000000)
 

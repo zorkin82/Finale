@@ -110,10 +110,13 @@ Ich will daher hier drei grundlegende Architekturen darstellen, die sich in den 
 	
 	
 	
-	\subsection{Dienstorientiert}
+	\subsection{Dienstbasiert}
+	Neben den beiden oben genannten Architekturen hat sich eine weitere Form verbreitet. Bei der dienstbasierten Architektur spricht man von einem Architketurmuster aus dem Bereich der verteilten Systeme. Der Schwerpunkt wird dabei auf eigenständige Dienste als primäre Komponente gelegt, auf die über eine Art Remote-Protokoll zugegriffen werden kann. Die Art des Protokolles ist dabei nicht festgelegt oder auf eines beschränkt wie z.B. Representational State Transfer (REST), Simple Object Access Protocol (SOAP), Advanced Message Queuing Protokol (AMQP) oder andere geschehen.
+	Dienstbasierten Architekturen werden signifikante Vorteile im Bezug auf Skalierbarkeit, Entkopplung, Kontrolle über die Entwicklung, Testing und Deployment zugeschrieben. Verteilte Systeme tendieren zudem dazu weniger abhängig und besser modular aufgebaut zu sein. Im Zusammenhang mit dienstabasierten Architekturen bedeutet das, das jeder Dienst eine in sich geschlossen Einheit bildet, sie selbst designed, entwickelt, getestet und ausgeliefert wird.  Abhängigkeiten zu anderen Komponenten sollten dabei nicht, oder nur minimal bestehen. \\
+	Diese Vorteile bringen jedoch auch einige Nachteile mit sich, so zählen erhöhte Komlexität und höhere initiale Kosten zu den meist genannten Argumenten.
 
 \section{System Kommunikation}
-	\subsection{Represental State Transfer (REST)}
+	\subsection{Representalional State Transfer (REST)}
 	REST wurde erstmals von 2000 Roy Thomas Fielding in seiner Dissertation beschrieben. Im Gegensatz zu bekannten Protokollen wie Simple Object Access Protokol (SOAP) oder XML-RPC handelt es sich bei REST um einen Architekturstil, wie Anwendungen basierend auf dem HTTP Protokoll miteinander kommunizieren können. Unterstützt eine Anwendung die REST-Stil, so bezeichnet man sie als RESTful.
 	\cite[vgl.][]{Melzer.2010} \\
 	REST basiert auf einem Konzept von Ressourcen, über die der Service Kenntnis hat. Der Server erstellt dabei verschiedene Darstellungen, wobei diese entkoppelt ist von der internen Speicherung.
@@ -158,7 +161,7 @@ Ich will daher hier drei grundlegende Architekturen darstellen, die sich in den 
 	\subsection{Gegenüberstellung}
 	
 \section{Konzepte}
-	\subsection{Singel Responisibility}
+	\subsection{Separation of Concerns}
 	\subsection{Domain Driven Design}
 	\subsection{Data Consistency Primer}
 	\subsection{Competiting Consumer Pattern}
