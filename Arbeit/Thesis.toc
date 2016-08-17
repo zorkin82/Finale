@@ -11,24 +11,29 @@
 \contentsline {chapter}{\numberline {3}Cloud Computing}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}Herausforderungen traditioneller Architekturen}{7}{section.3.1}
 \contentsline {section}{\numberline {3.2}Merkmale}{7}{section.3.2}
-\contentsline {section}{\numberline {3.3}Architektur}{7}{section.3.3}
-\contentsline {section}{\numberline {3.4}Vorteile}{7}{section.3.4}
-\contentsline {section}{\numberline {3.5}Probleme und Herausforderungen}{7}{section.3.5}
-\contentsline {section}{\numberline {3.6}SaaS Anwendungen}{7}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Monolitische versus service basierte Architekturen}{7}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Herausforderungen}{7}{subsection.3.6.2}
-\contentsline {subsubsection}{Availability}{7}{subsubsection*.7}
-\contentsline {subsubsection}{Data management}{7}{subsubsection*.8}
-\contentsline {subsubsection}{Design and Implementation}{7}{subsubsection*.9}
-\contentsline {subsubsection}{Messaging}{7}{subsubsection*.10}
-\contentsline {subsubsection}{Management and Monitoring}{7}{subsubsection*.11}
-\contentsline {subsubsection}{Performance and Scalability}{7}{subsubsection*.12}
-\contentsline {subsubsection}{Resiliency}{7}{subsubsection*.13}
-\contentsline {subsubsection}{Security}{7}{subsubsection*.14}
-\contentsline {chapter}{\numberline {4}System Konzeption}{8}{chapter.4}
-\contentsline {section}{\numberline {4.1}Planungsphase}{8}{section.4.1}
-\contentsline {section}{\numberline {4.2}Definitionsphase}{8}{section.4.2}
-\contentsline {section}{\numberline {4.3}Entwurfsphase}{8}{section.4.3}
-\contentsline {chapter}{\numberline {5}Diskussion, Zusammenfassung und Ausblick}{10}{chapter.5}
-\contentsline {section}{\numberline {5.1}Glossar}{11}{section.5.1}
-\contentsline {section}{\numberline {5.2}Anh\IeC {\"a}nge}{12}{section.5.2}
+\contentsline {section}{\numberline {3.3}Service Modell}{7}{section.3.3}
+\contentsline {section}{\numberline {3.4}Bereitstellung Modell}{8}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Private Cloud}{9}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Public Cloud}{9}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Hybrid Cloud}{9}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}Vorteile}{10}{section.3.5}
+\contentsline {section}{\numberline {3.6}Probleme und Herausforderungen}{10}{section.3.6}
+\contentsline {subsubsection}{Sicherheit und Datenschutz}{10}{subsubsection*.7}
+\contentsline {section}{\numberline {3.7}SaaS Anwendungen}{10}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Monolitische versus service basierte Architekturen}{10}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Herausforderungen}{10}{subsection.3.7.2}
+\contentsline {subsubsection}{Availability}{11}{subsubsection*.8}
+\contentsline {subsubsection}{Data management}{11}{subsubsection*.9}
+\contentsline {subsubsection}{Design and Implementation}{11}{subsubsection*.10}
+\contentsline {subsubsection}{Messaging}{11}{subsubsection*.11}
+\contentsline {subsubsection}{Management and Monitoring}{11}{subsubsection*.12}
+\contentsline {subsubsection}{Performance and Scalability}{11}{subsubsection*.13}
+\contentsline {subsubsection}{Resiliency}{11}{subsubsection*.14}
+\contentsline {subsubsection}{Security}{11}{subsubsection*.15}
+\contentsline {chapter}{\numberline {4}System Konzeption}{12}{chapter.4}
+\contentsline {section}{\numberline {4.1}Planungsphase}{12}{section.4.1}
+\contentsline {section}{\numberline {4.2}Definitionsphase}{12}{section.4.2}
+\contentsline {section}{\numberline {4.3}Entwurfsphase}{12}{section.4.3}
+\contentsline {chapter}{\numberline {5}Diskussion, Zusammenfassung und Ausblick}{14}{chapter.5}
+\contentsline {section}{\numberline {5.1}Glossar}{15}{section.5.1}
+\contentsline {section}{\numberline {5.2}Anh\IeC {\"a}nge}{16}{section.5.2}

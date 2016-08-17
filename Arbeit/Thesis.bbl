@@ -24,80 +24,92 @@ Balzert, H.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Bass%
-, Clements%
-\BCBL {}\ \BBA {} Kazman%
+Jadeja%
+\ \BBA {} Modi%
 }{%
-Bass%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2013}}%
+Jadeja%
+\ \BBA {} Modi%
+}{%
+{\protect \APACyear {2012}}%
 }]{%
-Bass.2013}
+Jadeja.2012}
 \APACinsertmetastar {%
-Bass.2013}%
+Jadeja.2012}%
 \begin{APACrefauthors}%
-Bass, L.%
-, Clements, P.%
-\BCBL {}\ \BBA {} Kazman, R.%
+Jadeja, Y.%
+\BCBT {}\ \BBA {} Modi, K.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{2013}.
+\APACrefYearMonthDay{2012}{}{}.
 \newblock
-\APACrefbtitle {{S}oftware architecture in practice} {{S}oftware architecture
-  in practice}\ (\PrintOrdinal{3rd ed}\ \BEd).
+{\BBOQ}\APACrefatitle {{C}loud computing - concepts, architecture and
+  challenges} {{C}loud computing - concepts, architecture and
+  challenges}.{\BBCQ}
 \newblock
-\APACaddressPublisher{Upper Saddle River and NJ}{Addison-Wesley}.
+\BIn{} \APACrefbtitle {{C}omputing, {E}lectronics and {E}lectrical
+  {T}echnologies ({I}{C}{C}{E}{E}{T}), 2012 {I}nternational {C}onference on}
+  {{C}omputing, {E}lectronics and {E}lectrical {T}echnologies
+  ({I}{C}{C}{E}{E}{T}), 2012 {I}nternational {C}onference on}\ (\BPGS\
+  877--880).
+\newblock
+\begin{APACrefDOI} \doi{10.1109/ICCEET.2012.6203873} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Fowler%
+Mahmood%
 }{%
-Fowler%
+Mahmood%
 }{%
-{\protect \APACyear {2010}}%
+{\protect \APACyear {2011}}%
 }]{%
-Fowler.2010}
+Mahmood.2011}
 \APACinsertmetastar {%
-Fowler.2010}%
+Mahmood.2011}%
 \begin{APACrefauthors}%
-Fowler, M.%
+Mahmood, Z.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2010}{}{}.
+\APACrefYearMonthDay{2011}{}{}.
 \newblock
-\APACrefbtitle {{R}ichardson {M}aturity {M}odel.} {{R}ichardson {M}aturity
-  {M}odel.}
+{\BBOQ}\APACrefatitle {{C}loud {C}omputing: {C}haracteristics and {D}eployment
+  {A}pproaches} {{C}loud {C}omputing: {C}haracteristics and {D}eployment
+  {A}pproaches}.{\BBCQ}
 \newblock
-\begin{APACrefURL}
-  [{06.07.2016}]\url{http://martinfowler.com/articles/richardsonMaturityModel.html}
-  \end{APACrefURL}
+\BIn{} \APACrefbtitle {11th {I}nternational {C}onference on {C}omputer and
+  {I}nformation {T}echnology ({C}{I}{T})} {11th {I}nternational {C}onference on
+  {C}omputer and {I}nformation {T}echnology ({C}{I}{T})}\ (\BPGS\ 121--126).
+\newblock
+\begin{APACrefDOI} \doi{10.1109/CIT.2011.75} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Melzer%
+Mell%
+\ \BBA {} Grance%
 }{%
-Melzer%
+Mell%
+\ \BBA {} Grance%
 }{%
-{\protect \APACyear {2010}}%
+{\protect \APACyear {2011}}%
 }]{%
-Melzer.2010}
+Mell.2011}
 \APACinsertmetastar {%
-Melzer.2010}%
+Mell.2011}%
 \begin{APACrefauthors}%
-Melzer, I.%
+Mell, P\BPBI M.%
+\BCBT {}\ \BBA {} Grance, T.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYear{2010}.
+\APACrefYearMonthDay{2011}{}{}.
 \newblock
-\APACrefbtitle {{S}ervice-orientierte {A}rchitekturen mit {W}eb {S}ervices:
-  {K}onzepte - {S}tandards - {P}raxis} {{S}ervice-orientierte {A}rchitekturen
-  mit {W}eb {S}ervices: {K}onzepte - {S}tandards - {P}raxis}\
-  (\PrintOrdinal{4}\ \BEd).
+\APACrefbtitle {{S}{P} 800-145. {T}he {N}{I}{S}{T} {D}efinition of {C}loud
+  {C}omputing.} {{S}{P} 800-145. {T}he {N}{I}{S}{T} {D}efinition of {C}loud
+  {C}omputing.}
 \newblock
-\APACaddressPublisher{Heidelberg}{Spektrum Akademischer Verlag}.
+\APACaddressPublisher{Gaithersburg and MD and United States}{National Institute
+  of Standards {\&} Technology}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -129,51 +141,39 @@ Radde, G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Richardson%
+Tharam%
+, Chen%
+\BCBL {}\ \BBA {} Elizabeth%
 }{%
-Richardson%
-}{%
-{\protect \APACyear {2014}}%
+Tharam%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
 }]{%
-Richardson.2014}
+Tharam.2010}
 \APACinsertmetastar {%
-Richardson.2014}%
+Tharam.2010}%
 \begin{APACrefauthors}%
-Richardson, C.%
+Tharam, D.%
+, Chen, W.%
+\BCBL {}\ \BBA {} Elizabeth, C.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{2014}{}{}.
+\APACrefYearMonthDay{2010}{}{}.
 \newblock
-\APACrefbtitle {{P}attern: {M}onolithic {A}rchitecture.} {{P}attern:
-  {M}onolithic {A}rchitecture.}
+{\BBOQ}\APACrefatitle {{C}loud {C}omputing: {I}ssues and {C}hallenges} {{C}loud
+  {C}omputing: {I}ssues and {C}hallenges}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {2010 24th {I}{E}{E}{E} {I}nternational {C}onference on
+  {A}dvanced {I}nformation {N}etworking and {A}pplications} {2010 24th
+  {I}{E}{E}{E} {I}nternational {C}onference on {A}dvanced {I}nformation
+  {N}etworking and {A}pplications}\ (\BPGS\ 27--33).
 \newblock
 \begin{APACrefURL}
-  [{05.07.2016}]\url{http://microservices.io/patterns/monolithic.html}
+  \url{http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5474674}
   \end{APACrefURL}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
-Sommerville%
-}{%
-Sommerville%
-}{%
-{\protect \APACyear {2007}}%
-}]{%
-Sommerville.2007}
-\APACinsertmetastar {%
-Sommerville.2007}%
-\begin{APACrefauthors}%
-Sommerville, I.%
-\end{APACrefauthors}%
-\unskip\
 \newblock
-\APACrefYear{2007}.
-\newblock
-\APACrefbtitle {{S}oftware-{E}ngineering} {{S}oftware-{E}ngineering}\
-  (\PrintOrdinal{8.}\ \BEd).
-\newblock
-\APACaddressPublisher{M{\"u}nchen and Boston [u.a.]}{Pearson Studium}.
+\begin{APACrefDOI} \doi{10.1109/AINA.2010.187} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

@@ -3,7 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: Thesis.aux
 A level-1 auxiliary file: einleitung.aux
 A level-1 auxiliary file: hochschulsport.aux
-A level-1 auxiliary file: grundlagen.aux
+A level-1 auxiliary file: cloud.aux
 A level-1 auxiliary file: konzept.aux
 A level-1 auxiliary file: zusammenfassung.aux
 A level-1 auxiliary file: glossar.aux
@@ -20,44 +20,44 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: literatur_full.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 7 entries,
+You've used 6 entries,
             6951 wiz_defined-function locations,
-            1329 strings with 11907 characters,
-and the built_in function-call counts, 10561 in all, are:
-= -- 1302
-> -- 79
+            1323 strings with 12157 characters,
+and the built_in function-call counts, 10961 in all, are:
+= -- 1431
+> -- 91
 < -- 437
-+ -- 402
-- -- 14
++ -- 420
+- -- 12
 * -- 640
-:= -- 1879
-add.period$ -- 28
-call.type$ -- 7
-change.case$ -- 119
+:= -- 1843
+add.period$ -- 31
+call.type$ -- 6
+change.case$ -- 105
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 261
-empty$ -- 510
-format.name$ -- 116
-if$ -- 2112
+cite$ -- 12
+duplicate$ -- 257
+empty$ -- 466
+format.name$ -- 122
+if$ -- 2205
 int.to.chr$ -- 0
-int.to.str$ -- 21
+int.to.str$ -- 18
 missing$ -- 0
-newline$ -- 163
-num.names$ -- 56
-pop$ -- 322
+newline$ -- 155
+num.names$ -- 48
+pop$ -- 316
 preamble$ -- 1
-purify$ -- 28
+purify$ -- 24
 quote$ -- 0
-skip$ -- 643
+skip$ -- 740
 stack$ -- 0
-substring$ -- 438
-swap$ -- 169
-text.length$ -- 14
+substring$ -- 484
+swap$ -- 170
+text.length$ -- 29
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 560
+type$ -- 672
 warning$ -- 0
-while$ -- 42
+while$ -- 44
 width$ -- 0
-write$ -- 183
+write$ -- 181
