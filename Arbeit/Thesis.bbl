@@ -1,6 +1,33 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Achimugu%
+, Oluwagbemi%
+\BCBL {}\ \BBA {} Popoola%
+}{%
+Achimugu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+Achimugu.2012}
+\APACinsertmetastar {%
+Achimugu.2012}%
+\begin{APACrefauthors}%
+Achimugu, P.%
+, Oluwagbemi, O.%
+\BCBL {}\ \BBA {} Popoola, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A}rchitecting the {C}loud: {P}rospects and {P}roblems}
+  {{A}rchitecting the {C}loud: {P}rospects and {P}roblems}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of Information}{2}{3}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Balzert%
 }{%
 Balzert%
@@ -21,6 +48,31 @@ Balzert, H.%
   {{L}ehrbuch der {S}oftware-{T}echnik - {S}oftware-{E}ntwicklung}.
 \newblock
 \APACaddressPublisher{Heidelberg [u.a.]}{Spektrum Akadem. Verl.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+{Bundesamt f{\"u}r Sicherheit in der Informationstechnik}%
+}{%
+{Bundesamt f{\"u}r Sicherheit in der Informationstechnik}%
+}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+BundesamtfurSicherheitinderInformationstechnik.}
+\APACinsertmetastar {%
+BundesamtfurSicherheitinderInformationstechnik.}%
+\begin{APACrefauthors}%
+{Bundesamt f{\"u}r Sicherheit in der Informationstechnik}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+\APACrefbtitle {{C}loud {C}omputing {G}rundlagen.} {{C}loud {C}omputing
+  {G}rundlagen.}
+\newblock
+\begin{APACrefURL}
+  [{27.08.2016}]\url{https://www.bsi.bund.de/DE/Themen/DigitaleGesellschaft/CloudComputing/Grundlagen/CloudComputing-Grundlagen.html}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -113,31 +165,26 @@ Mell, P\BPBI M.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Radde%
+Siegele%
 }{%
-Radde%
+Siegele%
 }{%
-{\protect \APACyear {1996}}%
+{\protect \APACyear {2008}}%
 }]{%
-Radde.1996}
+Siegele.2008}
 \APACinsertmetastar {%
-Radde.1996}%
+Siegele.2008}%
 \begin{APACrefauthors}%
-Radde, G.%
+Siegele, L.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
-\APACrefYearMonthDay{1996}{}{}.
+\APACrefYearMonthDay{2008}{}{}.
 \newblock
-{\BBOQ}\APACrefatitle {{H}ochschulsporteinrichtungen - {E}ine vergleichende
-  {B}etrachtung} {{H}ochschulsporteinrichtungen - {E}ine vergleichende
-  {B}etrachtung}.{\BBCQ}
+{\BBOQ}\APACrefatitle {{L}et it rise: {A} special report on corporate {I}{T}}
+  {{L}et it rise: {A} special report on corporate {I}{T}}.{\BBCQ}
 \newblock
-\APACjournalVolNumPages{dvs-Informationen}{11}{3}{15--17}.
-\newblock
-\begin{APACrefURL}
-  [{05.07.2016}]\url{http://www.sportwissenschaft.de/fileadmin/pdf/dvs-Info/1996/1996\_3\_radde.pdf}
-  \end{APACrefURL}
+\APACjournalVolNumPages{Economist Newspaper}{}{8603}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -164,10 +211,10 @@ Tharam, D.%
 {\BBOQ}\APACrefatitle {{C}loud {C}omputing: {I}ssues and {C}hallenges} {{C}loud
   {C}omputing: {I}ssues and {C}hallenges}.{\BBCQ}
 \newblock
-\BIn{} \APACrefbtitle {2010 24th {I}{E}{E}{E} {I}nternational {C}onference on
-  {A}dvanced {I}nformation {N}etworking and {A}pplications} {2010 24th
-  {I}{E}{E}{E} {I}nternational {C}onference on {A}dvanced {I}nformation
-  {N}etworking and {A}pplications}\ (\BPGS\ 27--33).
+\BIn{} \APACrefbtitle {24th {I}{E}{E}{E} {I}nternational {C}onference on
+  {A}dvanced {I}nformation {N}etworking and {A}pplications} {24th {I}{E}{E}{E}
+  {I}nternational {C}onference on {A}dvanced {I}nformation {N}etworking and
+  {A}pplications}\ (\BPGS\ 27--33).
 \newblock
 \begin{APACrefURL}
   \url{http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5474674}
