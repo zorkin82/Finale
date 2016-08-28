@@ -76,6 +76,35 @@ BundesamtfurSicherheitinderInformationstechnik.}%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Chong%
+, Carraro%
+\BCBL {}\ \BBA {} Wolter%
+}{%
+Chong%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Chong.2006}
+\APACinsertmetastar {%
+Chong.2006}%
+\begin{APACrefauthors}%
+Chong, F.%
+, Carraro, G.%
+\BCBL {}\ \BBA {} Wolter, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+\APACrefbtitle {{M}ulti-{T}enant {D}ata {A}rchitecture.} {{M}ulti-{T}enant
+  {D}ata {A}rchitecture.}
+\newblock
+\begin{APACrefURL}
+  [{17.08.2016}]\url{https://msdn.microsoft.com/en-us/library/aa479086.aspx}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Jadeja%
 \ \BBA {} Modi%
 }{%
@@ -106,6 +135,34 @@ Jadeja, Y.%
   877--880).
 \newblock
 \begin{APACrefDOI} \doi{10.1109/ICCEET.2012.6203873} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Krebs%
+, Momm%
+\BCBL {}\ \BBA {} Kounev%
+}{%
+Krebs%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+Krebs.2012}
+\APACinsertmetastar {%
+Krebs.2012}%
+\begin{APACrefauthors}%
+Krebs, R.%
+, Momm, C.%
+\BCBL {}\ \BBA {} Kounev, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{}{}.
+\newblock
+\APACrefbtitle {{A}rchitectural {C}oncerns in {M}ulti-{T}enant {S}aa{S}
+  {A}pplications.} {{A}rchitectural {C}oncerns in {M}ulti-{T}enant {S}aa{S}
+  {A}pplications.}
+\newblock
+\APACaddressPublisher{At Setubal and Portugal}{}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -162,6 +219,34 @@ Mell, P\BPBI M.%
 \newblock
 \APACaddressPublisher{Gaithersburg and MD and United States}{National Institute
   of Standards {\&} Technology}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Radde%
+}{%
+Radde%
+}{%
+{\protect \APACyear {1996}}%
+}]{%
+Radde.1996}
+\APACinsertmetastar {%
+Radde.1996}%
+\begin{APACrefauthors}%
+Radde, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1996}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{H}ochschulsporteinrichtungen - {E}ine vergleichende
+  {B}etrachtung} {{H}ochschulsporteinrichtungen - {E}ine vergleichende
+  {B}etrachtung}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{dvs-Informationen}{11}{3}{15--17}.
+\newblock
+\begin{APACrefURL}
+  [{05.07.2016}]\url{http://www.sportwissenschaft.de/fileadmin/pdf/dvs-Info/1996/1996\_3\_radde.pdf}
+  \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

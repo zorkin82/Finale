@@ -21,6 +21,7 @@
   pdfstartview=FitV
 }
   
+  \renewcommand{\baselinestretch}{1.5}
 \newcommand{\getmydate}{%
   \ifcase\month%
     \or Januar\or Februar\or M\"arz%
@@ -69,11 +70,11 @@
 
 \begin{document}
 	
- % \makethesistitle
+  \makethesistitle
   
- % \affidavit[...]{Dirk Beckmann}
- % \tableofcontents 
-  %\clearpage
+  \affidavit[...]{Dirk Beckmann}
+  \tableofcontents 
+  \clearpage
   
   %\listoffigures 
   %\clearpage
@@ -81,20 +82,20 @@
   %\listoftables 
   %\clearpage
   
-%	\include{einleitung} 
+	\include{einleitung} 
 	
-%	\include{hochschulsport} 
+	\include{hochschulsport} 
 	
 %	\include{grundlagen} 
 	\include{cloud} 
 	
 	\include{konzept} 
 	
-%	\include{zusammenfassung} 
+	\include{zusammenfassung} 
 
-%	\include{glossar}
+	\include{glossar}
 	
-%	\include{anhang}
+	\include{anhang}
 
 
   \bibliographystyle{apacite}

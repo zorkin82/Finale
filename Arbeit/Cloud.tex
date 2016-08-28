@@ -14,11 +14,6 @@ Diese Definition des ist auch Grundlage für die Definition des Bundesamt für S
 	Cloud Computing bezeichnet das dynamisch an den Bedarf angepasste Anbieten, Nutzen und Abrechnen von IT-Dienstleistungen über ein Netz. Angebot und Nutzung dieser Dienstleistungen erfolgen dabei ausschließlich über definierte technische Schnittstellen und Protokolle. Die Spannbreite der im Rahmen von Cloud Computing angebotenen Dienstleistungen umfasst das komplette Spektrum der Informationstechnik und beinhaltet unter anderem Infrastruktur (z. B. Rechenleistung, Speicherplatz), Plattformen und Software.
 \end{quote} \cite*[vgl.][]{BundesamtfurSicherheitinderInformationstechnik.}
 
-Bevor die Merkmale, Service  und Bereitstellungsmodelle im Detail erläutert werden, ist es jedoch wichtig zu verstehen, woher die Notwendigkeit bestand ein neues Modell zu erschaffen.
-
-\section{Herausforderungen traditioneller Architekturen} \label{herausforderungen}
-
-
 \section{Merkmale}
 \subsubsection{On-demand self-service}\label{selfservice}
 \subsubsection{Broad network access}\label{networkaccess}
@@ -27,7 +22,7 @@ Bevor die Merkmale, Service  und Bereitstellungsmodelle im Detail erläutert wer
 \subsubsection{Measured service}\label{measuredservice}
 \cite*[vgl.][S.2]{Mell.2011}
 
-\section{Service Modell}
+\section{Service Modell}\label{serviceModell}
 In der Definition von \cite*[S.2]{Mell.2011} sind drei unterschiedliche Service Modelle beschreiben, die sich in der Cloud Community etabliert haben. Diese decken sich mit den Kategorisierungen von \cite[S. 28]{Tharam.2010} und \cite[S. 878]{Jadeja.2012}.
 
 	\begin{figure}[h]
@@ -50,7 +45,7 @@ In der Definition von \cite*[S.2]{Mell.2011} sind drei unterschiedliche Service 
 In einigen Fällen werden diese drei Ebenen noch um zusätzliche Service Formen ergänzt. So verwendet \cite[S. 28]{Tharam.2010} noch die Einteilung in storage as a Service (DaaS) während \cite[S. 123]{Mahmood.2011} von "other Provision as Service" spricht und darunter Formen wie Storage as a Service, Database as a Service, Security as a Service, Communication as a Service, etc gruppiert. All diese Services können jedoch auch spezialisierte IaaS Services angesehen werden.
 
 
-\section{Bereitstellung Modell}
+\section{Bereitstellung Modell}\label{bereitstellung}
 Ein weiterer zentraler Punkt in der Definition von Cloud Computing ist das Bereitstellungsmodell, das primär die Art beschreibt, wer Zugriff auf die Daten und Anwendungen hat.
 
 	\begin{figure}[h]
@@ -117,10 +112,11 @@ Durch das einfache hinzufügen von Ressourcen und die interne Ressourcen Verwalt
 Diese Vorteile lassen sich an einem kleinen Beispiel im Hochschulsport mit fiktiven Zahlen verdeutlichen. Wie bereits in Abschnitt~\ref{hspAnforderungen} beschrieben kommt es zu einem enormen zusätzlichen Performance Bedarf für das Buchungssystem zum Buchungsstart. Als Lastspitze wird ein Bedarf von 100 Servern zu Grunde gelegt. Diese Lastspitzen treten etwa 10 mal im Jahr auf und halten für 24 Stunden an. Den Rest der Zeit besteht ein Workload für etwa 20 Server. Daraus ergibt sich über das Jahr ein durchschnittlicher Bedarf an Serverstunden von 532,6 je Tag. Für eine Veranschaulichung des Kostenfaktors wird eine Serverstunde mit 50 Cent veranschlagt.
 \\
 \\
-Serverstunden je Tag => ((355 * 20) + (10 * 100)) * 24 / 365 = 532,6 \\
-Kosten je Tag => (532,6 * 50) / 100 = 266,3€ \\
-
-Um den Kunden auch in den Lastspitzen die benötigte Performance zusichern zu können, so müsste in einer traditionellem Rechenzentrum die Bemessung des Bedarfs am Peak Load erfolgen und somit für 100 Server. Gemessen am durchschnittlichen Bedarf über das Jahr stellt dies jedoch eine deutliche Überprovisionierung da. (BILD)
+Serverstunden je Tag:    $\displaystyle \frac{((355 * 20) + (10 * 100)) * 24}{365}\; =\; \textbf{532,6}	 $\\
+\\
+Kosten je Tag:           $\displaystyle \frac{532,6 * 50}{100}\; =\; \textbf{266,3€} $\\
+\\
+Um den Kunden auch in den Lastspitzen die benötigte Performance zusichern zu können, so müsste in einer traditionellem Rechenzentrum die Bemessung des Bedarfs am Peak Load erfolgen und somit für 100 Server. Gemessen am durchschnittlichen Bedarf über das Jahr stellt dies jedoch eine deutliche Überprovisionierung da (\ref{fig:overprovisioning}).
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.7\linewidth]{images/overprovisioning}
@@ -129,12 +125,13 @@ Um den Kunden auch in den Lastspitzen die benötigte Performance zusichern zu k�
 	\end{figure}
 \\ 
 \\
-Serverstunde je Tag => 100 * 24 = 2400 \\
-Kosten je Tag => (2400 * 50) / 100 = 1200€ \\ 
+Serverstunden je Tag:    $\displaystyle 100 * 24 \; =\; \textbf{2400} $\\
 \\
-Dies Entspräche einer Faktor von 4,5.
+Kosten je Tag:           $\displaystyle \frac{2400 * 50}{100}\; =\; \textbf{1200€} $\\
 \\
-Ein alternativer Ansatz wäre eine moderatere Bemessung des Bedarfes möglich mit z.B. 50 Servern und somit einer Unterprovisionierung. Dies würde dazu führen, das die Lastspitzen jedoch nicht mehr entsprechend versorgt werden könnten und es zu Einschränkungen und sogar Ausfällen des System kommen könnte. 
+Dies entspricht einem erhöhten Preis um Faktor 4,5.
+\\
+Ein alternativer Ansatz wäre eine moderatere Bemessung des Bedarfes möglich mit z.B. 50 Servern und somit einer Unterprovisionierung. Dies würde dazu führen, das die Lastspitzen jedoch nicht mehr entsprechend versorgt werden könnten und es zu Einschränkungen und sogar Ausfällen des System kommen könnte (\ref{fig:underprovisioning}). 
 	\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.7\linewidth]{images/underprovisioning}
@@ -144,16 +141,17 @@ Ein alternativer Ansatz wäre eine moderatere Bemessung des Bedarfes möglich mi
 Mit diesem Ansatz ließen sich deutliche Einsparungen erzielen, jedoch muss mit betrachtet werden, dass es zu deutlichen Einnahme Einbußen kommen könnte, da nicht allen Kunden eine Buchung möglich wäre oder sich Kunden sogar vollständig vom diesem Dienst entfernen.
 \\
 \\
-Serverstunde je Tag => 50 * 24 = 1200 \\
-Kosten je Tag => (1200 * 50) / 100 = 600€ \\
-\\ 
-
+Serverstunden je Tag:    $\displaystyle 50 * 24 \; =\; \textbf{1200}	 $\\
+\\
+Kosten je Tag:           $\displaystyle \frac{1200 * 50}{100}\; =\; \textbf{600€} $\\
+\\
 Dieses auf fiktiven Zahlen basierende Beispiel ist in der realen Welt häufig anzutreffen und es müssen mit dem traditionellen Modell Kompromisse eingegangen werden, die unterschiedlich stark ausfallen können. Kosten-Nutzen-Optimierungen sind immer notwendig, bekommen mit dem Cloud Computing aber neue Möglichkeiten. Eine Umsetzung im Cloud Umfeld könnte wie folgt aussehen. Um einen reibungslosen Betrieb in den Phasen mit weniger Aktivität zu gewährleisten und einen gewissen Puffer zu integrieren, werden für das Jahr 25 Server provisioniert. Für die Anmelde Zeiträume werden jeweils für 48 Stunden weiter 75 Server dazu geschaltet. Daraus ergäbe sich folgende Rechnung:
 \\
 \\
-Serverstunden je Tag => ((355 * 25) + (20 * 100)) * 24 / 365 = 715,07 \\
-Kosten je Tag => (715,07 * 50) / 100 = 357,53€ \\
-
+Serverstunden je Tag:    $\displaystyle \frac{((355 * 25) + (20 * 100)) * 24}{365}\; =\; \textbf{715,07}	 $\\
+\\
+Kosten je Tag:           $\displaystyle \frac{715,07 * 50}{100}\; =\; \textbf{357,53€} $\\
+\\
 Dies entspräche dem 1,34-fachem des durchschnittlichen Bedarfes und ist in erster Linie dem Puffer geschuldet. Im Vergleich zur Überprovisionierung betragen die Kosten aber nur das 0,3-fache und im Vergleich zur Unterprovisionierung das 0,6-fache ohne die einhergehenden Geschäftlichen Verluste.
 Dieses vereinfachte Beispiel macht so klar, welche Vorteile vor allem die Punkte Kosteneinsparung, Skalierbarkeit und Flexibilität in Cloud Umgebungen bringen.
 
@@ -171,16 +169,88 @@ Die Zuverlässigkeit eines Anbieters gilt weiter als Nachteil, da mehr Schnittpu
 \subsubsection{Interoperabilität}
 Viele Cloud-Anbieter bieten je nach Service viele eigenen Techniken, Produkte und Services mit denen gearbeitet wird. Prinzipiell ist dabei ein Umzug zu einem anderen Cloud Anbieter nicht vorgesehen, da es zu Inkompatibilitäten führen kann. Dies kann zu großen Problemen führen, wenn diese Anbieter ggf. insolvent gehen oder der Kunde aus anderen Gründen den Anbieter wechseln möchte. 
 
-\section{SaaS Anwendungen}
-\subsection{Monolitische versus service basierte Architekturen}
-\subsection{Herausforderungen}
-\subsubsection{Availability}
-\subsubsection{Data management}
-\subsubsection{Design and Implementation}
-\subsubsection{Messaging}
-\subsubsection{Management and Monitoring}
-\subsubsection{Performance and Scalability}
-\subsubsection{Resiliency}
-\subsubsection{Security}
+\section{Software-as-a-Service Anwendungen (SaaS)}\label{SaaS}
+Wie bereits in den vorherigen Abschnitten beschrieben, bietet das Cloud Computing viele neue Möglichkeiten. In Abschnitt~\ref{serviceModell} wurde der Begriff Software-as-a-Service erläutert und gilt heute als einer der bekanntesten Begriffe aus dem Cloud Computing Service Katalog. Da sich diese Arbeit mit der Konzeption eines Softwaresystems für Hochschulsporteinrichtungen beschäftigt soll dieses Modell in diesem Abschnitt noch einmal genauer betrachtet werden. 
+\\
+Per Definition gibt es für SaaS-Anwendungen keine speziellen Einschränkungen, wie diese aufgebaut sein muss. Aus Anbietersicht lohnt sich eine SaaS-Anwendung jedoch nur in den seltensten Fällen, sodass das Ziel meist ist, mit einer Anwendung möglichst viele Kunden gleichzeitig versorgen zu könne, ohne spezielle Anpassungen, Installationen etc. machen zu müssen. Damit wird das Multi-Tenancy Konzept zu einem zentralen neuen Bestandteil der meisten Anwendungen. Betrachtet man die Anwendungsmerkmal genauer, so lassen sich weitere Charakteristika erkennen, die im Normalfall erfüllt sein müssen:
 
+\begin{itemize}
+	\item Generalisiert und anpassbar, sodass ein breite Nutzerbasis angesprochen werden kann
+	\item Intuitive, einfache Bedienung und Navigation
+	\item Modular und Service-orientiert aufgebaut
+	\item Integrierte Messung und Monitoring für Nutzungsbasierte Abrechnung
+	\item Integrierter Rechnungsstellung
+	\item Konstante Weiterentwicklung mit neuen Features
+	\item Gewährleistung von Datenschutzrichtlinien
+	\item Unterstützung von mehreren gleichzeitigen Kunden (Multi-Tenancy)
+\end{itemize}
+
+
+\subsection{Vorteile}
+Betrachtet man die Vorteile, die auf Kundenseite durch SaaS-Anwendungen entstehen, so lässt sich leicht feststellen, dass diese zum Teil auf den Vorteilen von Cloud Computing basieren.
+\subsubsection{Kostenersparnis}
+Die Kostenersparnisse setzen sich aus mehreren Faktoren zusammen, um die SaaS Variante als günstiger bezeichnen zu können. Betrachtet man die Kosten für die Anwendungsnutzung isoliert, so sind SaaS-Anwendungen in vielen Fällen sogar teurer als traditionelle on-premise Anwendungen. Bezieht man die Kosten für IT-Infrastruktur, Skalierungsmöglichkeiten und Wartung mit ein, so ändert sich das Verhältnis zu Gunsten der SaaS-Lösung.
+
+\subsubsection{Zeitersparnis}
+Da die Software bereits beim Cloud Anbieter installiert ist, entfällt die Zeit für Installation und Einrichtung der Software und beteiligter IT-Infrastruktur.
+
+\subsubsection{Fokus auf Geschäftsaufgaben anstatt Infrastruktur}
+Der Kunde wird von kostenintensiven, zeitaufwändigen Unterstützungsaufgaben für den Betrieb der IT-Infrastruktur befreit und kann sich auf die Kernaufgaben konzentrieren.
+\begin{itemize}
+	\item Beschaffung und Wartung der hauseigenen IT-Infrastruktur, um die Software vor Ort zu betreiben 
+	\item Sicherstellung von Sicherheit, Reliabilität und Skalierbarkeit mit redundanter Hardware
+	\item Aufrechterhalten eines Update und Upgrade-Prozesses
+\end{itemize}
+
+\subsubsection{Direkter Zugriff auf Neuerungen}
+In herkömmlichen Anwendungen musste bis zu neuen Release gewartet werden, um neue Features nutzen oder Fehlerbehebungen einspielen zu können. Der Update-Aufwand und die Release Frequenz können diesen Prozess oft in die Länge ziehen. In SaaS-Anwendungen wir das Update vom Cloud Anbieter eingespielt und steht sofort zur Verfügung. Dem Anbieter ist im Rahmen des Wettbewerbsvorteils meist sehr daran gelegen, neue Features zeitnah zu Verfügung zu stellen.
+ 
+
+\subsection{Herausforderungen}
+Viele Herausforderungen, die für herkömmliche Anwendungen gelten, sind auch bei SaaS-Anwendungen anzutreffen. Hinzu kommen jedoch auch neue Herausforderungen, die bisher nicht so häufig zu Tage traten jetzt aber eine höhere Relevanz bekommen. Eine der zentralen Herausforderungen umfasst das Thema Security. Daten und Anwendung werden an den Dienstanbieter weiter gegeben und unterliegt deren Verantwortlichkeit. Für viele Firmen, Organisationen und Anwender ist die Sicherheit und der Datenschutz zu erheblichen Bedenken, die von Seiten der Anbieter beseitigt werden müssen. Eine weitere Herausforderung ergibt sich in diesem Zusammenhang mit der Multi-Tenancy-Architektur. Da SaaS-Anwendungen meist für mehrere Kunden ausgelegt ist, muss sichergestellt werden, das jeder Kunde auch nur auf seine eigenen Daten zugreifen kann. Durch das Multi-Tenancy Prinzp muss die Anwendung mit einer hohen Useranzahl und sehr unterschiedlichen Kundenwünschen zurecht kommen können. Dies stellt spezielle Anforderungen an das Architekturdesign und die Implementierung. Diese drei Kernherausforderungen sollen im Anschluss betrachtet werden.
+
+\subsubsection{Design and Implementation}
+
+
+\subsubsection{Multi-Tenant Application (MTA)}
+Bevor die MTA im Detail erklärt werden kann, ist es wichtig ein gemeinsames Verständnis von Tenant (dt. Mieter) und Multi-Tenancy (dt. Mehrfach Mieter) im Kontext von Software-Anwendungen zu schaffen. 
+\\
+\begin{tabular}{|p{4.5cm}|p{12cm}|}
+	\hline 
+	\textbf{Tenant} & Bezeichnet eine Gruppe von Benutzern, die die gleiche Sicht auf eine Software teilen. Dies bezieht sich auf die Punkte wie zugreifbare Daten, Konfiguration, User Management und Funktionalität. Ein Tenant kann zum Beispiel eine Hochschulsporteinrichtung sein. \\ 
+	\hline 
+	\textbf{Multi-Tenancy} & Beschreibt ein Modell bei dem eine Anwendungsinstanz von mehreren Tenants genutzt wird aber jeder einen eingeschränkten, isolierten Zugriff erhält. Dabei werden Performance und Datenschutz Kriterien je Tenant behandelt. \\ 
+	\hline 
+	\textbf{Multi-Tenant Application} & Teilt eine Anwendungsinstanz unter mehreren Tenants, um zusätzliche Kosten zu reduzieren. \\ 
+	\hline 
+\end{tabular}
+\\
+\cite*[vgl. ][S.2]{Krebs.2012}
+\\
+\\
+Die primäre Herausforderung in MTA liegt daher die saubere Trennung von Abläufen und Daten zwischen den einzelnen Tenants. \citeauthor{Chong.2006} zeigen in ihrem Artikel drei unterschiedliche Möglichkeiten, wie Multi-Tenant Daten verwaltet werden können.
+\\
+\\
+\textbf{Separierte Datenbanken}\\
+In diesem Ansatz werden die Daten für jeden Tenant in einer eigenen Datenbank gespeichert. Die Hardware Ressourcen und der Anwendungscode werden dabei geteilt. Innerhalb des Datenbank Management Systems (DBMS) bekommt jeder Tenant jedoch eine eigene Datenbank und auf Datenbank Zugriffsebene eine Trennung zu anderen Nutzern hergestellt. Dieser Ansatz macht es einfach das Datenmodell individuell zu erweitern und Daten aus einem Backup wiederherzustellen. Anderseits führt es zu höheren Wartungskosten, da mehrere Datenbanken verwaltet werden müssen und das Backup Prozedere komplizierter wird. Zusätzlich ist in einigen Systemen die Anzahl der Datenbanken beschränkt, sodass bei einer hohen Tenant Anzahl zusätzliche DBMS benötigt werden.
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.7\linewidth]{images/placeholder}
+		\caption{Separierte Datenbanken}
+		\label{fig:separierteDatenbanken}
+	\end{figure}
+vgl.	
+\\
+\\
+\textbf{Geteilte Datenbank, separiertes Schema}\\
+Ein alternativer Ansatz ist es, alle Tenant Daten innerhalb einer Datenbank zu speichern, wobei jeder ein eigenes Schema und Set von Tabellen mit entsprechenden Zugriffsrechten bekommt.
+Die Implementierung ist relativ einfach und erreicht ein gemäßigtes Maß an logischer Isolation. Im Gegensatz zum Ansatz mit separierten Datenbanken lassen sich so jedoch deutlich mehr Tenants unterstützen. Das wiederherstellen von Tenant spezifischen Daten aus einem Backup gestaltet sich in diesem Ansatz deutlich schwieriger. Da ein Datenbank Backup nicht einfach zurück gespielt werden kann, müssen zuerst alle Daten, aller Tenants aus einem Backup in einen Temporären Server zurück gespielt werden, um sie anschließend aus zurück in das Produktiv System spielen zu können. Diese Vorgehensweise führt zu einem erheblichen Mehraufwand im Falle von Datenverlust.
+\\
+\\
+\textbf{Geteilte Datenbank, geteiltes Schema} \\
+Dieser Ansatz basiert auf einer Datenbank und einem Set von Tabellen. Die Trennung der Daten erfolgt über das mitführen einer Tenant-ID in jedem Datensatz. Diese Lösungsstrategie erlaubt die Versorgung einer großen Tenant-Anzahl per Datenbank und erfordert daher die geringsten Hardware und Backup Kosten. Gleichzeitig erfordert es auch den höchsten Aufwand die Trennung Anwendungsseitig zu sicherzustellen, um alle Sicherheits- und Datenschutzbedingungen zu erfüllen. Die Probleme beim Wiederherstellen von Backups verhält sich wie beim Ansatz mit separiertem Schema. 
+
+ 
+\subsubsection{Security}
 
