@@ -27,7 +27,7 @@ In der Definition von \cite*[S.2]{Mell.2011} sind drei unterschiedliche Service 
 
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.7\linewidth]{images/cloud_computing_pyramide}
+		\includegraphics[width=0.5\linewidth]{images/cloud_computing_pyramide}
 		\caption{3-Ebenen Modell von Cloud Computing}
 		\label{fig:CloudComputingPyramide}
 	\end{figure}
@@ -207,14 +207,17 @@ In herkömmlichen Anwendungen musste bis zu neuen Release gewartet werden, um ne
  
 
 \subsection{Herausforderungen}
-Viele Herausforderungen, die für herkömmliche Anwendungen gelten, sind auch bei SaaS-Anwendungen anzutreffen. Hinzu kommen jedoch auch neue Herausforderungen, die bisher nicht so häufig zu Tage traten jetzt aber eine höhere Relevanz bekommen. Eine der zentralen Herausforderungen umfasst das Thema Security. Daten und Anwendung werden an den Dienstanbieter weiter gegeben und unterliegt deren Verantwortlichkeit. Für viele Firmen, Organisationen und Anwender ist die Sicherheit und der Datenschutz zu erheblichen Bedenken, die von Seiten der Anbieter beseitigt werden müssen. Eine weitere Herausforderung ergibt sich in diesem Zusammenhang mit der Multi-Tenancy-Architektur. Da SaaS-Anwendungen meist für mehrere Kunden ausgelegt ist, muss sichergestellt werden, das jeder Kunde auch nur auf seine eigenen Daten zugreifen kann. Durch das Multi-Tenancy Prinzp muss die Anwendung mit einer hohen Useranzahl und sehr unterschiedlichen Kundenwünschen zurecht kommen können. Dies stellt spezielle Anforderungen an das Architekturdesign und die Implementierung. Diese drei Kernherausforderungen sollen im Anschluss betrachtet werden.
+Viele Herausforderungen, die für herkömmliche Anwendungen gelten, sind auch bei SaaS-Anwendungen anzutreffen. Hinzu kommen jedoch weiter, neue Herausforderungen, die bisher nicht so häufig zu Tage traten jetzt aber eine höhere Relevanz bekommen. Eine der zentralen Herausforderungen umfasst das Thema Security. Daten und Anwendung werden an den Dienstanbieter weiter gegeben und unterliegt deren Verantwortlichkeit. Für viele Firmen, Organisationen und Anwender ist die Sicherheit und der Datenschutz zu erheblichen Bedenken, die von Seiten der Anbieter beseitigt werden müssen. Eine weitere Herausforderung ergibt sich in diesem Zusammenhang mit der Multi-Tenancy-Architektur. Da SaaS-Anwendungen meist für mehrere Kunden ausgelegt ist, muss sichergestellt werden, das jeder Kunde auch nur auf seine eigenen Daten zugreifen kann. Durch das Multi-Tenancy Prinzp muss die Anwendung mit einer hohen Useranzahl und sehr unterschiedlichen Kundenwünschen zurecht kommen können. Dies stellt spezielle Anforderungen an das Architekturdesign und die Implementierung. Da SaaS-Anwendungen als ein spezieller Service des Cloud Computing zu sehen sind, beanspruchen sie für sich die Vorteile für sich am besten Nutzbar machen zu können. Damit werden besondere Ansprüche an die Kernpunkte Skalierbarkeit und Flexibilität gestellt. Diese drei Kernherausforderungen sollen im Anschluss betrachtet werden.
 
-\subsubsection{Design and Implementation}
 
+\subsubsection{Architektur und Design}
+Software Architektur und Design sind komplexe Konstrukte, die von vielen Seiteneffekten \textbf{BENENNEN} beeinflusst werden. Ein passendes Konzept für die jeweilige Anwendung zu finden ist daher äußerst schwierig und kann sich im Lebenszyklus einer Anwendung durchaus ändern. Auch gibt es für SaaS-Anwendungen nicht die richtige oder falsche Architektur jedoch lassen sich anhand der Anforderungen geeignete und ungeeignete Modelle identifizieren.\\
+Monolithische Software Systeme sind in der Software-Entwicklung eine der am häufigsten Anzutreffenden 
 
 \subsubsection{Multi-Tenant Application (MTA)}
 Bevor die MTA im Detail erklärt werden kann, ist es wichtig ein gemeinsames Verständnis von Tenant (dt. Mieter) und Multi-Tenancy (dt. Mehrfach Mieter) im Kontext von Software-Anwendungen zu schaffen. 
 \\
+\begin{table}[h]
 \begin{tabular}{|p{4.5cm}|p{12cm}|}
 	\hline 
 	\textbf{Tenant} & Bezeichnet eine Gruppe von Benutzern, die die gleiche Sicht auf eine Software teilen. Dies bezieht sich auf die Punkte wie zugreifbare Daten, Konfiguration, User Management und Funktionalität. Ein Tenant kann zum Beispiel eine Hochschulsporteinrichtung sein. \\ 
@@ -224,19 +227,18 @@ Bevor die MTA im Detail erklärt werden kann, ist es wichtig ein gemeinsames Ver
 	\textbf{Multi-Tenant Application} & Teilt eine Anwendungsinstanz unter mehreren Tenants, um zusätzliche Kosten zu reduzieren. \\ 
 	\hline 
 \end{tabular}
-\\
-\cite*[vgl. ][S.2]{Krebs.2012}
-\\
-\\
+		\caption{Begriffserklärung Tenant \cite*[vgl. ][S.2]{Krebs.2012}}
+\end{table}
+
 Die primäre Herausforderung in MTA liegt daher die saubere Trennung von Abläufen und Daten zwischen den einzelnen Tenants. \citeauthor{Chong.2006} zeigen in ihrem Artikel drei unterschiedliche Möglichkeiten, wie Multi-Tenant Daten verwaltet werden können.
 \\
 \\
 \textbf{Separierte Datenbanken}\\
-In diesem Ansatz werden die Daten für jeden Tenant in einer eigenen Datenbank gespeichert. Die Hardware Ressourcen und der Anwendungscode werden dabei geteilt. Innerhalb des Datenbank Management Systems (DBMS) bekommt jeder Tenant jedoch eine eigene Datenbank und auf Datenbank Zugriffsebene eine Trennung zu anderen Nutzern hergestellt. Dieser Ansatz macht es einfach das Datenmodell individuell zu erweitern und Daten aus einem Backup wiederherzustellen. Anderseits führt es zu höheren Wartungskosten, da mehrere Datenbanken verwaltet werden müssen und das Backup Prozedere komplizierter wird. Zusätzlich ist in einigen Systemen die Anzahl der Datenbanken beschränkt, sodass bei einer hohen Tenant Anzahl zusätzliche DBMS benötigt werden.
+In diesem Ansatz werden die Daten für jeden Tenant in einer eigenen Datenbank gespeichert (vgl. Abbildung~\ref{fig:separierteDatenbanken}). Die Hardware Ressourcen und der Anwendungscode werden dabei geteilt. Innerhalb des Datenbank Management Systems (DBMS) bekommt jeder Tenant jedoch eine eigene Datenbank und auf Datenbank Zugriffsebene eine Trennung zu anderen Nutzern hergestellt. Dieser Ansatz macht es einfach das Datenmodell individuell zu erweitern und Daten aus einem Backup wiederherzustellen. Anderseits führt es zu höheren Wartungskosten, da mehrere Datenbanken verwaltet werden müssen und das Backup Prozedere komplizierter wird. Zusätzlich ist in einigen Systemen die Anzahl der Datenbanken beschränkt, sodass bei einer hohen Tenant Anzahl zusätzliche DBMS benötigt werden.
 
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=0.7\linewidth]{images/placeholder}
+		\includegraphics[width=0.7\linewidth]{images/separierte_datenbanken}
 		\caption{Separierte Datenbanken}
 		\label{fig:separierteDatenbanken}
 	\end{figure}
@@ -245,12 +247,145 @@ vgl.
 \\
 \textbf{Geteilte Datenbank, separiertes Schema}\\
 Ein alternativer Ansatz ist es, alle Tenant Daten innerhalb einer Datenbank zu speichern, wobei jeder ein eigenes Schema und Set von Tabellen mit entsprechenden Zugriffsrechten bekommt.
-Die Implementierung ist relativ einfach und erreicht ein gemäßigtes Maß an logischer Isolation. Im Gegensatz zum Ansatz mit separierten Datenbanken lassen sich so jedoch deutlich mehr Tenants unterstützen. Das wiederherstellen von Tenant spezifischen Daten aus einem Backup gestaltet sich in diesem Ansatz deutlich schwieriger. Da ein Datenbank Backup nicht einfach zurück gespielt werden kann, müssen zuerst alle Daten, aller Tenants aus einem Backup in einen Temporären Server zurück gespielt werden, um sie anschließend aus zurück in das Produktiv System spielen zu können. Diese Vorgehensweise führt zu einem erheblichen Mehraufwand im Falle von Datenverlust.
+Die Implementierung ist relativ einfach und erreicht ein gemäßigtes Maß an logischer Isolation. Im Gegensatz zum Ansatz mit separierten Datenbanken lassen sich so jedoch deutlich mehr Tenants unterstützen (vgl. Abbildung~\ref{fig:geteilteDatenbank}). Das wiederherstellen von Tenant spezifischen Daten aus einem Backup gestaltet sich in diesem Ansatz deutlich schwieriger. Da ein Datenbank Backup nicht einfach zurück gespielt werden kann, müssen zuerst alle Daten, aller Tenants aus einem Backup in einen Temporären Server zurück gespielt werden, um sie anschließend aus zurück in das Produktiv System spielen zu können. Diese Vorgehensweise führt zu einem erheblichen Mehraufwand im Falle von Datenverlust.
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\linewidth]{images/geteilte_datenbanken-separiertes_schema}
+		\caption{Geteilte Datenbank und separierte Schemata}
+		\label{fig:geteilteDatenbank}
+	\end{figure}
+	vgl.
 \\
 \\
 \textbf{Geteilte Datenbank, geteiltes Schema} \\
-Dieser Ansatz basiert auf einer Datenbank und einem Set von Tabellen. Die Trennung der Daten erfolgt über das mitführen einer Tenant-ID in jedem Datensatz. Diese Lösungsstrategie erlaubt die Versorgung einer großen Tenant-Anzahl per Datenbank und erfordert daher die geringsten Hardware und Backup Kosten. Gleichzeitig erfordert es auch den höchsten Aufwand die Trennung Anwendungsseitig zu sicherzustellen, um alle Sicherheits- und Datenschutzbedingungen zu erfüllen. Die Probleme beim Wiederherstellen von Backups verhält sich wie beim Ansatz mit separiertem Schema. 
-
- 
+Dieser Ansatz basiert auf einer Datenbank und einem Set von Tabellen. Die Trennung der Daten erfolgt über das mitführen einer Tenant-ID in jedem Datensatz wie in Abbildung~\ref{fig:geteilteDatenbankundSchema} zu sehen. Diese Lösungsstrategie erlaubt die Versorgung einer großen Tenant-Anzahl per Datenbank und erfordert daher die geringsten Hardware und Backup Kosten. Gleichzeitig erfordert es auch den höchsten Aufwand die Trennung Anwendungsseitig zu sicherzustellen, um alle Sicherheits- und Datenschutzbedingungen zu erfüllen. Die Probleme beim Wiederherstellen von Backups verhält sich wie beim Ansatz mit separiertem Schema. 
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\linewidth]{images/geteilte_datenbank-geteiltes_schema}
+		\caption{Geteilte Datenbank und Schema}
+		\label{fig:geteilteDatenbankundSchema}
+	\end{figure}
+	vgl.
+\\
+\\
+adfkadf 
 \subsubsection{Security}
+
+
+\subsection{Softwarearchitektur}
+Die Definitionen, was Softwarearchitektur ist und wie dieser Term zu definieren ist, unterscheidet sich bei einzelnen Autoren. \citet*[S. 4]{Bass.2013} verwenden für mich eine sehr passende Definition des Begriffes:
+	\begin{quote} 
+	The software architecture of a system is the set of structures needed to reason about the system, which comprise software elements, relations among them, and properties of both.
+	 \end{quote}
+Vor allem die Zusammenhänge sind hier von Bedeutung, denn auch wenn das Design der Architektur nicht endgültig sein muss und sich im Laufe der Entwicklung noch Veränderungen und Anpassungen ergeben könne, so ist es doch von Anfang an wichtig eine Vorstellung über die geplanten Zusammenhänge im gesamten Team zu entwickeln.\\
+Für das Verständnis, welche Prinzipien sich für eine SaaS-Anwendung eignen, will drei grundlegende Architekturen darstellen, die sich in den Zusammenhängen unterscheiden. Jede diese Architekturen lässt sich optimieren, anpassen und so besser nutzbar machen und oftmals gibt es auch unterschiedliche Kombinationen die zum gewünschten Erfolg führen.
+	\subsubsection{Monolitisch}
+	Eine der am weitest verbreiteten Software Architekturen ist die monolithische Architektur. Gerade zentrale Server Anwendungen sind häufig nach diesem Prinzip aufgebaut. Die Stärken dieser Architektur liegen in:
+	\begin{itemize}
+	\item Einfach zu entwickeln - Das Ziel bestehender Entwicklungstools ist es die Erstellung monolithischer Programme zu unterstützen 
+	\item Einfach auszuliefern - Nur die Anwendung als Ganzes muss ausgeliefert werden
+	\item Einfach zu skalieren - Hinter einem Lastverteiler können einfach mehrere Kopien der Anwendung laufen
+	\end{itemize}
+	
+	Durch diese Vorteile hat sich dieses Architektur Prinzip weit verbreitet und ist jedem Entwickler bekannt. Gerade für kleine bis mittelgroße Projekte sind die genannten Faktoren entscheidend. Der interne Aufbau der Anwendung kann dabei jedoch sehr unterschiedlich gestaltet sein. In den meisten Fällen ist allerdings ein Schicht-Aufbau zu erkennen, der unterschiedliche Komponenten intern trennt. Gängige Schichten in einer Webanwendung sind folgende:
+	\begin{itemize}
+	\item Präsentation - Darstellung und Verwalten von HTTP Anfragen und Ergebnissen in HTML oder JSON/XML Format
+	\item Geschäftslogik - Interne Logik für Geschäftsabläufe
+	\item Datenbank Zugriff - Zuständig für alle Zugriffe auf die Datenbank
+	\item Anwendungsintegration - Nachrichten Transfer, Email etc.
+	\end{itemize}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.9\linewidth]{images/TraditionalWebArchitecture}
+		\caption{Traditionelle Webanwendungs Architektur}
+		\label{fig:TraditionalWebArchitecture}
+	\end{figure}
+
+	\cite*{Richardson.2014} sieht jedoch auch eine Reihe von Nachteilen dieser Architektur, die mit zunehmender Größe der Anwendung und wachsender Teamgröße immer signifikanter werden.
+	
+	\begin{itemize}
+	\item Die große monolithische Codebasis kann neue Entwickler schnell einschüchtern. Änderungen und Verständnis können schwierig sein und die Entwicklung verlangsamen. Durch fehlende Modulgrenzen geht im laufe der Zeit die Modularität verloren.
+	\item Mit wachsender Größe er Codebasis werden die IDEs (Integrierte Entwicklungsumgeben) langsamer und bremsen die Produktivität
+	\item Anwendungsstart wird zunehmend länger und hat einen großen Effekt auf die Produktivität der Entwickler und die Auslieferung. Wartezeit ist verschwendete Zeit.
+	\item \textbf{Continuous deployment is difficult }
+	\item Das Skalieren der Anwendung kann schwierig werden, da es nur in eine Dimension skalieren kann. Mit wachsenden Transaktionen kann das System durch zusätzlich Instanzen skaliert werden. Hingegen kann bei einem wachsenden Datenvolumen diese Architektur nicht gut skalieren. Jede Instanz greift auf alle Daten zurück und führt zu wenig effektivem Caching, höherem Speicherverbrauch sowie zusätzlichem I/O traffic. Außerdem können unterschiedliche Anwendungsbereiche verschiedene Anforderungen z.B. CPU haben, das skalieren von einzelnen Komponenten ist jedoch unmöglich.
+	\item Die monolithische Architektur hat Grenzen wie die Entwicklung skalieren kann. Bei einer entsprechenden Anwendungsgröße werden Teams gebildet, die für spezielle Bereiche verantwortlich sind z.B. UI Team, Buchhaltungs Team etc.
+	Die enge Verzahnung der einzelnen Bereiche erschwert jedoch die unabhängige Arbeit.
+	\item Mit dem Beginn der Entwicklung muss sich auf eine Technologie und ggf. eine Version festgelegt werden, die es sehr schwer macht neue Technologien zu adaptieren. Eine inkrementelle Umstellung gestaltet sich als schwierig, wobei eine vollständige Ersetzung der aktuellen Technologie sehr kostenintensiv ist und das Problem im Kern nicht behebt.
+	\end{itemize}
+	
+	\subsubsection{Client/Server-Architekturmodell}
+	Im Gegensatz zur monolitischen Architektur handelt es sich beim Client/Server Modell um ein verteiltes System.
+	Das Client/Server-Architekturmodel ist ein Systemmodell, das aus einer Anzahl von zugehörigen Diensten und Servern besteht, sowie aus Clients, die diese Dienste nutzen und auf sie zugreifen. Das einfachste Modell ist dabei das zweischichtige Client/Server Modell, die zusammen ein komplettes System bilden mit unterschiedlichen Zuständigkeiten. \\
+	Dabei lassen sich drei logische Hauptbestandteile unterschieden.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\linewidth]{images/Clients-und-Server}
+		\caption{Client Server Model}
+		\label{fig:client-server}
+	\end{figure}
+	
+	\paragraph{Server}
+	Der Server ist die zentrale Einheit der Architektur. Sie stellt Services und Daten anderen Einheiten zur Verfügung. Der Server muss nicht zwingend wissen, welche und wie viele Einheiten die von ihm zur Verfügung gestellten Dienste und Daten nutzen.
+	
+	\paragraph{Client}
+	Clients können in beliebig großer Anzahl existieren. Sie nehmen die Daten oder Services, die vom Server bereitgestellt werden in Anspruch. Um mit den Diensten interagieren zu können, muss ein Client von der Existenz und dessen Adresse wissen. Der Client sendet eine Anfrage an den Server und bekommt ein Resultat zurück geliefert. \citet*[S. 302]{Sommerville.2007} unterscheidet folgende zwei Client-Modelle:
+	\\
+	\\
+	\textbf{Thin-Client-Modell}\\
+	Bei diesem Modell werden die gesamten Anwendungsprozesse und Datenhaltung auf dem Server erledigt. Der Client ist nur für die Darstellung verantwortlich. Daraus ergibt sich der Vorteil, dass sehr wenig Ressourcen für den Client benötigt werden und dieser sich auch auf kleinen Systemen (z.B. Terminals) implementieren lässt. Der Nachteil dieses Modelles liegt jedoch darin, dass so sämtliche Arbeit Serverseitig geleistet werden muss. Gerade bei Anwendungen mit großer Client Anzahl oder rechenintensiven Operationen kann so der Server schnell zur kritischen Komponente werden und das System vor Skalierungsprobleme stellen. Zusätzlich führt der Thin-Client zu einer erhöhten Netzwerkbelastung, da alle Daten vom Server zum Client transportiert werden müssen.
+	\\
+	\\
+\textbf{Fat-Client-Modell}\\
+	Dieses Modell verlagert die Anwendungslogik vollständig oder in großen Teilen vom Server direkt in den Client. Dadurch kann der Server deutlich entlastet werden und die Rechenleistung des Client Rechners zusätzlich genutzt werden. Dies kann sich in speziellen Situationen allerdings auch als Nachteile erweisen, wenn die Client Computer die notwendige Rechenleistung nicht selbstständig bereitstellen könne. Der Server fungiert dabei nur noch als Daten Service und die Netzwerklast wird reduziert. Die Verlagerung der Anwendungslogik auf den Client bringt aber auch Nachteile mit sich. Müssen hier Änderungen vorgenommen werden, so müssen alle Clients auf die neue Version aktualisiert werden, was zu einem komplexen Systemmanagement führen kann. Der Aufwand dafür steigt mit zunehmender Zahl der Clients.
+	
+	\paragraph{Netzwerk (optional)}
+	In der Literatur wird das Netzwerk häufig noch ein dritter Bestandteil aufgeführt, der jedoch nicht zwingend notwendig ist da prinzipiell Server und Client auf einem Computer ausgeführt werden können und so kein Netzwerk zur Kommunikation benötigen. Da dieses Modell aber in der Praxis nahezu ausschließlich als verteiltes System angewendet wird, ist in diesen Fällen das Netzwerk grundlegende Kommunikationsgrundlage.
+	\\
+	
+	Generell hat das zweischichtige Client/Server Modell das Problem, dass die drei logischen Schichten auf zwei unterschiedlichen Computersystemen abgebildet werden müssen. \\
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\linewidth]{images/placeholder}
+		\caption{Logische drei Schichten}
+		\label{fig:log3schichten}
+	\end{figure}
+	
+	Als Alternativansatz hat sich dafür die dreischichtige System-Architektur Entwickelt. Sie stellt für jede logische Schicht ein separates Computersystem zur Verfügung. Die Vorteile liegen dabei in der besseren Skalierbarkeit, da jedes System individuell skaliert werden kann, geringere Netzwerklast im Vergleich zum Thin-Client-Modell und Anwendungsprozesse sind zentralisiert und lassen sich dort leichter anpassen und aktualisieren.
+	
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\linewidth]{images/placeholder}
+		\caption{Dreischichtige Architektur}
+		\label{fig:3-tier-architecture}
+	\end{figure}
+
+
+	\citeauthor{Sommerville.2007} gibt in seinem Buch Software Engineering Beispiele, wann die Anwendung der jeweiligen Architektur sinnvoll ist.
+	
+	\begin{table}[h]
+	\begin{tabular}{|p{3.5cm}|p{12.5cm}|}
+		\hline 
+		\textbf{Architektur} & \textbf{Anwendung} \\ 
+		\hline 
+		Zweischichtige C/S-Architektur mit Thin-Clients & Anwendungen mit Legacy-Systemen, bei denen die Trennung von Anwendungsprozessen und Datenmanagement nicht praktikabel ist Rechenintensive Anwendungen wie zum Beispiel Compiler mit geringem oder keinem Datenmanagement -Datenintensive Anwendungen (Browser oder Abfragesysteme) mit wenig oder keinen Anwendungsprozessen \\
+		\hline 
+		Zweischichtige C/S-Architektur mit Fat-Clients & Anwendungen, bei denen die Prozesse durch Standardanwendungen (z.b. Microsoft Excel) auf dem Client verarbeitet werden Anwendungen mit rechenintensiver Datenverarbeitung (z.B. Datenvisualisierung) Anwendungen mit relativ stabiler Endbenutzerfunktionalität, die in einer Umgebung mit gut strukturiertem Systemmanagement angeordnet sind \\ 
+		\hline 
+		Drei- oder mehrschichtige C/S-Architektur & Anwendungen großen Umfangs mit Hunderten oder Tausenden von Clients Anwendungen, bei denen sowohl die Daten als auch die Anwendung selbst ständigen Veränderungen unterliegen Anwendungen, bei denen Daten aus vielfältigen Quellen verarbeitet werden \\ 
+		\hline 
+	\end{tabular} 
+			\caption{Verwendungsbeispiele von mehrschichtigen Architekturen \cite{Sommerville.2007}}
+	\end{table}
+	
+	
+	\subsubsection{Dienstbasiert}
+	Neben den beiden oben genannten Architekturen hat sich eine weitere Form verbreitet. Bei der dienstbasierten Architektur spricht man von einem Architekturmuster aus dem Bereich der verteilten Systeme. Der Schwerpunkt wird dabei auf eigenständige Dienste als primäre Komponente gelegt, auf die über eine Art Remote-Protokoll zugegriffen werden kann. Die Art des Protokolls ist dabei nicht festgelegt oder auf eines beschränkt wie z.B. Representational State Transfer (REST), Simple Object Access Protocol (SOAP), Advanced Message Queuing Protokol (AMQP) oder andere geschehen.
+	Dienstbasierten Architekturen werden signifikante Vorteile im Bezug auf Skalierbarkeit, Entkopplung, Kontrolle über die Entwicklung, Testing und Deployment zugeschrieben. Verteilte Systeme tendieren zudem dazu weniger abhängig und besser modular aufgebaut zu sein. Im Zusammenhang mit dienstabasierten Architekturen bedeutet das, das jeder Dienst eine in sich geschlossen Einheit bildet, sie selbst designed, entwickelt, getestet und ausgeliefert wird.  Abhängigkeiten zu anderen Komponenten sollten dabei nicht, oder nur minimal bestehen. \\
+	Diese Vorteile bringen jedoch auch einige Nachteile mit sich, so zählen erhöhte Komplexität und höhere initiale Kosten zu den meist genannten Argumenten.
 

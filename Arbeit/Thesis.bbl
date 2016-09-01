@@ -28,6 +28,40 @@ Achimugu, P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Armbrust%
+\ \protect \BOthers {.}}{%
+Armbrust%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+Armbrust.2010}
+\APACinsertmetastar {%
+Armbrust.2010}%
+\begin{APACrefauthors}%
+Armbrust, M.%
+, Fox, A.%
+, Griffith, R.%
+, Joseph, A\BPBI D.%
+, Katz, R.%
+, Konwinski, A.%
+\BDBL {}Zaharia, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A} {V}iew of {C}loud {C}omputing} {{A} {V}iew of
+  {C}loud {C}omputing}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Commun. ACM}{53}{4}{50--58}.
+\newblock
+\begin{APACrefURL} \url{http://doi.acm.org/10.1145/1721654.1721672}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1145/1721654.1721672} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Balzert%
 }{%
 Balzert%
@@ -48,6 +82,33 @@ Balzert, H.%
   {{L}ehrbuch der {S}oftware-{T}echnik - {S}oftware-{E}ntwicklung}.
 \newblock
 \APACaddressPublisher{Heidelberg [u.a.]}{Spektrum Akadem. Verl.}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bass%
+, Clements%
+\BCBL {}\ \BBA {} Kazman%
+}{%
+Bass%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+Bass.2013}
+\APACinsertmetastar {%
+Bass.2013}%
+\begin{APACrefauthors}%
+Bass, L.%
+, Clements, P.%
+\BCBL {}\ \BBA {} Kazman, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2013}.
+\newblock
+\APACrefbtitle {{S}oftware architecture in practice} {{S}oftware architecture
+  in practice}\ (\PrintOrdinal{3rd ed}\ \BEd).
+\newblock
+\APACaddressPublisher{Upper Saddle River and NJ}{Addison-Wesley}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -250,6 +311,31 @@ Radde, G.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Richardson%
+}{%
+Richardson%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+Richardson.2014}
+\APACinsertmetastar {%
+Richardson.2014}%
+\begin{APACrefauthors}%
+Richardson, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+\APACrefbtitle {{P}attern: {M}onolithic {A}rchitecture.} {{P}attern:
+  {M}onolithic {A}rchitecture.}
+\newblock
+\begin{APACrefURL}
+  [{05.07.2016}]\url{http://microservices.io/patterns/monolithic.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Siegele%
 }{%
 Siegele%
@@ -270,6 +356,29 @@ Siegele, L.%
   {{L}et it rise: {A} special report on corporate {I}{T}}.{\BBCQ}
 \newblock
 \APACjournalVolNumPages{Economist Newspaper}{}{8603}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sommerville%
+}{%
+Sommerville%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+Sommerville.2007}
+\APACinsertmetastar {%
+Sommerville.2007}%
+\begin{APACrefauthors}%
+Sommerville, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2007}.
+\newblock
+\APACrefbtitle {{S}oftware-{E}ngineering} {{S}oftware-{E}ngineering}\
+  (\PrintOrdinal{8.}\ \BEd).
+\newblock
+\APACaddressPublisher{M{\"u}nchen and Boston [u.a.]}{Pearson Studium}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

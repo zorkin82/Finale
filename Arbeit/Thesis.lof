@@ -1,1 +1,18 @@
 \select@language {ngerman}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 3-Ebenen Modell von Cloud Computing}}{12}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Public und Private Cloud Architektur}}{14}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Hybrid Cloud Architektur}}{15}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Provisionierung f\IeC {\"u}r Lastspitzen}}{19}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Unterprovisionierung}}{20}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Separierte Datenbanken}}{26}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Geteilte Datenbank und separierte Schemata}}{27}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Geteilte Datenbank und Schema}}{28}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Traditionelle Webanwendungs Architektur}}{30}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Client Server Model}}{31}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Logische drei Schichten}}{33}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Dreischichtige Architektur}}{34}{figure.3.12}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

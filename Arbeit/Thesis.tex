@@ -12,7 +12,7 @@
 \usepackage{graphicx}
 
 \usepackage[natbibapa]{apacite}
-  
+%\geometry{inner=4cm,outer=2.5cm}
 \hypersetup{%
   pdftitle={Diplomarbeit},
   pdfauthor={D. Beckmann},
@@ -67,7 +67,8 @@
 %    Sie hat immer ein offenes Ohr\\
 %    f"ur unsere Fragen und Anregungen.}
 
-
+%\addtocounter{tocdepth}{1}
+\setcounter{secnumdepth}{4}
 \begin{document}
 	
   \makethesistitle
@@ -76,11 +77,11 @@
   \tableofcontents 
   \clearpage
   
-  %\listoffigures 
-  %\clearpage
+  \listoffigures 
+  \clearpage
   
-  %\listoftables 
-  %\clearpage
+  \listoftables 
+  \clearpage
   
 	\include{einleitung} 
 	

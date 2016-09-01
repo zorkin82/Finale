@@ -1,9 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.6.20)  28 AUG 2016 17:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/W32TeX) (format=pdflatex 2014.5.23)  2 SEP 2016 00:11
 entering extended mode
-**./grundlagen.tex
-(grundlagen.tex
-LaTeX2e <2016/03/31>
-Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**grundlagen.tex
+(./grundlagen.tex
+LaTeX2e <2011/06/27>
+Babel <3.9k> and hyphenation patterns for 78 languages loaded.
 ! Undefined control sequence.
 l.1 \chapter
             {Technische und fachliche Grundlagen}
@@ -13024,17 +13026,17 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no n in font nullfont!
 )
 ! Emergency stop.
-<*> ./grundlagen.tex
-                    
+<*> grundlagen.tex
+                  
 *** (job aborted, no legal \end found)
 
  
 Here is how much of TeX's memory you used:
- 18 strings out of 493335
- 202 string characters out of 3140628
- 62211 words of memory out of 3000000
- 3646 multiletter control sequences out of 15000+200000
- 3948 words of font info for 15 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 19i,8n,21p,836b,117s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 17 strings out of 493308
+ 245 string characters out of 6141367
+ 61434 words of memory out of 5000000
+ 3575 multiletter control sequences out of 15000+600000
+ 3948 words of font info for 15 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 19i,8n,21p,833b,116s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
