@@ -28,40 +28,6 @@ Achimugu, P.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Armbrust%
-\ \protect \BOthers {.}}{%
-Armbrust%
-\ \protect \BOthers {.}}{%
-{\protect \APACyear {2010}}%
-}]{%
-Armbrust.2010}
-\APACinsertmetastar {%
-Armbrust.2010}%
-\begin{APACrefauthors}%
-Armbrust, M.%
-, Fox, A.%
-, Griffith, R.%
-, Joseph, A\BPBI D.%
-, Katz, R.%
-, Konwinski, A.%
-\BDBL {}Zaharia, M.%
-\end{APACrefauthors}%
-\unskip\
-\newblock
-\APACrefYearMonthDay{2010}{}{}.
-\newblock
-{\BBOQ}\APACrefatitle {{A} {V}iew of {C}loud {C}omputing} {{A} {V}iew of
-  {C}loud {C}omputing}.{\BBCQ}
-\newblock
-\APACjournalVolNumPages{Commun. ACM}{53}{4}{50--58}.
-\newblock
-\begin{APACrefURL} \url{http://doi.acm.org/10.1145/1721654.1721672}
-  \end{APACrefURL}
-\newblock
-\begin{APACrefDOI} \doi{10.1145/1721654.1721672} \end{APACrefDOI}
-\PrintBackRefs{\CurrentBib}
-
-\bibitem [\protect \citeauthoryear {%
 Balzert%
 }{%
 Balzert%
@@ -162,6 +128,31 @@ Chong, F.%
 \newblock
 \begin{APACrefURL}
   [{17.08.2016}]\url{https://msdn.microsoft.com/en-us/library/aa479086.aspx}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fowler%
+}{%
+Fowler%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+Fowler.2010}
+\APACinsertmetastar {%
+Fowler.2010}%
+\begin{APACrefauthors}%
+Fowler, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+\APACrefbtitle {{R}ichardson {M}aturity {M}odel.} {{R}ichardson {M}aturity
+  {M}odel.}
+\newblock
+\begin{APACrefURL}
+  [{06.07.2016}]\url{http://martinfowler.com/articles/richardsonMaturityModel.html}
   \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
@@ -280,6 +271,31 @@ Mell, P\BPBI M.%
 \newblock
 \APACaddressPublisher{Gaithersburg and MD and United States}{National Institute
   of Standards {\&} Technology}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Melzer%
+}{%
+Melzer%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+Melzer.2010}
+\APACinsertmetastar {%
+Melzer.2010}%
+\begin{APACrefauthors}%
+Melzer, I.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2010}.
+\newblock
+\APACrefbtitle {{S}ervice-orientierte {A}rchitekturen mit {W}eb {S}ervices:
+  {K}onzepte - {S}tandards - {P}raxis} {{S}ervice-orientierte {A}rchitekturen
+  mit {W}eb {S}ervices: {K}onzepte - {S}tandards - {P}raxis}\
+  (\PrintOrdinal{4}\ \BEd).
+\newblock
+\APACaddressPublisher{Heidelberg}{Spektrum Akademischer Verlag}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%

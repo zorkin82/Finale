@@ -6,8 +6,6 @@ A level-1 auxiliary file: hochschulsport.aux
 A level-1 auxiliary file: cloud.aux
 A level-1 auxiliary file: konzept.aux
 A level-1 auxiliary file: zusammenfassung.aux
-A level-1 auxiliary file: glossar.aux
-A level-1 auxiliary file: anhang.aux
 The style file: apacite.bst
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
@@ -20,44 +18,44 @@ Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: literatur_full.bib
 apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 15 entries,
+You've used 16 entries,
             6951 wiz_defined-function locations,
-            1388 strings with 14028 characters,
-and the built_in function-call counts, 25137 in all, are:
-= -- 3136
-> -- 234
-< -- 997
-+ -- 954
-- -- 32
-* -- 1495
-:= -- 4171
-add.period$ -- 67
-call.type$ -- 15
-change.case$ -- 245
+            1389 strings with 13968 characters,
+and the built_in function-call counts, 26174 in all, are:
+= -- 3286
+> -- 227
+< -- 1068
++ -- 989
+- -- 34
+* -- 1547
+:= -- 4435
+add.period$ -- 72
+call.type$ -- 16
+change.case$ -- 262
 chr.to.int$ -- 0
-cite$ -- 30
-duplicate$ -- 703
-empty$ -- 1154
-format.name$ -- 364
-if$ -- 5063
+cite$ -- 32
+duplicate$ -- 681
+empty$ -- 1198
+format.name$ -- 334
+if$ -- 5278
 int.to.chr$ -- 0
-int.to.str$ -- 45
+int.to.str$ -- 48
 missing$ -- 0
-newline$ -- 379
-num.names$ -- 120
-pop$ -- 762
+newline$ -- 391
+num.names$ -- 128
+pop$ -- 834
 preamble$ -- 1
-purify$ -- 59
+purify$ -- 63
 quote$ -- 0
-skip$ -- 1588
+skip$ -- 1624
 stack$ -- 0
-substring$ -- 1072
-swap$ -- 422
-text.length$ -- 47
+substring$ -- 1106
+swap$ -- 412
+text.length$ -- 49
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 1392
+type$ -- 1472
 warning$ -- 0
-while$ -- 130
+while$ -- 121
 width$ -- 0
-write$ -- 459
+write$ -- 465

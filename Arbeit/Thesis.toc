@@ -1,60 +1,59 @@
 \select@language {ngerman}
-\contentsline {chapter}{\numberline {1}Einleitung}{6}{chapter.1}
-\contentsline {chapter}{\numberline {2}Analyse der Fachdom\IeC {\"a}ne Hochschulsport}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Historische Entwicklung des Hochschulsports}{7}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Hochschulsport heute}{7}{subsection.2.1.1}
-\contentsline {section}{\numberline {2.2}Typische Aufgaben}{9}{section.2.2}
-\contentsline {section}{\numberline {2.3}Organisationsformen}{9}{section.2.3}
-\contentsline {section}{\numberline {2.4}Befragung ausgew\IeC {\"a}hlter Standorte}{10}{section.2.4}
-\contentsline {section}{\numberline {2.5}Wichtige Gesch\IeC {\"a}ftsprozesse}{10}{section.2.5}
-\contentsline {section}{\numberline {2.6}Probleme und Herausforderungen}{10}{section.2.6}
-\contentsline {chapter}{\numberline {3}Cloud Computing}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Merkmale}{12}{section.3.1}
-\contentsline {subsubsection}{\numberline {3.1.0.1}On-demand self-service}{12}{subsubsection.3.1.0.1}
-\contentsline {subsubsection}{\numberline {3.1.0.2}Broad network access}{12}{subsubsection.3.1.0.2}
-\contentsline {subsubsection}{\numberline {3.1.0.3}Resoruce pooling}{12}{subsubsection.3.1.0.3}
-\contentsline {subsubsection}{\numberline {3.1.0.4}Rapid elasticity}{12}{subsubsection.3.1.0.4}
-\contentsline {subsubsection}{\numberline {3.1.0.5}Measured service}{12}{subsubsection.3.1.0.5}
-\contentsline {section}{\numberline {3.2}Service Modell}{12}{section.3.2}
-\contentsline {section}{\numberline {3.3}Bereitstellung Modell}{13}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Private Cloud}{14}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Public Cloud}{14}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Hybrid Cloud}{15}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}Pro \& Contra}{16}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Vorteile}{16}{subsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.1.1}Einfachheit}{16}{subsubsection.3.4.1.1}
-\contentsline {subsubsection}{\numberline {3.4.1.2}Kostenersparnis}{16}{subsubsection.3.4.1.2}
-\contentsline {subsubsection}{\numberline {3.4.1.3}Skalierbarkeit und Flexibilit\IeC {\"a}t}{17}{subsubsection.3.4.1.3}
-\contentsline {subsubsection}{\numberline {3.4.1.4}Zukunfts- und Ausfallsicherheit}{18}{subsubsection.3.4.1.4}
-\contentsline {subsubsection}{\numberline {3.4.1.5}Nachhaltigkeit}{18}{subsubsection.3.4.1.5}
-\contentsline {subsubsection}{\numberline {3.4.1.6}Beispiel}{19}{subsubsection.3.4.1.6}
-\contentsline {subsection}{\numberline {3.4.2}Nachteile}{21}{subsection.3.4.2}
-\contentsline {subsubsection}{\numberline {3.4.2.1}Sicherheit und Datenschutz}{21}{subsubsection.3.4.2.1}
-\contentsline {subsubsection}{\numberline {3.4.2.2}Abh\IeC {\"a}ngigkeit}{21}{subsubsection.3.4.2.2}
-\contentsline {subsubsection}{\numberline {3.4.2.3}Internetzugang}{21}{subsubsection.3.4.2.3}
-\contentsline {subsubsection}{\numberline {3.4.2.4}Verf\IeC {\"u}gbarkeit}{22}{subsubsection.3.4.2.4}
-\contentsline {subsubsection}{\numberline {3.4.2.5}Interoperabilit\IeC {\"a}t}{22}{subsubsection.3.4.2.5}
-\contentsline {section}{\numberline {3.5}Software-as-a-Service Anwendungen (SaaS)}{22}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Vorteile}{23}{subsection.3.5.1}
-\contentsline {subsubsection}{\numberline {3.5.1.1}Kostenersparnis}{23}{subsubsection.3.5.1.1}
-\contentsline {subsubsection}{\numberline {3.5.1.2}Zeitersparnis}{23}{subsubsection.3.5.1.2}
-\contentsline {subsubsection}{\numberline {3.5.1.3}Fokus auf Gesch\IeC {\"a}ftsaufgaben anstatt Infrastruktur}{24}{subsubsection.3.5.1.3}
-\contentsline {subsubsection}{\numberline {3.5.1.4}Direkter Zugriff auf Neuerungen}{24}{subsubsection.3.5.1.4}
-\contentsline {subsection}{\numberline {3.5.2}Herausforderungen}{24}{subsection.3.5.2}
-\contentsline {subsubsection}{\numberline {3.5.2.1}Architektur und Design}{25}{subsubsection.3.5.2.1}
-\contentsline {subsubsection}{\numberline {3.5.2.2}Multi-Tenant Application (MTA)}{25}{subsubsection.3.5.2.2}
-\contentsline {subsubsection}{\numberline {3.5.2.3}Security}{28}{subsubsection.3.5.2.3}
-\contentsline {subsection}{\numberline {3.5.3}Softwarearchitektur}{28}{subsection.3.5.3}
-\contentsline {subsubsection}{\numberline {3.5.3.1}Monolitisch}{29}{subsubsection.3.5.3.1}
-\contentsline {subsubsection}{\numberline {3.5.3.2}Client/Server-Architekturmodell}{31}{subsubsection.3.5.3.2}
-\contentsline {paragraph}{\numberline {3.5.3.2.1}Server}{32}{paragraph.3.5.3.2.1}
-\contentsline {paragraph}{\numberline {3.5.3.2.2}Client}{32}{paragraph.3.5.3.2.2}
-\contentsline {paragraph}{\numberline {3.5.3.2.3}Netzwerk (optional)}{33}{paragraph.3.5.3.2.3}
-\contentsline {subsubsection}{\numberline {3.5.3.3}Dienstbasiert}{34}{subsubsection.3.5.3.3}
-\contentsline {chapter}{\numberline {4}System Konzeption}{36}{chapter.4}
-\contentsline {section}{\numberline {4.1}Planungsphase}{36}{section.4.1}
-\contentsline {section}{\numberline {4.2}Definitionsphase}{37}{section.4.2}
-\contentsline {section}{\numberline {4.3}Entwurfsphase}{37}{section.4.3}
-\contentsline {chapter}{\numberline {5}Diskussion, Zusammenfassung und Ausblick}{38}{chapter.5}
-\contentsline {section}{\numberline {5.1}Glossar}{39}{section.5.1}
-\contentsline {section}{\numberline {5.2}Anh\IeC {\"a}nge}{40}{section.5.2}
+\contentsline {chapter}{\numberline {1}Einleitung}{3}{chapter.1}
+\contentsline {chapter}{\numberline {2}Analyse der Fachdom\IeC {\"a}ne Hochschulsport}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Historische Entwicklung des Hochschulsports}{4}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Hochschulsport heute}{4}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Typische Aufgaben}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Organisationsformen}{6}{section.2.3}
+\contentsline {section}{\numberline {2.4}Befragung ausgew\IeC {\"a}hlter Standorte}{7}{section.2.4}
+\contentsline {section}{\numberline {2.5}Wichtige Gesch\IeC {\"a}ftsprozesse}{7}{section.2.5}
+\contentsline {section}{\numberline {2.6}Probleme und Herausforderungen}{7}{section.2.6}
+\contentsline {chapter}{\numberline {3}Cloud Computing}{8}{chapter.3}
+\contentsline {section}{\numberline {3.1}Merkmale}{9}{section.3.1}
+\contentsline {subsubsection}{\numberline {3.1.0.1}On-demand self-service}{9}{subsubsection.3.1.0.1}
+\contentsline {subsubsection}{\numberline {3.1.0.2}Broad network access}{9}{subsubsection.3.1.0.2}
+\contentsline {subsubsection}{\numberline {3.1.0.3}Resoruce pooling}{9}{subsubsection.3.1.0.3}
+\contentsline {subsubsection}{\numberline {3.1.0.4}Rapid elasticity}{9}{subsubsection.3.1.0.4}
+\contentsline {subsubsection}{\numberline {3.1.0.5}Measured service}{9}{subsubsection.3.1.0.5}
+\contentsline {section}{\numberline {3.2}Service Modell}{9}{section.3.2}
+\contentsline {section}{\numberline {3.3}Bereitstellung Modell}{10}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Private Cloud}{11}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Public Cloud}{11}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Hybrid Cloud}{12}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Pro \& Contra}{13}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Vorteile}{13}{subsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Einfachheit}{13}{subsubsection.3.4.1.1}
+\contentsline {subsubsection}{\numberline {3.4.1.2}Kostenersparnis}{13}{subsubsection.3.4.1.2}
+\contentsline {subsubsection}{\numberline {3.4.1.3}Skalierbarkeit und Flexibilit\IeC {\"a}t}{14}{subsubsection.3.4.1.3}
+\contentsline {subsubsection}{\numberline {3.4.1.4}Zukunfts- und Ausfallsicherheit}{15}{subsubsection.3.4.1.4}
+\contentsline {subsubsection}{\numberline {3.4.1.5}Nachhaltigkeit}{15}{subsubsection.3.4.1.5}
+\contentsline {subsubsection}{\numberline {3.4.1.6}Beispiel}{16}{subsubsection.3.4.1.6}
+\contentsline {subsection}{\numberline {3.4.2}Nachteile}{18}{subsection.3.4.2}
+\contentsline {subsubsection}{\numberline {3.4.2.1}Sicherheit und Datenschutz}{18}{subsubsection.3.4.2.1}
+\contentsline {subsubsection}{\numberline {3.4.2.2}Abh\IeC {\"a}ngigkeit}{18}{subsubsection.3.4.2.2}
+\contentsline {subsubsection}{\numberline {3.4.2.3}Internetzugang}{18}{subsubsection.3.4.2.3}
+\contentsline {subsubsection}{\numberline {3.4.2.4}Verf\IeC {\"u}gbarkeit}{19}{subsubsection.3.4.2.4}
+\contentsline {subsubsection}{\numberline {3.4.2.5}Interoperabilit\IeC {\"a}t}{19}{subsubsection.3.4.2.5}
+\contentsline {section}{\numberline {3.5}Software-as-a-Service Anwendungen (SaaS)}{19}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Vorteile}{20}{subsection.3.5.1}
+\contentsline {subsubsection}{\numberline {3.5.1.1}Kostenersparnis}{20}{subsubsection.3.5.1.1}
+\contentsline {subsubsection}{\numberline {3.5.1.2}Zeitersparnis}{20}{subsubsection.3.5.1.2}
+\contentsline {subsubsection}{\numberline {3.5.1.3}Fokus auf Gesch\IeC {\"a}ftsaufgaben anstatt Infrastruktur}{21}{subsubsection.3.5.1.3}
+\contentsline {subsubsection}{\numberline {3.5.1.4}Direkter Zugriff auf Neuerungen}{21}{subsubsection.3.5.1.4}
+\contentsline {subsection}{\numberline {3.5.2}Herausforderungen}{21}{subsection.3.5.2}
+\contentsline {subsubsection}{\numberline {3.5.2.1}Architektur und Design}{22}{subsubsection.3.5.2.1}
+\contentsline {subsubsection}{\numberline {3.5.2.2}Multi-Tenant Application (MTA)}{22}{subsubsection.3.5.2.2}
+\contentsline {subsubsection}{\numberline {3.5.2.3}Security}{25}{subsubsection.3.5.2.3}
+\contentsline {subsection}{\numberline {3.5.3}Softwarearchitektur}{25}{subsection.3.5.3}
+\contentsline {subsubsection}{\numberline {3.5.3.1}Monolitisch}{26}{subsubsection.3.5.3.1}
+\contentsline {subsubsection}{\numberline {3.5.3.2}Client/Server-Architekturmodell}{28}{subsubsection.3.5.3.2}
+\contentsline {paragraph}{\numberline {3.5.3.2.1}Server}{29}{paragraph.3.5.3.2.1}
+\contentsline {paragraph}{\numberline {3.5.3.2.2}Client}{29}{paragraph.3.5.3.2.2}
+\contentsline {paragraph}{\numberline {3.5.3.2.3}Netzwerk (optional)}{30}{paragraph.3.5.3.2.3}
+\contentsline {subsubsection}{\numberline {3.5.3.3}Dienstbasiert}{31}{subsubsection.3.5.3.3}
+\contentsline {paragraph}{\numberline {3.5.3.3.1}Representalional State Transfer (REST)}{31}{paragraph.3.5.3.3.1}
+\contentsline {chapter}{\numberline {4}System Konzeption}{34}{chapter.4}
+\contentsline {section}{\numberline {4.1}Planungsphase}{34}{section.4.1}
+\contentsline {section}{\numberline {4.2}Definitionsphase}{35}{section.4.2}
+\contentsline {section}{\numberline {4.3}Entwurfsphase}{35}{section.4.3}
+\contentsline {chapter}{\numberline {5}Diskussion, Zusammenfassung und Ausblick}{36}{chapter.5}

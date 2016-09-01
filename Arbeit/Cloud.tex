@@ -388,4 +388,45 @@ Für das Verständnis, welche Prinzipien sich für eine SaaS-Anwendung eignen, w
 	Neben den beiden oben genannten Architekturen hat sich eine weitere Form verbreitet. Bei der dienstbasierten Architektur spricht man von einem Architekturmuster aus dem Bereich der verteilten Systeme. Der Schwerpunkt wird dabei auf eigenständige Dienste als primäre Komponente gelegt, auf die über eine Art Remote-Protokoll zugegriffen werden kann. Die Art des Protokolls ist dabei nicht festgelegt oder auf eines beschränkt wie z.B. Representational State Transfer (REST), Simple Object Access Protocol (SOAP), Advanced Message Queuing Protokol (AMQP) oder andere geschehen.
 	Dienstbasierten Architekturen werden signifikante Vorteile im Bezug auf Skalierbarkeit, Entkopplung, Kontrolle über die Entwicklung, Testing und Deployment zugeschrieben. Verteilte Systeme tendieren zudem dazu weniger abhängig und besser modular aufgebaut zu sein. Im Zusammenhang mit dienstabasierten Architekturen bedeutet das, das jeder Dienst eine in sich geschlossen Einheit bildet, sie selbst designed, entwickelt, getestet und ausgeliefert wird.  Abhängigkeiten zu anderen Komponenten sollten dabei nicht, oder nur minimal bestehen. \\
 	Diese Vorteile bringen jedoch auch einige Nachteile mit sich, so zählen erhöhte Komplexität und höhere initiale Kosten zu den meist genannten Argumenten.
+	
+	\paragraph{Representalional State Transfer (REST)}
+		REST wurde erstmals von 2000 Roy Thomas Fielding in seiner Dissertation beschrieben. Im Gegensatz zu bekannten Protokollen wie Simple Object Access Protokol (SOAP) oder XML-RPC handelt es sich bei REST um einen Architekturstil, wie Anwendungen basierend auf dem HTTP Protokoll miteinander kommunizieren können. Unterstützt eine Anwendung die REST-Stil, so bezeichnet man sie als RESTful.
+		\cite[vgl.][]{Melzer.2010} \\
+		REST basiert auf einem Konzept von Ressourcen, über die der Service Kenntnis hat. Der Server erstellt dabei verschiedene Darstellungen, wobei diese entkoppelt ist von der internen Speicherung.
+		HTTP und HTTPS sind die primär benutzten Protokolle bei der Verwendung von REST. HTTP Caching Proxies, Load-Balancers und Monitoring Tools besitzen einen tiefe Unterstützung für HTTP von Haus aus.
+		Den HTTP Verben GET, POST, PUT und DELETE lösen in RESTful Anwendungen spezielle Aktionen aus.
+		\\
+		
+		\begin{table}[h]
+		
+		\begin{tabular}{|p{3.5cm}|p{12.5cm}|}
+		\hline 
+		\textbf{HTTP Verb} & \textbf{REST Aktion} \\ 
+		\hline 
+		GET & Abfragen einer Ressource ohne Änderungen vorzunehmen \\ 
+		\hline 
+		POST & Erstellt eine neue Ressource. Der Link zur neuen Ressource wird zurück gegeben \\ 
+		\hline 
+		PUT & Eine Ressource wird angelegt. Wenn die Ressource bereits existiert, wird sie geändert. \\ 
+		\hline 
+		PATCH & Ein Teil der Ressource wird geändert \\ 
+		\hline 
+		DELETE & Löscht eine Ressource \\ 
+		\hline 
+		\end{tabular} 
+		\caption{Rest Operationen}
+		\end{table}
+		
+		Der große Vorteil und der Grund für die schnelle Verbreitung von REST Architekturen liegt in der Einfachheit. Methoden für die Nutzung des HTTP Protokoll sind in allen modernen Programmiersprachen enthalten und können einfach genutzt werden. Das Ressourcen Konzept ist leicht anwendbar und bietet umfangreiche Möglichkeiten der eigenen Anpassung.
+		
+		Die Bandbreite der Möglichkeiten, die mit der REST Architektur umgesetzt werden können zeigt Leonard Richardson in seinem \textacutedbl Richardson Maturity Model\textgravedbl indem er vier REST Level beschreibt.
+	
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.7\linewidth]{images/Richardson_Maturity_Model}
+			\caption{Richardson Maturity Model}
+			\label{fig:Richardson_Maturity_Model}
+		\end{figure}
+		
+		\cite[vgl.][]{Fowler.2010}
 
