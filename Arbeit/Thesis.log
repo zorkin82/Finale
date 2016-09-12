@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/W32TeX) (format=pdflatex 2014.5.23)  11 SEP 2016 23:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/W32TeX) (format=pdflatex 2014.5.23)  12 SEP 2016 22:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1327,7 +1327,7 @@ LaTeX Font Info:    Font shape `OML/mdput/m/it' will be
 Package  Warning: Title has more then 3 lines. Fontsize reduced on input line 7
 5.
 
-<tud_logo.pdf, id=136, 157.58875pt x 63.23625pt>
+<tud_logo.pdf, id=148, 157.58875pt x 63.23625pt>
 File: tud_logo.pdf Graphic file (type pdf)
  <use tud_logo.pdf>
 Package pdftex.def Info: tud_logo.pdf used on input line 75.
@@ -1354,7 +1354,7 @@ LaTeX Font Info:    Try loading font information for T1+5sf on input line 75.
 (c:/texlive/2013/../texmf-local/tex/latex/tex-tudfonts/softmake/stafford/t15sf.
 fd
 File: t15sf.fd 2008/06/23 Fontinst v1.927 font definitions for T1/5sf.
-) <by-nc-nd.pdf, id=150, 121.45375pt x 43.16125pt>
+) <by-nc-nd.pdf, id=162, 121.45375pt x 43.16125pt>
 File: by-nc-nd.pdf Graphic file (type pdf)
  <use by-nc-nd.pdf>
 Package pdftex.def Info: by-nc-nd.pdf used on input line 75.
@@ -1363,14 +1363,18 @@ Package pdftex.def Info: by-nc-nd.pdf used on input line 75.
 [0
 
  <c:/texlive/2013/../texmf-local/tex/latex/tuddesign/thesis/by-nc-nd.pdf>]
-(./Thesis.toc [1
+(./Thesis.toc
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1
 
 
 ])
 \tf@toc=\write4
 \openout4 = `Thesis.toc'.
 
- [2]
+
+[2]
 \openout2 = `hochschulsport.aux'.
 
  (./hochschulsport.tex
@@ -1412,7 +1416,79 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--38
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6]
-[7]) [8]
+[7] [8]
+Underfull \hbox (badness 10000) detected at line 100
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 100
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--108
+
+ []
+
+[9] <images/umfrage_zufriedenheit.png, id=290, 986.7264pt x 501.072pt>
+File: images/umfrage_zufriedenheit.png Graphic file (type png)
+
+<use images/umfrage_zufriedenheit.png>
+Package pdftex.def Info: images/umfrage_zufriedenheit.png used on input line 11
+5.
+(pdftex.def)             Requested size: 497.92325pt x 252.85204pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Command \textpm invalid in math mode on input line 120.
+
+
+LaTeX Warning: Command \textpm invalid in math mode on input line 120.
+
+Missing character: There is no ± in font mdbchr7t!
+<images/umfrage_beeinträchtigung.png, id=293, 514.5624pt x 299.6796pt>
+File: images/umfrage_beeinträchtigung.png Graphic file (type png)
+
+<use images/umfrage_beeinträchtigung.png>
+Package pdftex.def Info: images/umfrage_beeinträchtigung.png used on input line
+ 127.
+(pdftex.def)             Requested size: 398.3401pt x 232.00235pt.
+ [10]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11 <./images/umfrage_zufriedenheit.png>]
+Underfull \hbox (badness 10000) detected at line 136
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 136
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 139
+[]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 139
+[]
+ []
+
+[12 <./images/umfrage_beeinträchtigung.png>]) [13]
 \openout2 = `cloud.aux'.
 
  (./cloud.tex
@@ -1427,7 +1503,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-[9
+[14
 
 
 
@@ -1481,7 +1557,7 @@ Underfull \hbox (badness 10000) detected at line 22
 []
  []
 
-<images/cloud_computing_pyramide.png, id=295, 725.71124pt x 403.5075pt>
+<images/cloud_computing_pyramide.png, id=350, 725.71124pt x 403.5075pt>
 File: images/cloud_computing_pyramide.png Graphic file (type png)
 
 <use images/cloud_computing_pyramide.png>
@@ -1493,7 +1569,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--38
 
  []
 
-[10 <./images/cloud_computing_pyramide.png>]
+[15 <./images/cloud_computing_pyramide.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
@@ -1503,7 +1579,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 42--44
 
  []
 
-<images/private_public_cloud.jpg, id=316, 714.41907pt x 301.125pt>
+<images/private_public_cloud.jpg, id=369, 714.41907pt x 301.125pt>
 File: images/private_public_cloud.jpg Graphic file (type jpg)
 
 <use images/private_public_cloud.jpg>
@@ -1527,7 +1603,7 @@ Underfull \hbox (badness 10000) detected at line 58
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11]
+ [16]
 Underfull \hbox (badness 10000) detected at line 69
 []
  []
@@ -1537,7 +1613,7 @@ Underfull \hbox (badness 10000) detected at line 69
 []
  []
 
-[12 <./images/private_public_cloud.jpg>]
+[17 <./images/private_public_cloud.jpg>]
 Underfull \hbox (badness 10000) detected at line 73
 []
  []
@@ -1547,7 +1623,7 @@ Underfull \hbox (badness 10000) detected at line 73
 []
  []
 
-<images/hybrid-cloud-architektur.png, id=341, 665.48625pt x 420.06938pt>
+<images/hybrid-cloud-architektur.png, id=394, 665.48625pt x 420.06938pt>
 File: images/hybrid-cloud-architektur.png Graphic file (type png)
 
 <use images/hybrid-cloud-architektur.png>
@@ -1562,9 +1638,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13 <./images/hybrid-cloud-architektur.png>]
+ [18 <./images/hybrid-cloud-architektur.png>]
 
-LaTeX Warning: Reference `herausforderungen' on page 14 undefined on input line
+LaTeX Warning: Reference `herausforderungen' on page 19 undefined on input line
  88.
 
 
@@ -1597,7 +1673,7 @@ Underfull \hbox (badness 10000) detected at line 94
 []
  []
 
-[14]
+[19]
 Underfull \hbox (badness 10000) detected at line 99
 []
  []
@@ -1607,7 +1683,7 @@ Underfull \hbox (badness 10000) detected at line 99
 []
  []
 
-[15]
+[20]
 Underfull \hbox (badness 10000) detected at line 103
 []
  []
@@ -1627,7 +1703,7 @@ Underfull \hbox (badness 10000) detected at line 107
 []
  []
 
-[16]
+[21]
 Underfull \hbox (badness 10000) detected at line 111
 []
  []
@@ -1638,17 +1714,17 @@ Underfull \hbox (badness 10000) detected at line 111
  []
 
 
-LaTeX Warning: Reference `hspAnforderungen' on page 17 undefined on input line 
+LaTeX Warning: Reference `hspAnforderungen' on page 22 undefined on input line 
 112.
 
-<images/overprovisioning.png, id=373, 680.3016pt x 403.7484pt>
+<images/overprovisioning.png, id=427, 680.3016pt x 403.7484pt>
 File: images/overprovisioning.png Graphic file (type png)
 
 <use images/overprovisioning.png>
 Package pdftex.def Info: images/overprovisioning.png used on input line 122.
 (pdftex.def)             Requested size: 348.54475pt x 206.8577pt.
 
-<images/underprovisioning.png, id=375, 680.3016pt x 403.7484pt>
+<images/underprovisioning.png, id=429, 680.3016pt x 403.7484pt>
 File: images/underprovisioning.png Graphic file (type png)
 
 <use images/underprovisioning.png>
@@ -1717,10 +1793,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--157
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17]
+[22]
 Underfull \vbox (badness 1189) has occurred while \output is active []
 
- [18 <./images/overprovisioning.png> <./images/underprovisioning.png>]
+ [23 <./images/overprovisioning.png> <./images/underprovisioning.png>]
 Underfull \hbox (badness 10000) detected at line 158
 []
  []
@@ -1760,7 +1836,7 @@ Underfull \hbox (badness 10000) detected at line 164
 []
  []
 
-[19]
+[24]
 Underfull \hbox (badness 10000) detected at line 166
 []
  []
@@ -1780,7 +1856,7 @@ Underfull \hbox (badness 10000) detected at line 169
 []
  []
 
-[20]
+[25]
 Underfull \hbox (badness 10000) detected at line 189
 []
  []
@@ -1810,7 +1886,7 @@ Underfull \hbox (badness 10000) detected at line 194
 []
  []
 
-[21]
+[26]
 Underfull \hbox (badness 10000) detected at line 197
 []
  []
@@ -1840,7 +1916,7 @@ Underfull \hbox (badness 10000) detected at line 209
 []
  []
 
-[22] [23]
+[27] [28]
 Kapitel 3.
 
 Underfull \hbox (badness 10000) detected at line 224
@@ -1852,10 +1928,10 @@ Underfull \hbox (badness 10000) detected at line 224
 []
  []
 
-[24
+[29
 
 
-] <images/TraditionalWebArchitecture.jpg, id=430, 722.7pt x 542.025pt>
+] <images/TraditionalWebArchitecture.jpg, id=483, 722.7pt x 542.025pt>
 File: images/TraditionalWebArchitecture.jpg Graphic file (type jpg)
 
 <use images/TraditionalWebArchitecture.jpg>
@@ -1866,7 +1942,7 @@ ne 242.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[25] [26 <./images/TraditionalWebArchitecture.jpg>]
+[30] [31 <./images/TraditionalWebArchitecture.jpg>]
 Underfull \hbox (badness 10000) detected at line 260
 []
  []
@@ -1876,7 +1952,7 @@ Underfull \hbox (badness 10000) detected at line 260
 []
  []
 
-<images/Clients-und-Server.png, id=443, 353.06906pt x 304.13625pt>
+<images/Clients-und-Server.png, id=496, 353.06906pt x 304.13625pt>
 File: images/Clients-und-Server.png Graphic file (type png)
 
 <use images/Clients-und-Server.png>
@@ -1895,15 +1971,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 276--285
 
 Underfull \vbox (badness 4060) has occurred while \output is active []
 
- [27 <./images/Clients-und-Server.png>]
+ [32 <./images/Clients-und-Server.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28]
+ [33]
 Underfull \hbox (badness 10000) in paragraph at lines 289--290
 
  []
 
-<images/placeholder.png, id=459, 401.5pt x 200.75pt>
+<images/placeholder.png, id=512, 401.5pt x 200.75pt>
 File: images/placeholder.png Graphic file (type png)
 
 <use images/placeholder.png>
@@ -1946,7 +2022,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 320--320
 
 Underfull \vbox (badness 1418) has occurred while \output is active []
 
- [29 <./images/placeholder.png>]
+ [34 <./images/placeholder.png>]
 Underfull \hbox (badness 10000) detected at line 327
 []
  []
@@ -1956,7 +2032,7 @@ Underfull \hbox (badness 10000) detected at line 327
 []
  []
 
-[30]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 333--339
 
  []
@@ -1964,7 +2040,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 333--339
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Richardson_Maturity_Model.png, id=483, 675.52374pt x 399.4925pt>
+<images/Richardson_Maturity_Model.png, id=536, 675.52374pt x 399.4925pt>
 File: images/Richardson_Maturity_Model.png Graphic file (type png)
 
 <use images/Richardson_Maturity_Model.png>
@@ -1983,7 +2059,7 @@ Underfull \hbox (badness 10000) detected at line 376
 
 Underfull \vbox (badness 2521) has occurred while \output is active []
 
- [31]
+ [36]
 Underfull \hbox (badness 10000) detected at line 376
 []
  []
@@ -2001,7 +2077,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 380--381
 
 Underfull \vbox (badness 1048) has occurred while \output is active []
 
- [32 <./images/Richardson_Maturity_Model.png>]
+ [37 <./images/Richardson_Maturity_Model.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 382--383
 
  []
@@ -2011,7 +2087,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 384--386
 
  []
 
-<images/separierte_datenbanken.png, id=505, 494.84875pt x 177.66376pt>
+<images/separierte_datenbanken.png, id=559, 494.84875pt x 177.66376pt>
 File: images/separierte_datenbanken.png Graphic file (type png)
 
 <use images/separierte_datenbanken.png>
@@ -2035,8 +2111,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 398--401
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [33]
-<images/geteilte_datenbanken-separiertes_schema.png, id=514, 332.24126pt x 339.
+ [38]
+<images/geteilte_datenbanken-separiertes_schema.png, id=568, 332.24126pt x 339.
 2675pt>
 File: images/geteilte_datenbanken-separiertes_schema.png Graphic file (type png
 )
@@ -2059,7 +2135,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 411--414
  []
 
 
-<images/geteilte_datenbank-geteiltes_schema.png, id=516, 253.94875pt x 136.51pt
+<images/geteilte_datenbank-geteiltes_schema.png, id=570, 253.94875pt x 136.51pt
 >
 File: images/geteilte_datenbank-geteiltes_schema.png Graphic file (type png)
  <use images/geteilte_datenbank-geteiltes_schema.png>
@@ -2074,7 +2150,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 415--426
 
 Underfull \vbox (badness 3148) has occurred while \output is active []
 
- [34 <./images/separierte_datenbanken.png>]
+ [39 <./images/separierte_datenbanken.png>]
 Underfull \hbox (badness 10000) detected at line 426
 []
  []
@@ -2084,7 +2160,7 @@ Underfull \hbox (badness 10000) detected at line 426
 []
  []
 
-) [35 <./images/geteilte_datenbanken-separiertes_schema.png> <./images/geteilte
+) [40 <./images/geteilte_datenbanken-separiertes_schema.png> <./images/geteilte
 _datenbank-geteiltes_schema.png>]
 \openout2 = `konzept.aux'.
 
@@ -2108,7 +2184,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--24
 
 Underfull \vbox (badness 1163) has occurred while \output is active []
 
- [36
+ [41
 
 
 
@@ -2122,7 +2198,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--94
 
  []
 
-[37] (./Thesis.bbl
+[42] (./Thesis.bbl
 LaTeX Font Info:    Try loading font information for T1+txtt on input line 162.
 
  (c:/texlive/2013/texmf-dist/tex/latex/txfonts/t1txtt.fd
@@ -2148,7 +2224,7 @@ ting [] -Grundlagen []
 
 Underfull \vbox (badness 1314) has occurred while \output is active []
 
- [38
+ [43
 
 
 ]
@@ -2159,13 +2235,13 @@ ver-glei-chen-de Be-trach-
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
- [39]
+ [44]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
  (./Thesis.aux (./hochschulsport.aux) (./cloud.aux) (./konzept.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 369BB170211E28B1A3B2A4850F5B5CAA;2251.
+(rerunfilecheck)             Checksum: 7B58FCA2385AF12280FD5AB0B8F7B9C3;2508.
 
 
 LaTeX Warning: There were undefined references.
@@ -2173,11 +2249,11 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
- 13503 strings out of 493308
- 206408 string characters out of 6141367
- 345759 words of memory out of 5000000
- 16436 multiletter control sequences out of 15000+600000
- 128245 words of font info for 77 fonts, out of 8000000 for 9000
+ 13536 strings out of 493308
+ 207057 string characters out of 6141367
+ 345965 words of memory out of 5000000
+ 16451 multiletter control sequences out of 15000+600000
+ 128610 words of font info for 78 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  65i,12n,77p,1473b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2013/texmf-dist/fonts/enc/dvips/ly1/texnansi.enc}{c:/texlive/2013
@@ -2190,11 +2266,12 @@ fpr8a.pfb><c:/texlive/2013/../texmf-local/fonts/type1/softmake/stafford/5sfr8a.
 pfb><c:/texlive/2013/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb><c:/tex
 live/2013/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7t.pfb><c:/texli
 ve/2013/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr7y.pfb><c:/texlive
-/2013/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
-Output written on Thesis.pdf (41 pages, 858247 bytes).
+/2013/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chrma.pfb><c:/texlive/2
+013/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb>
+Output written on Thesis.pdf (46 pages, 924759 bytes).
 PDF statistics:
- 646 PDF objects out of 1000 (max. 8388607)
- 563 compressed objects within 6 object streams
- 173 named destinations out of 1000 (max. 500000)
- 347 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 707 PDF objects out of 1000 (max. 8388607)
+ 613 compressed objects within 7 object streams
+ 188 named destinations out of 1000 (max. 500000)
+ 381 words of extra memory for PDF output out of 10000 (max. 10000000)
 
