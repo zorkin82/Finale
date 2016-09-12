@@ -78,6 +78,67 @@ Bass, L.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Baumgarten%
+, L{\"u}er%
+\BCBL {}\ \BBA {} Dreiboldt%
+}{%
+Baumgarten%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2009}}%
+}]{%
+Baumgarten.2009}
+\APACinsertmetastar {%
+Baumgarten.2009}%
+\begin{APACrefauthors}%
+Baumgarten, K.%
+, L{\"u}er, D.%
+\BCBL {}\ \BBA {} Dreiboldt, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Z}ukunftsperspektiven von {G}esundheitssportangeboten
+  im {H}ochschulsport} {{Z}ukunftsperspektiven von {G}esundheitssportangeboten
+  im {H}ochschulsport}.{\BBCQ}
+\newblock
+\BIn{} A.~G{\"o}ring\ (\BED), \APACrefbtitle {{Q}uo vadis {H}ochschulsport?}
+  {{Q}uo vadis {H}ochschulsport?}\ (\BVOL~2, \BPGS\ 69--85).
+\newblock
+\APACaddressPublisher{G{\"o}ttingen}{Univ.-Verl. G{\"o}ttingen}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Berthold%
+\ \BBA {} Leichsenring%
+}{%
+Berthold%
+\ \BBA {} Leichsenring%
+}{%
+{\protect \APACyear {2007}}%
+}]{%
+Berthold.2007}
+\APACinsertmetastar {%
+Berthold.2007}%
+\begin{APACrefauthors}%
+Berthold, C.%
+\BCBT {}\ \BBA {} Leichsenring, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2007}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{D}er {H}ochschulsport und die {R}eformen der
+  {H}ochschulen} {{D}er {H}ochschulsport und die {R}eformen der
+  {H}ochschulen}.{\BBCQ}
+\newblock
+\BIn{} I.~Behrens\ \BBA {} A.~G{\"o}ring\ (\BEDS), \APACrefbtitle {{A}bschied
+  von {H}umboldt?} {{A}bschied von {H}umboldt?}\ (\BVOL\ Bd. 1, \BPGS\ 5--19).
+\newblock
+\APACaddressPublisher{G{\"o}ttingen}{Univ.-Verl. G{\"o}ttingen}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 {Bundesamt f{\"u}r Sicherheit in der Informationstechnik}%
 }{%
 {Bundesamt f{\"u}r Sicherheit in der Informationstechnik}%
@@ -153,6 +214,65 @@ Fowler, M.%
 \newblock
 \begin{APACrefURL}
   [{06.07.2016}]\url{http://martinfowler.com/articles/richardsonMaturityModel.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+G{\"o}ring%
+\ \BBA {} M{\"o}llenbeck%
+}{%
+G{\"o}ring%
+\ \BBA {} M{\"o}llenbeck%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+Goring.2010}
+\APACinsertmetastar {%
+Goring.2010}%
+\begin{APACrefauthors}%
+G{\"o}ring, A.%
+\BCBT {}\ \BBA {} M{\"o}llenbeck, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{G}esundheitspotenziale des {H}ochschulsports}
+  {{G}esundheitspotenziale des {H}ochschulsports}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Pr{\"a}vention und
+  Gesundheitsf{\"o}rderung}{5}{3}{238--242}.
+\newblock
+\begin{APACrefDOI} \doi{10.1007/s11553-010-0245-2} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hachmeister%
+, Tabor%
+\BCBL {}\ \BBA {} B{\"u}rgel%
+}{%
+Hachmeister%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2004}}%
+}]{%
+Hachmeister.2004}
+\APACinsertmetastar {%
+Hachmeister.2004}%
+\begin{APACrefauthors}%
+Hachmeister, C\BHBI D.%
+, Tabor, O.%
+\BCBL {}\ \BBA {} B{\"u}rgel, E\BPBI D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2004}{}{}.
+\newblock
+\APACrefbtitle {{H}ochschulsport 2004.} {{H}ochschulsport 2004.}
+\newblock
+\APACaddressPublisher{Dieburg/G{\"u}tersloh}{}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.che-ranking.de/downloads/Hochschulsport\_2004.pdf}
   \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 
@@ -431,6 +551,30 @@ Tharam, D.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1109/AINA.2010.187} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zandonella%
+}{%
+Zandonella%
+}{%
+{\protect \APACyear {2005}}%
+}]{%
+Zandonella.2005}
+\APACinsertmetastar {%
+Zandonella.2005}%
+\begin{APACrefauthors}%
+Zandonella, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2005}.
+\newblock
+\APACrefbtitle {{P}ocket {E}uropa - {E}{U}-{B}egriffe und {L}{\"a}nderdaten}
+  {{P}ocket {E}uropa - {E}{U}-{B}egriffe und {L}{\"a}nderdaten}\
+  (\PrintOrdinal{1. Aufl}\ \BEd, \BVOL\ [04]).
+\newblock
+\APACaddressPublisher{Bonn}{Bpb}.
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}

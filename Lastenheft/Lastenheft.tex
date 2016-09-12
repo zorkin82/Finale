@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,11pt]{article}
 \usepackage{amssymb} % needed for math
 \usepackage{amsmath} % needed for math
 \usepackage[utf8]{inputenc} % this is needed for german umlauts
@@ -85,6 +85,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Die Hochschulsport Verwaltungssoftware soll die Arbeitsabläufe innerhalb einer Hochschulsporteinrichtung vereinfachen, zentralisieren und dem Benutzer bei den täglichen Aufgaben unterstützen. Das System unterscheidet dabei die Bereiche Verwaltung (Backend) und öffentliche Darstellung der Informationen (Frontend), die unterschiedlichen Kriterien erfüllen müssen. \\
 Es soll eine zentrale Plattform zur Verfügung gestellt werden, die Anlaufstelle für möglichst viele Aufgaben ist und die Synergien bestehender Daten und Abläufe nutzen. Das System soll so modular aufgebaut sein, dass sich neue Funktionen integrieren lassen und sich so eine Anpassung an neue Anforderungen oder Arbeitsbereiche möglich ist.\\
+Dieses Lastenheft beschreibt nur die Anforderungen für die erste Umsetzungsphase. In~\ref{erweiterbarkeit} werden zukünftige Erweiterungen kurz besprochen, die zwingend bei der Umsetzung mitbedacht werden müssen.
 
 
 
@@ -102,225 +103,193 @@ Kunden lassen sich in unterschiedliche Gruppen unterteilen:
 \item Externe
 \end{itemize} 
 
-Über das \textbf{Backend} soll das Verwaltungspersonal administrative Tätigkeiten manuell, automatisiert oder teilautomatisiert schneller erledigen können. Das Backend verfügt über ein erweitertes Rechtesystem, dass unterschiedlichen Personen differenzierte Bearbeitungsmöglichkeiten zur Verfügung stellt. Die Bereitstellung der relevanten Informationen im Frontend soll auf einfache Weise zu bewerkstelligen sein. Zudem soll der Hochschulsport durch die Informationen in die Lage versetzt werden, ihr Angebot zu analysieren und optimieren.
+Über das \textbf{Backend} soll das Verwaltungspersonal administrative Tätigkeiten manuell, automatisiert oder teilautomatisiert schnell erledigen können. Das Backend verfügt über ein erweitertes Rechtesystem, dass unterschiedlichen Personen differenzierte Bearbeitungsmöglichkeiten zur Verfügung stellt. Die Bereitstellung der relevanten Informationen im Frontend soll auf einfache Weise zu bewerkstelligen sein. Zudem soll der Hochschulsport durch die Informationen in die Lage versetzt werden, ihr Angebot zu analysieren und optimieren.
 
 \section{Funktionale Anforderungen}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Was muss das Programm können?                   					 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Verwaltung}
-\paragraph{\textbf{Allgemein}\\}
+\subsubsection{Allgemein}
 \begin{usecase}
   \addheading{Nummer}{Beschreibung} 
-  \addrow{/FA/}{Der Zugang zur Verwaltung soll über eine Benutzerauthentifizierung abgesichert sein}
-  \addrow{/FA/}{Das Benutzersystem soll eine Rechteverwaltung beinhalten}
-  \addrow{/FA/}{Anonymisierung}
-  \addrow{/FA/}{Sämtliche Buchungen müssen nachvollziehbar machen, aus welcher Anwendung und von wem sie gebucht wurden (z.b. welcher Backenduser)}
-  \addrow{/FA/}{}
+  \addrow{/FA101.01/}{Der Zugang zur Verwaltung soll über eine Benutzerauthentifizierung abgesichert sein. Es sollen keine separaten Accounts gepflegt werden müssen. Demnach soll prinzipiell die Möglichkeit bestehen jedem Teilnehmer den Zugang zur Verwaltung freizuschalten.}
+  \addrow{/FA101.02/}{Das Benutzersystem soll eine Rechteverwaltung beinhalten. Jeder Nutzer soll dabei einer Gruppe angehören und deren Rechte erben, sowie individuelle Rechte zugewiesen bekommen. Individuelle Rechte überschreiben dabei Gruppenrechte.}
+  \addrow{/FA101.03/}{Aus Datenschutzrechtlichen Gründen muss das System mit einer Anonymisierungsfunktion ausgestattet sein. Diese muss sicherstellen, das in definierten Intervallen überflüssige Nutzerinformationen gelöscht werden. Die zu anonymisierenden Daten müssen dabei konfigurierbar sein.}
+  \addrow{/FA101.04/}{Sämtliche Buchungen müssen nachvollziehbar machen, aus welcher Anwendung und von wem sie gebucht wurden (z.b. welcher Backenduser)}
+  \addrow{/FA101.05/}{}
 \end{usecase}
 
-\paragraph{\textbf{Veranstaltungen}\\}
+\subsubsection{Veranstaltungen}
+
+
 \begin{usecase}
   \addheading{Nummer}{Beschreibung} 
-  \addrow{/FA/}{Erstellen, bearbeiten und löschen von Veranstaltungen}
-  \addrow{/FA/}{Beliebige Kategorisierung (Semester, Themenbereich, Status etc)}
-  \addrow{/FA/}{Abgestuftes Preismodel (Nach Nutzergruppe, Buchungszeitpunkt)}
-  \addrow{/FA/}{Festlegung von Kursvoraussetzungen (Z.b. Müssen vorher andere Kurse belegt worden sein)}
-  \addrow{/FA/}{Zeitliches und allgemeines sperren und Freigeben für unterschiedliche Nutzergruppen}
-  \addrow{/FA/}{Hinterlegen von Kursinformationen (Kursbeschreibung, Bilder, Dateien, Fertigkeitsniveau, Gender)}
-  \addrow{/FA/}{Zuordnen von Teilnehmern zu Veranstaltungen}
-  \addrow{/FA/}{Zuordnen von Übungsleitern zu Veranstaltungen}
-  \addrow{/FA/}{Individuelle Definition der Bezahlung je Übungsleiter}
-  \addrow{/FA/}{Zuordnen von Ansprechpartnern und Verantwortlichen zu Veranstaltungen}
-  \addrow{/FA/}{Manuelles und zeitgesteuertes veröffentlichen von Veranstaltungen}
-  \addrow{/FA/}{Definieren von minimaler und maximaler Teilnehmerzahlen}
-  \addrow{/FA/}{Zuordnung zu Veranstaltungsorten (Räume, Sportplätze, Turnhallen)}
-  \addrow{/FA/}{Automatisiertes Erstellen der Einzeltermine}
-  \addrow{/FA/}{Änderungsmöglichkeiten für jeden Einzeltermin (Datum, Start/Ende, Übungsleiter, Ort)}
-  \addrow{/FA/}{Verwalten einer Warteliste (Anschreiben, Personen hinzufügen, löschen)}
-  \addrow{/FA/}{Auswahl unterschiedlicher Platzvergabeverfahren (Race, Auslosung)}
-  \addrow{/FA/}{Übersicht der Teilnehmer}
-  \addrow{/FA/}{Passwortgeschützter Zugang zur Anmeldung}
-  \addrow{/FA/}{Druckmöglichkeiten (Teilnehmerliste, Warteliste, Teilnehmerurkunde, "Veranstaltungsinformationen")}
-  \addrow{/FA/}{Erfassungsmöglichkeit der Anwesenheit von Teilnehmern}
-  \addrow{/FA/}{Duplizieren einzelner und multipler Veranstaltungen}
-  \addrow{/FA/}{Multi-Campus Unterstützung}
-  \addrow{/FA/}{}
+  \addrow{/FA102.01/}{Erstellen, bearbeiten und löschen von Veranstaltungen}
+  \addrow{/FA102.02/}{Beliebige Kategorisierung (Semester, Themenbereich, Status etc.)}
+  \addrow{/FA102.03/}{Abgestuftes Preismodel; Preise müssen sich für jede Nutzergruppe individuell vergeben lassen. Außerdem soll es eine Möglichkeit geben, nach definierten Zeitintervallen oder Datum Preise automatisch anzupassen. z.B. 20 \% Rabatt oder 10\% Aufschlag. Es soll eine optionale Möglichkeit geben diese Informationen im Vorfeld anzeigen zu lassen}
+  \addrow{/FA102.04/}{Festlegung von Kursvoraussetzungen; während Kategorisierungen für die Information genutzt werden kann, die nicht an einer Buchung hindert, so können Voraussetzungen explizit festgelegt werden. Sind diese nicht erfüllt, so soll eine Buchung nicht möglich sein. Dies betrifft z.B. Semesterkarten oder auch andere Kurse. Zusätzlich muss eingeschränkt werden können, ob eine Buchung ausreicht oder der Kurs bereits abgeschlossen worden sein muss}
+  \addrow{/FA102.05/}{Zeitliches und allgemeines Sperren und Freigeben für unterschiedliche Nutzergruppen}
+  \addrow{/FA102.06/}{Hinterlegen von Kursinformationen (Kursbeschreibung, Bilder, Dateien, Fertigkeitsniveau, Gender)}
+  \addrow{/FA102.07/}{Zuordnen von Teilnehmern zu Veranstaltungen. Wichtig ist hier, dass bei kostenpflichtigen Kursen die Rechnungserstellung angestoßen wird und der Teilnehmer entsprechend informiert wird.}
+  \addrow{/FA102.08/}{Zuordnen von Übungsleitern zu Veranstaltungen}
+  \addrow{/FA102.09/}{Individuelle Definition der Bezahlung je Übungsleiter und Veranstaltung.}
+  \addrow{/FA102.10/}{Zuordnen von Ansprechpartnern und Verantwortlichen zu Veranstaltungen. Basierend auf dieser Zuordnung soll es den Personen möglich sein sich nur die Veranstaltungen mit eigener Verantwortlichkeit anzeigen zu lassen}
+  \addrow{/FA102.11/}{Manuelles und zeitgesteuertes veröffentlichen von Veranstaltungen für die Teilnehmer. }
+  \addrow{/FA102.12/}{Definieren von minimaler und maximaler Teilnehmerzahlen}
+  \addrow{/FA102.13/}{Zuordnung zu Veranstaltungsorten (Räume, Sportplätze, Turnhallen)}
+  \addrow{/FA102.14/}{Automatisiertes und manuelles Erstellen der Einzeltermine}
+  \addrow{/FA102.15/}{Änderungsmöglichkeiten für jeden Einzeltermin (Datum, Start/Ende, Übungsleiter, Ort)}
+  \addrow{/FA102.16/}{Verwalten einer Warteliste (Anschreiben, Personen hinzufügen, löschen)}
+  \addrow{/FA102.17/}{Auswahl unterschiedlicher Platzvergabeverfahren (Race, Auslosung)}
+  \addrow{/FA102.18/}{Übersicht der Teilnehmer mit eigens definierter Ansicht}
+  \addrow{/FA102.19/}{Passwortgeschützter Zugang zur Anmeldung}
+  \addrow{/FA102.20/}{Druckmöglichkeiten (Teilnehmerliste, Warteliste, Teilnehmerurkunde, Veranstaltungsinformationen)}
+  \addrow{/FA102.21/}{Erfassungsmöglichkeit der Anwesenheit von Teilnehmern}
+  \addrow{/FA102.22/}{Duplizieren einzelner und multipler Veranstaltungen}
+  \addrow{/FA102.23/}{Multi-Campus Unterstützung}
+  \addrow{/FA102.24/}{Multi-Edit-Mode um die Bearbeitung von mehreren Kursen zu erleichtern}
+  \addrow{/FA102./}{DirectLink: Für jeden Kurs soll es die Möglichkeit einen direkten Link (ShortURL) zu generieren, der zum Versand verwendet werden kann}
+  \addrow{/FA120./}{Kurse sollen als \textit{versteckt} markiert werden können, sodass sie nicht im Normalen Programm aufgelistet werden. Der Zugang ist nur über den DirectLink möglich}
+  \addrow{/FA120./}{Für jeden Teilnehmer soll erfasst werden können, ob er den Kurs erfolgreich abgeschlossen hat. Voraussetzungsprüfung}
 \end{usecase}
 
-\paragraph{\textbf{Personen/Kunden/Teilnehmer}\\}
+\subsubsection{Personen/Kunden/Teilnehmer}
 \begin{usecase}
   \addheading{Nummer}{Beschreibung} 
-  \addrow{/FA/}{Erstellen, ändern und löschen von Personen}
-  \addrow{/FA/}{Einlesen von Chipkarten zu einer Person (Studierenden Card, Bediensteten Card)}
-  \addrow{/FA/}{Zuordnung zu Benutzergruppen (Studierende, Bedienstete, Externe)}
-  \addrow{/FA/}{Zuordnung zu Hochschulen}
-  \addrow{/FA/}{Automatisierte Überprüfung der Benutzergruppe und Hochschule}
-  \addrow{/FA/}{Optionales hinterlegen von Bankdaten (mehrere Bankdaten möglich)}
-  \addrow{/FA/}{Aufrufen einer Rechnungshistorie}
-  \addrow{/FA/}{Sperren von Personen (Kein Zutritt und keine Buchungen mehr möglich)}
-  \addrow{/FA/}{Zuordnung zu unterschiedlichen Kategorien}
-  \addrow{/FA/}{Druckmöglichkeiten (Steckbrief, Rechnungshistorie, Kurshistorie)}
-  \addrow{/FA/}{Zutrittsprotokoll für Zutrittskontrollsysteme}
-  \addrow{/FA/}{Kommunikationshistorie (Systemmails, Manuelle Kommunikationseinträge)}
-  \addrow{/FA/}{Dublettenprüfung und Zusammenführung}
-  \addrow{/FA/}{}
+  \addrow{/FA103.01/}{Erstellen, ändern und löschen von Personen}
+  \addrow{/FA103.02/}{Einlesen von Chipkarten zu einer Person (Studierenden Card, Bediensteten Card)}
+  \addrow{/FA103.03/}{Zuordnung zu Benutzergruppen (Studierende, Bedienstete, Externe)}
+  \addrow{/FA103.04/}{Zuordnung zu Hochschulen}
+  \addrow{/FA103.05/}{Automatisierte Überprüfung der Benutzergruppe und Hochschule}
+  \addrow{/FA103.06/}{Optionales hinterlegen von Bankdaten (mehrere Bankdaten möglich). Bestehen noch offene Rechnungen, so soll ein löschen der Bankdaten dazu führen, dass dieser Vorgang erst ausgeführt wird, wenn alle offenen Posten beglichen sind}
+  \addrow{/FA103.07/}{Aufrufen einer Rechnungshistorie}
+  \addrow{/FA103.08/}{Sperren von Personen (Kein Zutritt und keine Buchungen mehr möglich)}
+  \addrow{/FA103.09/}{Zuordnung zu unterschiedlichen Kategorien}
+  \addrow{/FA103.10/}{Druckmöglichkeiten (Steckbrief, Rechnungshistorie, Kurshistorie)}
+  \addrow{/FA103.11/}{Zutrittsprotokoll für Zutrittskontrollsysteme}
+  \addrow{/FA103.12/}{Kommunikationshistorie (Systemmails, Manuelle Kommunikationseinträge)}
+  \addrow{/FA103.13/}{Dublettenprüfung und Zusammenführung}
+  \addrow{/FA103.14/}{Für jeden Kunden soll ein Code (Strichcode, QR-Code) ausgestellt werden können, über den die Zugangsberechtigung geprüft werden kann}
 \end{usecase}
 
-\paragraph{\textbf{Verträge}\\}
+\subsubsection{Verträge}
 \begin{usecase}
   \addheading{Nummer}{Beschreibung} 
-  \addrow{/FA/}{Erstellen, bearbeiten und löschen von Verträgen basierend auf Vorlagen} 
-  \addrow{/FA/}{Erstellen, bearbeiten und löschen von Vertragsvorlagen}
-  \addrow{/FA/}{Stilllegen von Verträgen}
-  \addrow{/FA/}{Automatisierte Rechnungsgenerierung}
-  \addrow{/FA/}{}
-  \addrow{/FA/}{}
+  \addrow{/FA104.01/}{Erstellen, bearbeiten und löschen von Verträgen basierend auf Vorlagen} 
+  \addrow{/FA104.02/}{Erstellen, bearbeiten und löschen von Vertragsvorlagen}
+  \addrow{/FA104.03/}{Stilllegen von Verträgen}
+  \addrow{/FA104.04/}{Automatisierte Rechnungsgenerierung}
+  \addrow{/FA104.05/}{Änderungen an Rechnungsdaten der Personen müssen automatisch übernommen werden}
+  \addrow{/FA104.06/}{Verträge müssen sich automatisch verlängern können}
+  \addrow{/FA104.07/}{Übersicht auslaufender Verträge}
 \end{usecase}
 
-\paragraph{\textbf{Buchhaltung}\\}
+\subsubsection{Buchhaltung}
 \begin{usecase}
   \addheading{Nummer}{Beschreibung} 
-  \addrow{/FA/}{Liste kostenpflichtiger Rechnungen (Verträge, Buchungen, Verkäufe)} 
-  \addrow{/FA/}{Übersicht überfälliger Posten}
-  \addrow{/FA/}{Rechnungserstellung}
-  \addrow{/FA/}{Austauschmöglichkeit mit anderen Programmen für die Rechnungsabwicklung (SAP, csv)}
-  \addrow{/FA/}{SEPA Unterstützung mit Mandatsverwaltung}
-  \addrow{/FA/}{Unterstützung unterschiedlicher Kostenstellen und Buchungskonten}
-  \addrow{/FA/}{Unterscheidung von Lastschriften und Gutschriften}
-  \addrow{/FA/}{}
+  \addrow{/FA105.01/}{Liste kostenpflichtiger Rechnungen (Verträge, Buchungen, Verkäufe)} 
+  \addrow{/FA105.02/}{Übersicht überfälliger Posten}
+  \addrow{/FA105.03/}{Rechnungserstellung}
+  \addrow{/FA105.04/}{Austauschmöglichkeit mit anderen Programmen für die Rechnungsabwicklung (SAP, csv)}
+  \addrow{/FA105.05/}{SEPA Unterstützung mit Mandatsverwaltung}
+  \addrow{/FA105.06/}{Unterstützung unterschiedlicher Kostenstellen und Buchungskonten}
+  \addrow{/FA105.07/}{Unterscheidung von Lastschriften und Gutschriften}
+  \addrow{/FA105.08/}{}
 \end{usecase}
 
-\paragraph{\textbf{Kalender/Raumplanung}\\}
+\subsubsection{Kalender/Raumplanung}
 \begin{usecase}
   \addheading{Nummer}{Beschreibung} 
-  \addrow{/FA/}{Unterstützung von Kalenderdarstellungen eines Veranstaltungsortes in der Tages, Wochen, Arbeitswochen, Monats und Listenansicht}
-  \addrow{/FA/}{Kalenderdarstellung mehrerer Veranstaltungsorte (Ressourcen) in der Tages und Listenansicht}
-  \addrow{/FA/}{Ressourcen müssen auf Basis von Veranstaltungsorten frei definierbar sein}
-  \addrow{/FA/}{Option zur Auswahl der angezeigten Ereignisse (Basierend auf Kategorien)}
-  \addrow{/FA/}{Möglichkeit zum ICAL Import/Export}
-  \addrow{/FA/}{Anlegen, andern und löschen von unabhängigen Terminen}
-  \addrow{/FA/}{Definierbare Listen (Ausfallende Kurse, Kurse in den nächsten x Minuten, Kurse der Kategorie x und/oder y)}
-  \addrow{/FA/}{}
+  \addrow{/FA106.01/}{Unterstützung von Kalenderdarstellungen eines Veranstaltungsortes in der Tages, Wochen, Arbeitswochen, Monats und Listenansicht}
+  \addrow{/FA106.02/}{Kalenderdarstellung mehrerer Veranstaltungsorte (Ressourcen) in der Tages und Listenansicht}
+  \addrow{/FA106.03/}{Ressourcen müssen auf Basis von Veranstaltungsorten frei definierbar sein}
+  \addrow{/FA106.04/}{Option zur Auswahl der angezeigten Ereignisse (Basierend auf Kategorien)}
+  \addrow{/FA106.05/}{Möglichkeit zum ICAL Import/Export}
+  \addrow{/FA106.06/}{Anlegen, andern und löschen von unabhängigen Terminen}
+  \addrow{/FA106.07/}{Definierbare Listen (Ausfallende Kurse, Kurse in den nächsten x Minuten, Kurse der Kategorie x und/oder y)}
+  \addrow{/FA106.08/}{}
 \end{usecase}
 
-\paragraph{\textbf{Übungsleiter}\\}
+\subsubsection{Übungsleiter}
 \begin{usecase}
   \addheading{Nummer}{Beschreibung} 
-  \addrow{/FA/}{Anzeige von Übungsleiterlisten und ihren Kursen}
-  \addrow{/FA/}{Verwaltung von Stundenzetteln}
-  \addrow{/FA/}{Erstellen, ändern und löschen von Dienstverträgen (Zuordnung von Veranstaltungen)}
-  \addrow{/FA/}{Übungsleitersuche nach eigenen Kriterien (Sportart, aktiv/inaktiv)}
-  \addrow{/FA/}{}
+  \addrow{/FA107.01/}{Anzeige von Übungsleiterlisten und ihren Kursen}
+  \addrow{/FA107.02/}{Verwaltung von Stundenzetteln}
+  \addrow{/FA107.03/}{Erstellen, ändern und löschen von Dienstverträgen (Zuordnung von Veranstaltungen)}
+  \addrow{/FA107.04/}{Übungsleitersuche nach eigenen Kriterien (Sportart, aktiv/inaktiv)}
+  \addrow{/FA107.05/}{}
 \end{usecase}
 
-\paragraph{\textbf{Mailing}\\}
+\subsubsection{Mailing}
 \begin{usecase}
   \addheading{Nummer}{Beschreibung} 
-  \addrow{/FA/}{Erstellen von Massenmails an große Empfängergruppen}
-  \addrow{/FA/}{Erstellen, ändern und verwalten von dynamischen Empfängerlisten nach definierten Kriterien (z.b. Alle Teilnehmer von Kursen der Kategorie Bergsport im Jahr 2009)}
-  \addrow{/FA/}{Unterstützung von dynamischen Mailvorlagen (Platzhalter)}
-  \addrow{/FA/}{Eventgesteuerte, automatische Mailings (Zeit, Veranstaltungsabsage)}
-  \addrow{/FA/}{Unterstützung von Dateianhängen}
-  \addrow{/FA/}{Mailhistorie}
-  \addrow{/FA/}{Exportmöglichkeit von Empfängerlisten}
-  \addrow{/FA/}{Unterstützung unterschiedlicher Mailkonten}
-  \addrow{/FA/}{}
-  \addrow{/FA/}{}
-\end{usecase}
-
-\paragraph{\textbf{Einzelplatzbuchung}\\}
-\begin{usecase}
-  \addheading{Nummer}{Beschreibung} 
-  \addrow{/FA/}{Ausgewählte Veranstaltungsorte sollen für eine Buchung zur Verfügung gestellt werden (z.b. Seminarraum, Turnhalle, Tennisplatz)}
-  \addrow{/FA/}{Die Buchung erfolgt basierend auf definierten Zeit-Slots}
-  \addrow{/FA/}{Zeit-Slots werden nach Vorgaben automatisch generiert (Länge der Slots, von/bis)}
-  \addrow{/FA/}{Es müssen Zeiträume automatisch und manuell geblockt werden können, die nicht frei buchbar sind (Interne Verwendung für Kurse etc.)}
-  \addrow{/FA/}{Je Veranstaltungsort lassen sich unterschiedliche Slot-Preise und Buchungsvoraussetzungen vergeben (Ab wann kann gebucht werden, welche Nutzergruppen können buchen, wie viele Buchungen können pro Person je Woche/Monat gemacht werden, wie viele Tage im Voraus kann gebucht werden)}
-  \addrow{/FA/}{}
-\end{usecase}
-
-\paragraph{\textbf{Verleih}\\}
-\begin{usecase}
-  \addheading{Nummer}{Beschreibung} 
-  \addrow{/FA/}{Anlegen, ändern und löschen von Verleihobjekten (VW T3, Kanadier 103, etc.)}
-  \addrow{/FA/}{Anlegen, ändern und löschen von Verleihgruppen (Autos, Boote)}
-  \addrow{/FA/}{Je Objekt unterschiedliche Abrechnungseinheiten und Preise}
-  \addrow{/FA/}{Personengebunden}
-  \addrow{/FA/}{Jedes Objekt besitzt eine Verleih Historie}
-  \addrow{/FA/}{Suche nach Objekten und Leihpersonen}
-  \addrow{/FA/}{Liste verliehener Objekte}
-  \addrow{/FA/}{}
-\end{usecase}
-
-\paragraph{\textbf{Verkauf}\\}
-\begin{usecase}
-  \addheading{Nummer}{Beschreibung} 
-  \addrow{/FA/}{Über den Verkauf müssen auf den Kunden Kurse und Warenartikel gebucht werden können}
-  \addrow{/FA/}{Je nach Rechtezuteilung soll hier auch ein "Überbuchen" von Veranstaltungen möglich sein}
-  \addrow{/FA/}{Eine Bezahlung soll Bar, per Lastschrift oder Rechnung erfolgen können (konfigurierbar)}
-  \addrow{/FA/}{Alte Zahlungsvorgänge sollen einsehbar sein}
-  \addrow{/FA/}{Die Ansteuerung eine Bondruckers ist wünschenswert}
-  \addrow{/FA/}{Im Verkauf muss die Möglichkeit bestehen Kurse zu stornieren}
-  \addrow{/FA/}{Es muss die Möglichkeit bestehen von Punktekarten diese abzutragen}
-  \addrow{/FA/}{}
+  \addrow{/FA108.01/}{Erstellen von Massenmails an große Empfängergruppen}
+  \addrow{/FA108.02/}{Erstellen, ändern und verwalten von dynamischen Empfängerlisten nach definierten Kriterien (z.b. Alle Teilnehmer von Kursen der Kategorie Bergsport im Jahr 2009)}
+  \addrow{/FA108.03/}{Unterstützung von dynamischen Mailvorlagen (Platzhalter)}
+  \addrow{/FA108.04/}{Eventgesteuerte, automatische Mailings (Zeit, Veranstaltungsabsage)}
+  \addrow{/FA108.05/}{Unterstützung von Dateianhängen}
+  \addrow{/FA108.06/}{Mailhistorie}
+  \addrow{/FA108.07/}{Exportmöglichkeit von Empfängerlisten}
+  \addrow{/FA108.08/}{Unterstützung unterschiedlicher Mailkonten}
+  \addrow{/FA108.09/}{}
 \end{usecase}
 
 \subsection{Zugangsteuerung}
 \begin{usecase}
   \addheading{Nummer}{Beschreibung} 
-  \addrow{/FA/}{Die Zugangsteuerung soll automatisiert und manuell erfolgen können (Chip, Karte, Barcode oder Tastendruck)}
-  \addrow{/FA/}{Es sollen beliebig viele Steuerungsinstanzen unterstützt werden}
-  \addrow{/FA/}{Die Berechtigung kann für jede Instanz eigenständig definiert werden}
-  \addrow{/FA/}{Berechtigung durch Gruppenzugehörigkeit, Verträge, gebuchte Kurse, Punktekarten, Platzbuchungen}
-  \addrow{/FA/}{Kurs und Platzbuchungszugänge sollen einen Zutritt nur den Buchungszeitraum +/- x erlauben}
-  \addrow{/FA/}{Die Aktivitäten der Instanzen soll protokolliert werden (optional anonymisiert)}
-  \addrow{/FA/}{}
+  \addrow{/FA109.01/}{Die Zugangsteuerung soll automatisiert und manuell erfolgen können (Chip, Karte, Barcode oder Tastendruck)}
+  \addrow{/FA109.02/}{Es sollen beliebig viele Steuerungsinstanzen unterstützt werden}
+  \addrow{/FA109.03/}{Die Berechtigung kann für jede Instanz eigenständig definiert werden}
+  \addrow{/FA109.04/}{Berechtigung durch Gruppenzugehörigkeit, Verträge, gebuchte Kurse, Punktekarten, Platzbuchungen}
+  \addrow{/FA109.05/}{Kurs und Platzbuchungszugänge sollen einen Zutritt nur den Buchungszeitraum +/- x erlauben}
+  \addrow{/FA109.06/}{Die Aktivitäten der Instanzen soll protokolliert werden (optional anonymisiert)}
+  \addrow{/FA109.07/}{}
 \end{usecase}
 
 \subsection{Studio}
-\paragraph{\textbf{Checkin/Checkout}\\}
+\subsubsection{Checkin/Checkout}
 \begin{usecase}
   \addheading{Nummer}{Beschreibung} 
-  \addrow{/FA/}{Nutzer müssen manuell und automatisiert eingechecked werden können}
-  \addrow{/FA/}{Ein Checkin für Tagesgäste muss möglich sein (Ohne einen User anzulegen)}
-  \addrow{/FA/}{Beim Checkin müssen wichtige Personendaten angezeigt werden (Bild, Vertrag, Notizen)}
-  \addrow{/FA/}{Beim Checkin muss die Ausgabe von Spindschlüsseln vermerkt werden können}
-  \addrow{/FA/}{Die Checkout Bedingungen müssen konfigurierbar sein (Offene Rechnungen, hinterlegte Bankdaten, Schlüssel)}
-  \addrow{/FA/}{Eingecheckte Personen sollen Artikel/Kurse kaufen/buchen können}
-  \addrow{/FA/}{Die Rechnung muss temporär vorgehalten werden und erst beim Checkout beglichen werden}
-  \addrow{/FA/}{}
+  \addrow{/FA201.01/}{Nutzer müssen manuell und automatisiert eingechecked werden können}
+  \addrow{/FA201.02/}{Ein Checkin für Tagesgäste muss möglich sein (Ohne einen User anzulegen)}
+  \addrow{/FA201.03/}{Beim Checkin müssen wichtige Personendaten angezeigt werden (Bild, Vertrag, Notizen)}
+  \addrow{/FA201.04/}{Beim Checkin muss die Ausgabe von Spindschlüsseln vermerkt werden können}
+  \addrow{/FA201.05/}{Die Checkout Bedingungen müssen konfigurierbar sein (Offene Rechnungen, hinterlegte Bankdaten, Schlüssel)}
+  \addrow{/FA201.06/}{Eingecheckte Personen sollen Artikel/Kurse kaufen/buchen können}
+  \addrow{/FA201.07/}{Die Rechnung muss temporär vorgehalten werden und erst beim Checkout beglichen oder als Rechnung gestellt werden}
+  \addrow{/FA201.08/}{}
 \end{usecase}
 
-\paragraph{\textbf{Studioinfo}\\}
+\subsubsection{Studioinfo}
 \begin{usecase}
   \addheading{Nummer}{Beschreibung} 
-  \addrow{/FA/}{Basierend auf den Checkin Daten sollen aktuelle Studio Infos angezeigt werden können (Liste aller Personen, Anzahl der Besucher, Besucher über den Tag)}
-  \addrow{/FA/}{Übersicht der Kurse im Studio (Aktuelle Kurse, etc.)}
-  \addrow{/FA/}{}
+  \addrow{/FA202.01/}{Basierend auf den Checkin Daten sollen aktuelle Studio Infos angezeigt werden können (Liste aller Personen, Anzahl der Besucher, Besucher über den Tag)}
+  \addrow{/FA202.02/}{Übersicht der Kurse im Studio (Aktuelle Kurse, etc.)}
+  \addrow{/FA202.03/}{}
 \end{usecase}
 
-\paragraph{\textbf{Trainer}\\}
+\subsubsection{Trainer}
 \begin{usecase}
   \addheading{Nummer}{Beschreibung} 
-  \addrow{/FA/}{Erstellen, bearbeiten und löschen von Trainern}
-  \addrow{/FA/}{Trainer basieren auf normalen Personen/Teilnehmern}
-  \addrow{/FA/}{Trainer können für Termine freigeschaltet werden (Personal Training)}
-  \addrow{/FA/}{Je Trainer können individuelle Informationen hinterlegt werden (Preis, Qualifikation, Bilder)}
-  \addrow{/FA/}{Trainer können verfügbare Zeiten eintragen}
-  \addrow{/FA/}{Personen können auf freie Trainerzeiten gebucht werden}
-  \addrow{/FA/}{Über einen Kalender können Trainertermine dargestellt werden (Mehrere Trainer in der Tagesansicht oder ein Trainer in der Wochenansicht)}
-  \addrow{/FA/}{Für Teilnehmer/Personen wird eine Trainer Terminkalender bereitgestellt}
-  \addrow{/FA/}{}
+  \addrow{/FA203.01/}{Erstellen, bearbeiten und löschen von Trainern}
+  \addrow{/FA203.02/}{Trainer basieren auf normalen Personen/Teilnehmern}
+  \addrow{/FA203.03/}{Trainer können für Termine freigeschaltet werden (Personal Training)}
+  \addrow{/FA203.04/}{Je Trainer können individuelle Informationen hinterlegt werden (Preis, Qualifikation, Bilder)}
+  \addrow{/FA203.05/}{Trainer können verfügbare Zeiten eintragen}
+  \addrow{/FA203.06/}{Personen können auf freie Trainerzeiten gebucht werden}
+  \addrow{/FA203.07/}{Über einen Kalender können Trainertermine dargestellt werden (Mehrere Trainer in der Tagesansicht oder ein Trainer in der Wochenansicht)}
+  \addrow{/FA203.08/}{Für Teilnehmer/Personen wird eine Trainer Terminkalender bereitgestellt}
+  \addrow{/FA203.09/}{}
 \end{usecase}
 
 \subsection{Anpassungen}
 Das System muss umfangreiche individuelle Konfigurationsmöglicheiten unterstützen. Dies beinhaltet das Anlegen von Auswahlelementen wie auch die Erstellung unterschiedlicher Konfigurationselemente (z.B. Modulaktivierung)
-\paragraph{\textbf{Auswahlelemente}\\}
+\subsubsection{Auswahlelemente}
 
 \begin{usecase}
   \addheading{Nummer}{Beschreibung} 
-  \addrow{/FA/}{Sportarten (Beschreibugn, Ansprechpartner, Kateorie)}
+  \addrow{/FA/}{Sportarten (Beschreibung, Ansprechpartner, Kategorie)}
   \addrow{/FA/}{Gendergruppen}
   \addrow{/FA/}{Leistungsniveau/Zielgruppen}
   \addrow{/FA/}{Kosteninformation}
@@ -550,6 +519,32 @@ Es sollen die Möglichkeit bestehen (mindestens) die folgenden Daten persistent 
   \addrow{/NF/}{Die Maximale Teilnehmerzahl darf nie überschritten werden}
   \addrow{/NF/}{}
 \end{usecase}
+
+\section{Erweiterbarkeit} \label{erweiterbarkeit}
+\subsubsection{Verleih}
+\subsubsection{Verkauf}
+%\begin{usecase}
+%  \addheading{Nummer}{Beschreibung} 
+%  \addrow{/FA/}{Über den Verkauf müssen auf den Kunden Kurse und Warenartikel gebucht werden können}
+%  \addrow{/FA/}{Je nach Rechtezuteilung soll hier auch ein "Überbuchen" von Veranstaltungen möglich sein}
+%  \addrow{/FA/}{Eine Bezahlung soll Bar, per Lastschrift oder Rechnung erfolgen können (konfigurierbar)}
+%  \addrow{/FA/}{Alte Zahlungsvorgänge sollen einsehbar sein}
+%  \addrow{/FA/}{Die Ansteuerung eine Bondruckers ist wünschenswert}
+%  \addrow{/FA/}{Im Verkauf muss die Möglichkeit bestehen Kurse zu stornieren}
+%  \addrow{/FA/}{Es muss die Möglichkeit bestehen von Punktekarten diese abzutragen}
+%  \addrow{/FA/}{}
+%\end{usecase}
+
+\subsubsection{Einzelplatzbuchung}
+%\begin{usecase}
+%  \addheading{Nummer}{Beschreibung} 
+%  \addrow{/FA/}{Ausgewählte Veranstaltungsorte sollen für eine Buchung zur Verfügung gestellt werden (z.b. Seminarraum, Turnhalle, Tennisplatz)}
+%  \addrow{/FA/}{Die Buchung erfolgt basierend auf definierten Zeit-Slots}
+%  \addrow{/FA/}{Zeit-Slots werden nach Vorgaben automatisch generiert (Länge der Slots, von/bis)}
+%  \addrow{/FA/}{Es müssen Zeiträume automatisch und manuell geblockt werden können, die nicht frei buchbar sind (Interne Verwendung für Kurse etc.)}
+%  \addrow{/FA/}{Je Veranstaltungsort lassen sich unterschiedliche Slot-Preise und Buchungsvoraussetzungen vergeben (Ab wann kann gebucht werden, welche Nutzergruppen können buchen, wie viele Buchungen können pro Person je Woche/Monat gemacht werden, wie viele Tage im Voraus kann gebucht werden)}
+%  \addrow{/FA/}{}
+%\end{usecase}
 
 \section{Systemmodelle}
 \subsection{Szenarien}
