@@ -164,6 +164,31 @@ BundesamtfurSicherheitinderInformationstechnik.}%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+{Bundsministerium der Justiz und f{\"u}r Verbracherschutz}%
+}{%
+{Bundsministerium der Justiz und f{\"u}r Verbracherschutz}%
+}{%
+{\protect \APACyear {1976}}%
+}]{%
+BundsministeriumderJustizundfurVerbracherschutz.1976}
+\APACinsertmetastar {%
+BundsministeriumderJustizundfurVerbracherschutz.1976}%
+\begin{APACrefauthors}%
+{Bundsministerium der Justiz und f{\"u}r Verbracherschutz}.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1976}{}{}.
+\newblock
+\APACrefbtitle {{H}ochschulrahmengesetz ({H}{R}{G}).} {{H}ochschulrahmengesetz
+  ({H}{R}{G}).}
+\newblock
+\begin{APACrefURL}
+  [{10.09.2016}]\url{http://www.gesetze-im-internet.de/bundesrecht/hrg/gesamt.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Chong%
 , Carraro%
 \BCBL {}\ \BBA {} Wolter%
