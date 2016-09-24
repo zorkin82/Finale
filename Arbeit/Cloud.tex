@@ -274,13 +274,11 @@ Für das Verständnis, welche Prinzipien sich für eine SaaS-Anwendung eignen, w
 	
 	\paragraph{Client}
 	Clients können in beliebig großer Anzahl existieren. Sie nehmen die Daten oder Services, die vom Server bereitgestellt werden in Anspruch. Um mit den Diensten interagieren zu können, muss ein Client von der Existenz und dessen Adresse wissen. Der Client sendet eine Anfrage an den Server und bekommt ein Resultat zurück geliefert. \citet*[S. 302]{Sommerville.2007} unterscheidet folgende zwei Client-Modelle:
-	\\
-	\\
+		
 	\textbf{Thin-Client-Modell}\\
 	Bei diesem Modell werden die gesamten Anwendungsprozesse und Datenhaltung auf dem Server erledigt. Der Client ist nur für die Darstellung verantwortlich. Daraus ergibt sich der Vorteil, dass sehr wenig Ressourcen für den Client benötigt werden und dieser sich auch auf kleinen Systemen (z.B. Terminals) implementieren lässt. Der Nachteil dieses Modelles liegt jedoch darin, dass so sämtliche Arbeit Serverseitig geleistet werden muss. Gerade bei Anwendungen mit großer Client Anzahl oder rechenintensiven Operationen kann so der Server schnell zur kritischen Komponente werden und das System vor Skalierungsprobleme stellen. Zusätzlich führt der Thin-Client zu einer erhöhten Netzwerkbelastung, da alle Daten vom Server zum Client transportiert werden müssen.
-	\\
-	\\
-\textbf{Fat-Client-Modell}\\
+	
+  \textbf{Fat-Client-Modell}\\
 	Dieses Modell verlagert die Anwendungslogik vollständig oder in großen Teilen vom Server direkt in den Client. Dadurch kann der Server deutlich entlastet werden und die Rechenleistung des Client Rechners zusätzlich genutzt werden. Dies kann sich in speziellen Situationen allerdings auch als Nachteile erweisen, wenn die Client Computer die notwendige Rechenleistung nicht selbstständig bereitstellen könne. Der Server fungiert dabei nur noch als Daten Service und die Netzwerklast wird reduziert. Die Verlagerung der Anwendungslogik auf den Client bringt aber auch Nachteile mit sich. Müssen hier Änderungen vorgenommen werden, so müssen alle Clients auf die neue Version aktualisiert werden, was zu einem komplexen Systemmanagement führen kann. Der Aufwand dafür steigt mit zunehmender Zahl der Clients.
 	
 	\paragraph{Netzwerk (optional)}
@@ -377,12 +375,11 @@ Für das Verständnis, welche Prinzipien sich für eine SaaS-Anwendung eignen, w
 Bevor die MTA im Detail erklärt werden kann, ist es wichtig ein gemeinsames Verständnis von Tenant (dt. Mieter) und Multi-Tenancy (dt. Mehrfach Mieter) im Kontext von Software-Anwendungen zu schaffen. \cite*[vgl. ][S.2]{Krebs.2012}
 \\
 
-\textbf{Tenant:} Bezeichnet eine Gruppe von Benutzern, die die gleiche Sicht auf eine Software teilen. Dies bezieht sich auf die Punkte wie zugreifbare Daten, Konfiguration, User Management und Funktionalität. Ein Tenant ist häufig eine (Teil-)Organisation wie zum Beispiel eine Hochschulsporteinrichtung. \\ 
+\textbf{Tenant:} Bezeichnet eine Gruppe von Benutzern, die die gleiche Sicht auf eine Software teilen. Dies bezieht sich auf die Punkte wie zugreifbare Daten, Konfiguration, User Management und Funktionalität. Ein Tenant ist häufig eine (Teil-)Organisation wie zum Beispiel eine Hochschulsporteinrichtung. 
 
-\textbf{Multi-Tenancy:} Beschreibt ein Modell bei dem eine Anwendungsinstanz von mehreren Tenants genutzt wird aber jeder einen eingeschränkten, isolierten Zugriff erhält. Dabei werden Performance und Datenschutz Kriterien je Tenant behandelt. \\ 
+\textbf{Multi-Tenancy:} Beschreibt ein Modell bei dem eine Anwendungsinstanz von mehreren Tenants genutzt wird aber jeder einen eingeschränkten, isolierten Zugriff erhält. Dabei werden Performance und Datenschutz Kriterien je Tenant behandelt. 
 
 \textbf{Multi-Tenant Application:} Teilt eine Anwendungsinstanz unter mehreren Tenants, um zusätzliche Kosten zu reduzieren. 
-\\ 
 
 Die primäre Herausforderung in MTA liegt daher in der sauberen Trennung von Abläufen und Daten zwischen den einzelnen Tenants. \cite{Chong.2006} zeigen in ihrem Artikel drei unterschiedliche Möglichkeiten, wie Multi-Tenant Daten verwaltet werden können.
 
@@ -396,8 +393,7 @@ In diesem Ansatz werden die Daten für jeden Tenant in einer eigenen Datenbank g
 	\label{fig:separierteDatenbanken}
 \end{figure}
 vgl.	
-\\
-\\
+
 \paragraph{Geteilte Datenbank, separiertes Schema}
 Ein alternativer Ansatz ist es, alle Tenant Daten innerhalb einer Datenbank zu speichern, wobei jeder ein eigenes Schema und Set von Tabellen mit entsprechenden Zugriffsrechten bekommt.
 Die Implementierung ist relativ einfach und erreicht ein gemäßigtes Maß an logischer Isolation (vgl. Abbildung~\ref{fig:geteilteDatenbank}). Im Gegensatz zum Ansatz mit separierten Datenbanken lassen sich so jedoch deutlich mehr Tenants unterstützen. Das Wiederherstellen von Tenant spezifischen Daten aus einem Backup gestaltet sich in diesem Ansatz deutlich schwieriger. Da ein Datenbank Backup nicht einfach zurück gespielt werden kann, müssen zuerst alle Daten aller Tenants aus einem Backup in einen Temporären Server zurück gespielt werden, um sie anschließend von dort zurück in das Produktivsystem spielen zu können. Diese Vorgehensweise führt zu einem erheblichen Mehraufwand im Falle von Datenverlust.
@@ -409,8 +405,7 @@ Die Implementierung ist relativ einfach und erreicht ein gemäßigtes Maß an lo
 	\label{fig:geteilteDatenbank}
 \end{figure}
 vgl.
-\\
-\\
+
 \paragraph{Geteilte Datenbank, geteiltes Schema} 
 Dieser Ansatz basiert auf einer Datenbank und einem Set von Tabellen. Die Trennung der Daten erfolgt über das Mitführen einer Tenant-ID in jedem Datensatz wie in Abbildung~\ref{fig:geteilteDatenbankundSchema} zu sehen. Diese Lösungsstrategie erlaubt die Versorgung einer großen Tenant-Anzahl per Datenbank und erfordert daher die geringsten Hardware und Backup Kosten. Gleichzeitig erfordert es auch den höchsten Aufwand die Trennung von Tenant Daten anwendungsseitig sicherzustellen, um alle Sicherheits- und Datenschutzbedingungen zu erfüllen. Die Probleme beim Wiederherstellen von Backups verhalten sich wie beim Ansatz mit separiertem Schema. 
 \begin{figure}[h]
@@ -420,7 +415,6 @@ Dieser Ansatz basiert auf einer Datenbank und einem Set von Tabellen. Die Trennu
 	\label{fig:geteilteDatenbankundSchema}
 \end{figure}
 vgl.
-\\
-\\
+
 adfkadf 
 \subsection{Security}
